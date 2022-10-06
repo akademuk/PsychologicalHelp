@@ -127,6 +127,13 @@
         color: #007CF8;
     }
 }
+.flex {
+    display: flex;
+    align-items: center;
+    svg {
+        margin-right: 13px;
+    }
+}
 .burge-navigation-contact {
     display: flex;
     flex-direction: column;
@@ -139,6 +146,9 @@
         &:nth-last-of-type(1) {
             margin-bottom: 0;
         }
+        svg {
+            margin-right: 13px;
+        }
         a {
             font-family: "ProximaNova-Semibold";
             font-size: 14px;
@@ -146,24 +156,6 @@
             text-transform: lowercase;
             color: #0D3155;
             text-decoration: none;
-        }
-        &:nth-of-type(1):before {
-            content: "";
-            background: url(../../img/mail.png);
-            background-size: contain;
-            width: 18px;
-            height: 12px;
-            display: flex;
-            margin-right: 14px;
-        }
-        &:nth-of-type(2):before {
-            content: "";
-            background: url(../../img/tel.png);
-            background-size: contain;
-            width: 18px;
-            height: 18px;
-            display: flex;
-            margin-right: 14px;
         }
     }
 }
@@ -293,14 +285,6 @@ h6 {
         display: flex;
         margin-bottom: 0;
         width: max-content;
-        &::before {
-            content: "";
-            background: url(../img/calendar.png);
-            width: 19px;
-            height: 19px;
-            display: flex;
-            margin-right: 15px;
-        }
     }
 }
 .blogContainer {
@@ -407,6 +391,11 @@ h6 {
 }
 }
 @media(max-width: 992px) {
+.flex  {
+    svg {
+        margin-bottom: 20px;
+    }
+}
 .header {
     padding: 25px 16px;
 }
@@ -500,6 +489,11 @@ h1 {
 @media(max-width: 576px) {
 .header {
     padding: 17px 16px;
+}
+.flex  {
+    svg {
+        margin-bottom: 34px;
+    }
 }
 .burge-navigation {
     align-items: flex-start;
