@@ -1,0 +1,37 @@
+h1 {
+    font-family: "ProximaNova-Semibold";
+    font-size: 85px;
+    line-height: 81px;
+    color: $colorText;
+}
+h2 {
+    font-family: "ProximaNova-Semibold";
+    font-size: 40px;
+    line-height: 49px;
+    color: $colorText;
+}
+.wrapper {
+    max-width: 1165px;
+    width: 100%;
+    margin: 0 auto;
+}
+.logo-text {
+    font-family: "ProximaNova-Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+.button {
+    @include btn;
+    padding: 22px 44px;
+}
+h1 {
+    font-family: "ProximaNova-Semibold";
+    font-size: 85px;
+    line-height: 81px;
+    color: #0D3155;
+    margin-bottom: 45px;
+}

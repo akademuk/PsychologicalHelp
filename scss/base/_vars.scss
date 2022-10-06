@@ -1,0 +1,23 @@
+$colorText:#0D3155;
+$backgroundBtn:#007CF8;
+
+@mixin textCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin justifyContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin btn {
+    font-family: "ProximaNova-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background:$backgroundBtn;
+    border-radius: 5px;
+    border: none;
+}
