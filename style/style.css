@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "ProximaNova-Semibold";
-  src: url("../fonts/ProximaNova-Semibold.eot") format("eot"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  src: url("/fonts/ProximaNova-Semibold.eot") format("eot"), url("/fonts/ProximaNova-Semibold.woff2") format("woff2"), url("/fonts/ProximaNova-Semibold.woff") format("woff"), url("/fonts/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -390,7 +390,7 @@ h6 {
 }
 .btnDate p::before {
   content: "";
-  background: url(./img/calendar.png);
+  background: url(../img/calendar.png);
   width: 19px;
   height: 19px;
   display: flex;
