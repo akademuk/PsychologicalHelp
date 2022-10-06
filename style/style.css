@@ -1,24 +1,24 @@
 @font-face {
   font-family: "ProximaNova-Regular";
-  src: url("../../fonts/ProximaNova-Regular.eot") format("eot"), url("../../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../../fonts/ProximaNova-Regular.woff") format("woff"), url("../../fonts/ProximaNova-Regular.ttf") format("truetype");
+  src: url("./../fonts/ProximaNova-Regular.eot") format("eot"), url("./../fonts/ProximaNova-Regular.woff2") format("woff2"), url("./../fonts/ProximaNova-Regular.woff") format("woff"), url("./../fonts/ProximaNova-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "ProximaNova-Semibold";
-  src: url("../../fonts/ProximaNova-Semibold.eot") format("eot"), url("../../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../../fonts/ProximaNova-Semibold.woff") format("woff"), url("../../fonts/ProximaNova-Semibold.ttf") format("truetype");
+  src: url("./../fonts/ProximaNova-Semibold.eot") format("eot"), url("./../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("./../fonts/ProximaNova-Semibold.woff") format("woff"), url("./../fonts/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "ProximaNova-Bold";
-  src: url("../../fonts/ProximaNova-Bold.eot") format("eot"), url("../../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../../fonts/ProximaNova-Bold.woff") format("woff"), url("../../fonts/ProximaNova-Bold.ttf") format("truetype");
+  src: url("./../fonts/ProximaNova-Bold.eot") format("eot"), url("./../fonts/ProximaNova-Bold.woff2") format("woff2"), url("./../fonts/ProximaNova-Bold.woff") format("woff"), url("./../fonts/ProximaNova-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gilroy-Medium";
-  src: url("../../fonts/Gilroy-Medium.eot") format("eot"), url("../../fonts/Gilroy-Medium.woff2") format("woff2"), url("../../fonts/Gilroy-Medium.woff") format("woff"), url("../../fonts/Gilroy-Medium.ttf") format("truetype");
+  src: url("./../fonts/Gilroy-Medium.eot") format("eot"), url("./../fonts/Gilroy-Medium.woff2") format("woff2"), url("./../fonts/Gilroy-Medium.woff") format("woff"), url("./../fonts/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
@@ -75,9 +75,14 @@ h1 {
 .header {
   padding: 25px 39px;
   background: #0D3155;
+}
+
+.header .wrapper {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  max-width: 100%;
+  width: 1360px;
 }
 
 .logo {
@@ -493,6 +498,8 @@ h6 {
 @media (max-width: 992px) {
   .header {
     padding: 25px 16px;
+  }
+  .header .wrapper {
     flex-direction: column;
     align-items: center;
   }
@@ -522,7 +529,7 @@ h6 {
   }
 }
 @media (max-width: 768px) {
-  .header {
+  .header .wrapper {
     flex-direction: row;
     align-items: center;
   }

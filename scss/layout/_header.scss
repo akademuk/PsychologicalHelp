@@ -1,9 +1,13 @@
 .header {
     padding: 25px 39px;
     background:#0D3155;
+}
+.header .wrapper {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between
+    justify-content: space-between;
+    max-width: 100%;
+    width: 1360px;
 }
 .logo {
     margin-top: -5px;
@@ -405,6 +409,8 @@ h6 {
 @media(max-width: 992px) {
 .header {
     padding: 25px 16px;
+}
+.header .wrapper {
     flex-direction: column;
     align-items: center;
 }
@@ -436,7 +442,7 @@ h1 {
 }
 }
 @media(max-width: 768px) {
-.header {
+.header .wrapper{
     flex-direction: row;
     align-items: center;
 }
