@@ -258,7 +258,7 @@
     }
 }
 .video1 {
-    background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/img-video1.png);
+    background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -268,7 +268,7 @@
     margin-right: 23px;
 }
 .video2 {
-    background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/img-video2.png);
+    background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -281,7 +281,7 @@
     position: absolute;
     top: -50px;
     right: 0;
-    background: url(../../img/right.svg);
+    background: url(../img/right.svg);
     width: 23px;
     height: 12px;
     border: none;
