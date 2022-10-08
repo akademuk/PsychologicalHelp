@@ -245,33 +245,11 @@ h1 {
   margin-right: 100px;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 4px;
@@ -294,7 +272,6 @@ h1 {
   background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -329,6 +306,7 @@ h1 {
 @media (max-width: 992px) {
   .reviews .wrapper {
     flex-direction: column;
+    height: auto;
   }
   .reviewsLeft {
     width: 90%;
@@ -406,7 +384,8 @@ h1 {
     max-width: -moz-fit-content;
     max-width: fit-content;
     max-width: 75%;
-    width: 30%;
+    width: 55px;
+    height: 55px;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -962,6 +941,94 @@ h3:active {
   margin-bottom: 97px;
 }
 
+.form {
+  width: 100%;
+  background: #F4F9FE;
+  padding: 54px 155px 54px 155px;
+}
+.form .wrapper {
+  max-width: 1129px;
+  margin: 0 auto;
+}
+.form .wrapper h2 {
+  font-family: "ProximaNova-Semibold";
+  font-size: 24px;
+  line-height: 29px;
+  color: #0D3155;
+}
+.form .wrapper form {
+  margin-top: 23px;
+  display: flex;
+  align-items: flex-end;
+}
+.form .wrapper form label {
+  font-family: "ProximaNova-Regular";
+  display: flex;
+  flex-direction: column;
+  width: 438px;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #50759B;
+}
+.form .wrapper form label input {
+  width: 100%;
+  margin-top: 16px;
+  background: #FFFFFF;
+  border: 1px solid #E7EAED;
+  border-radius: 5px;
+  height: 63px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: left;
+}
+.form .wrapper form label input::-moz-placeholder {
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #50759B;
+}
+.form .wrapper form label input:-ms-input-placeholder {
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #50759B;
+}
+.form .wrapper form label input::placeholder {
+  font-family: "ProximaNova-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: capitalize;
+  color: #50759B;
+}
+.form .wrapper form label:nth-of-type(2) {
+  margin: 0 24px 0 24px;
+}
+.form .wrapper form input {
+  background: #007CF8;
+  border-radius: 5px;
+  height: 63px;
+  display: flex;
+  align-items: center;
+  width: 207px;
+  font-family: "ProximaNova-Bold";
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  justify-content: center;
+  border: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.mySlides-info-left p:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+
 @media (max-width: 1440px) {
   .video-wrapper {
     max-width: 90%;
@@ -987,6 +1054,13 @@ h3:active {
   }
   .sectionTittle .wrapper {
     width: 100%;
+  }
+  .form {
+    padding: 54px 50px;
+  }
+  .mySlides {
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .mainAccordion {
     width: 100%;
@@ -1126,10 +1200,35 @@ h3:active {
   .blog .wrapper {
     padding: 0 39px;
   }
+  .form .wrapper form {
+    flex-direction: column;
+    align-items: center;
+  }
+  .form .wrapper form label {
+    margin-bottom: 16px;
+  }
+  .form .wrapper form input {
+    margin-top: 16px;
+  }
 }
 @media (max-width: 576px) {
   .header {
     padding: 17px 16px;
+  }
+  .form {
+    padding: 52px 32px 76px 32px;
+  }
+  .form .wrapper h2 {
+    text-align: left;
+  }
+  .form .wrapper form {
+    align-items: flex-start;
+  }
+  .form .wrapper form label {
+    width: 256px;
+  }
+  .form .wrapper form label:nth-of-type(2) {
+    margin: 0;
   }
   .video .wrapper {
     width: 90%;
