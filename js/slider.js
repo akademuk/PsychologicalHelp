@@ -1,20 +1,23 @@
 $('.videoContainer').slick({
-    infinite: true,
-    slidesToShow: 2,
-    slidesToScroll: 1,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
     responsive: [
         {
           breakpoint: 768,
           settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
             variableWidth: true,
-            centerPadding: "40px",
           }
         },
         {
             breakpoint: 576,
             settings: {
-                variableWidth: true,
-              centerPadding: "10px",
+              slidesToShow: 1,
+          slidesToScroll: 1,
             }
           },
       ]
