@@ -368,7 +368,7 @@ h1 {
     width: 100%;
     position: relative;
     max-width: 100%;
-    height: 635px;
+    height: auto;
     overflow: hidden;
   }
   .reviewsCenter {
@@ -1451,6 +1451,28 @@ footer .wrapper .burge-navigation-icon li {
   .mySlides {
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 25px;
+    height: 400px;
+  }
+  footer::after {
+    content: none;
+  }
+  .form {
+    overflow: hidden;
+  }
+  .form .wrapper form {
+    padding: 0;
+  }
+  .form .wrapper form:after {
+    top: -70%;
+    right: -20%;
+    height: 90px;
+    width: 90px;
+    z-index: 5;
+  }
+  .form .wrapper form input {
+    margin-left: auto;
+    margin-right: auto;
   }
   .sectionTittle {
     flex-direction: column;

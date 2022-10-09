@@ -994,6 +994,32 @@ form {
 .mySlides {
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 25px;
+    height: 400px;
+}
+footer {
+    &::after {
+        content: none;
+    }
+}
+.form  {
+        overflow: hidden;
+    .wrapper  {
+        form {
+            padding: 0;
+            &:after {
+                top: -70%;
+                right: -20%;
+                height: 90px;
+                width: 90px;
+                z-index: 5;
+            }
+            input {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
 }
 .sectionTittle {
     flex-direction: column;
