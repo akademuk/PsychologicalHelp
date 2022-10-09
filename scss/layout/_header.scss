@@ -483,7 +483,7 @@ h3 {
             margin-top: 23px;
             display: flex;
             position: relative;
-            align-items: flex-end;
+            align-items: flex-end !important;
             label {
                 font-family: "ProximaNova-Regular";
                 display: flex;
@@ -597,6 +597,11 @@ footer {
 .footer-contact {
     display: flex;
 }
+.reviewsCenter {
+    h2 {
+        margin-bottom: 43px;
+    }
+}
 @media (max-width:1440px) {
 .main {
     max-width: 1130px;
@@ -628,6 +633,22 @@ footer {
 }
 .form {
     padding: 54px 50px;
+}
+.reviews {
+    .wrapper {
+        padding: 0;
+    }
+}
+.slideshow-container {
+    width: 100%;
+    .mySlides {
+        width: 100%;
+    }
+}
+.slideshow-container {
+    &::after {
+        width: 90%;
+    }
 }
 .mySlides {
     padding-left: 32px;
@@ -676,6 +697,14 @@ h2 {
 }
 .wrapper {
     width: 90%;
+}
+.slideshow-container  {
+    .mySlides {
+        width: 90%;
+    }
+}
+.dot-container {
+    right: 15px;
 }
 .header {
     padding: 25px;
@@ -742,6 +771,26 @@ h1 {
         }
         .burger-menu {
             display: block;
+        }
+    }
+}
+.form  {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    .wrapper  {
+        form {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            label {
+                width: 100%;
+                &:nth-of-type(2) {
+                    margin: 26px 0;
+                }
+            }
+            &:after {
+                top: -70%;
+            }
         }
     }
 }
@@ -814,6 +863,15 @@ h1 {
             }
         }
     }
+}
+.reviewsCenter {
+    h2 {
+        margin-bottom: 35px;
+    }
+}
+.mySlides {
+    padding-left: 16px;
+    padding-right: 16px;
 }
 .sectionTittle {
     flex-direction: column;

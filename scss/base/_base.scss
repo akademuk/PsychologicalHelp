@@ -50,9 +50,6 @@ h1 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 500px;
-        max-width: 100%;
-        padding: 0 70px;
    }
 }
 .reviewsLeft {
@@ -180,13 +177,9 @@ h1 {
         z-index: -2;
     }
 }
-
-/* Hide the images by default */
 .mySlides {
     display: none;
 }
-
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   transition: 0.6s ease;
@@ -324,9 +317,29 @@ h1 {
 .reviews {
     margin-bottom: 95px;
 }
+.dot-container {
+    right: 0 !important;
+}
+.mySlides {
+    p {
+        margin-bottom: 31px;
+    }
+}
+.mySlides-info-left  {
+    p {
+        &:nth-of-type(2) {
+            margin-bottom: 0;
+        }
+    }
+}
+.slideshow-container {
+    &::after {
+        width: 80%;
+    }
+}
 .reviewsLeft {
         position: absolute;
-        top: 65%;
+        top: 75%;
         z-index: -1;
         width: 70%;
         height: 120px;

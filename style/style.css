@@ -93,9 +93,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 500px;
-  max-width: 100%;
-  padding: 0 70px;
 }
 
 .reviewsLeft {
@@ -228,12 +225,10 @@ h1 {
   z-index: -2;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   transition: 0.6s ease;
@@ -381,9 +376,21 @@ h1 {
   .reviews {
     margin-bottom: 95px;
   }
+  .dot-container {
+    right: 0 !important;
+  }
+  .mySlides p {
+    margin-bottom: 31px;
+  }
+  .mySlides-info-left p:nth-of-type(2) {
+    margin-bottom: 0;
+  }
+  .slideshow-container::after {
+    width: 80%;
+  }
   .reviewsLeft {
     position: absolute;
-    top: 65%;
+    top: 75%;
     z-index: -1;
     width: 70%;
     height: 120px;
@@ -966,7 +973,7 @@ h3:active {
   margin-top: 23px;
   display: flex;
   position: relative;
-  align-items: flex-end;
+  align-items: flex-end !important;
 }
 .form .wrapper form label {
   font-family: "ProximaNova-Regular";
@@ -1096,6 +1103,10 @@ footer .wrapper {
   display: flex;
 }
 
+.reviewsCenter h2 {
+  margin-bottom: 43px;
+}
+
 @media (max-width: 1440px) {
   .main {
     max-width: 1130px;
@@ -1120,6 +1131,18 @@ footer .wrapper {
   }
   .form {
     padding: 54px 50px;
+  }
+  .reviews .wrapper {
+    padding: 0;
+  }
+  .slideshow-container {
+    width: 100%;
+  }
+  .slideshow-container .mySlides {
+    width: 100%;
+  }
+  .slideshow-container::after {
+    width: 90%;
   }
   .mySlides {
     padding-left: 32px;
@@ -1164,6 +1187,12 @@ footer .wrapper {
   }
   .wrapper {
     width: 90%;
+  }
+  .slideshow-container .mySlides {
+    width: 90%;
+  }
+  .dot-container {
+    right: 15px;
   }
   .header {
     padding: 25px;
@@ -1225,6 +1254,24 @@ footer .wrapper {
   .header .header-content .burger-menu {
     display: block;
   }
+  .form {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .form .wrapper form {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .form .wrapper form label {
+    width: 100%;
+  }
+  .form .wrapper form label:nth-of-type(2) {
+    margin: 26px 0;
+  }
+  .form .wrapper form:after {
+    top: -70%;
+  }
   .footer-navigation {
     flex-direction: column;
   }
@@ -1282,6 +1329,13 @@ footer .wrapper {
   }
   .header .header-content .logo a p {
     font-size: 14px;
+  }
+  .reviewsCenter h2 {
+    margin-bottom: 35px;
+  }
+  .mySlides {
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .sectionTittle {
     flex-direction: column;
