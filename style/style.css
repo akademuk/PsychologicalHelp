@@ -36,8 +36,14 @@ h2 {
   color: #0D3155;
 }
 
+.main {
+  max-width: 1360px;
+  margin: 0 auto;
+  margin-top: 150px;
+}
+
 .wrapper {
-  max-width: 1129px;
+  max-width: 1130px;
   width: 100%;
   margin: 0 auto;
 }
@@ -50,6 +56,10 @@ h2 {
   line-height: 17px;
   text-transform: capitalize;
   color: #FFFFFF;
+}
+
+.bodyActive {
+  overflow: hidden;
 }
 
 .button {
@@ -446,14 +456,21 @@ h1 {
 .header {
   padding: 25px 39px;
   background: #0D3155;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100vw;
+  min-width: 100vw;
+  z-index: 200;
 }
 
-.header .wrapper {
+.header-content {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   max-width: 100%;
   width: 1360px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -516,8 +533,17 @@ h1 {
   height: 100%;
   width: 100%;
   background: #FFFFFF;
+  position: fixed;
   z-index: 9999;
   display: none;
+  top: 57px;
+  left: 0;
+  padding-top: 57px;
+  padding-left: 16px;
+  max-width: 100%;
+  overflow: scroll;
+  padding-bottom: 100px;
+  box-sizing: border-box;
 }
 
 .bar {
@@ -619,7 +645,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 90%;
+  width: 45%;
 }
 .burge-navigation-icon li {
   background: #F4F9FE;
@@ -636,8 +662,6 @@ h1 {
 
 .sectionTittle {
   margin-top: 44px;
-}
-.sectionTittle .wrapper {
   display: flex;
 }
 
@@ -662,17 +686,23 @@ h1 {
 }
 
 .coursesContainer {
-  margin-bottom: 122px;
-}
-.coursesContainer .wrapper {
-  max-width: 100%;
-  width: 1360px;
+  background: #F4F9FE;
+  border-radius: 10px;
+  padding: 50px 116px 100px 116px;
   box-sizing: border-box;
+  margin-bottom: 122px;
 }
 .coursesContainer .coursesSectionLeft {
   display: flex;
   flex-direction: column;
   width: 49%;
+}
+
+.video {
+  background: #F4F9FE;
+  border-radius: 10px;
+  padding: 50px 116px 100px 116px;
+  box-sizing: border-box;
 }
 
 .videoContainer {
@@ -719,14 +749,6 @@ h1 {
   margin-top: 55px;
   justify-content: space-between;
   margin: 55px auto 0 auto;
-}
-
-.courses-wrapper {
-  width: 1360px;
-  background: #F4F9FE;
-  border-radius: 10px;
-  padding: 50px 116px 100px 116px;
-  box-sizing: border-box;
 }
 
 .coursesSectionLeftImgText {
@@ -842,22 +864,6 @@ h6 {
   max-width: 100%;
 }
 
-.video .wrapper {
-  max-width: 100%;
-  width: 1360px;
-}
-
-.video-wrapper {
-  max-width: 1360px;
-  min-width: 1360px;
-  background: #F4F9FE;
-  border-radius: 10px;
-  padding: 50px 116px 100px 116px;
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .videoContainer {
   max-width: 1129px;
   min-width: 1129px;
@@ -959,6 +965,7 @@ h3:active {
 .form .wrapper form {
   margin-top: 23px;
   display: flex;
+  position: relative;
   align-items: flex-end;
 }
 .form .wrapper form label {
@@ -1024,36 +1031,92 @@ h3:active {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+.form .wrapper form::after {
+  content: "";
+  background: url(../../img/sliderIcon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  right: -10%;
+  top: -175%;
+}
 
 .mySlides-info-left p:nth-of-type(1) {
   margin-bottom: 10px;
 }
 
+footer {
+  background: #0D3155;
+  padding: 160px 0 54px 0;
+  display: flex;
+  align-items: center;
+}
+footer .wrapper {
+  width: 825px;
+  margin: 0 auto;
+}
+
+.logo-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 62px;
+}
+.logo-footer p {
+  font-family: "ProximaNova-Semibold";
+  font-size: 23px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-left: 16px;
+}
+.logo-footer a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 77px;
+}
+.footer-navigation li a {
+  font-family: "ProximaNova-Semibold";
+  font-size: 15px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.footer-contact {
+  display: flex;
+}
+
 @media (max-width: 1440px) {
-  .video-wrapper {
-    max-width: 90%;
-    min-width: 90%;
-    margin: 0 auto;
-    padding: 50px 50px 100px 50px;
-    box-sizing: border-box;
+  .main {
+    max-width: 1130px;
   }
-  .courses-wrapper {
-    max-width: 90%;
-    min-width: 90%;
-    margin: 0 auto;
-    padding: 50px 50px 100px 50px;
-    box-sizing: border-box;
+  .wrapper {
+    width: 90%;
   }
-  .videoContainer {
-    overflow: hidden;
+  .coursesContainer {
+    padding: 50px 0 100px 0;
   }
 }
 @media (max-width: 1200px) {
-  .sectionTittle {
-    padding: 0 39px;
+  .main {
+    max-width: 100%;
+    padding: 0 50px;
   }
-  .sectionTittle .wrapper {
-    width: 100%;
+  .wrapper {
+    width: 90%;
+  }
+  .form .wrapper form::after {
+    right: 0;
   }
   .form {
     padding: 54px 50px;
@@ -1064,126 +1127,80 @@ h3:active {
   }
   .mainAccordion {
     width: 100%;
-    padding: 0 50px;
     max-width: 100%;
     box-sizing: border-box;
   }
   .sectionTittleLeft {
     padding-top: 0;
   }
-  .sectionTittleRight {
-    width: 110%;
-  }
-  .blog .wrapper {
-    padding: 0 50px;
-    box-sizing: border-box;
-  }
   .btnDate {
-    width: 100%;
+    width: 90%;
   }
   .blogContainerSection > p {
     min-height: 80px;
   }
-  .video .wrapper {
+  .sectionTittle {
     width: 100%;
-    padding: 50px 39px 100px 39px;
-    box-sizing: border-box;
   }
-  .coursesContainer .wrapper {
+  .sectionTittle .sectionTittleLeft {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  .sectionTittle .sectionTittleRight {
+    width: 50%;
+  }
+  .sectionTittle .sectionTittleRight picture img {
+    max-width: 100%;
     width: 100%;
-    padding: 50px 39px 100px 39px;
-    box-sizing: border-box;
   }
-  .video-wrapper {
-    max-width: 100%;
-    min-width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-  .courses-wrapper {
-    max-width: 100%;
-    min-width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
+  h2 {
+    text-align: center;
   }
 }
 @media (max-width: 992px) {
-  .flex svg {
-    margin-bottom: 20px;
+  .main {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+  .wrapper {
+    width: 90%;
   }
   .header {
-    padding: 25px 16px;
+    padding: 25px;
   }
-  .header .wrapper {
+  .header .header-content {
     flex-direction: column;
     align-items: center;
   }
-  .header-navigation {
-    width: auto;
-  }
-  h1 {
-    font-size: 60px;
-    line-height: 100%;
-    margin-bottom: 15px;
-  }
-  .logo {
+  .header .header-content .logo {
     margin-bottom: 20px;
   }
-  .sectionTittleLeft p {
-    width: 100%;
-    margin-bottom: 30px;
+  .header .header-content .logo a p {
+    font-size: 20px;
+  }
+  .header .header-content .header-navigation li {
+    margin-right: 16px;
+  }
+  .header .header-content .header-navigation li a {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 70px;
+    line-height: 100%;
+  }
+  .sectionTittleRight picture img {
+    max-width: auto;
+    min-width: auto;
+  }
+  .sectionTittle {
+    justify-content: space-between;
+    align-items: flex-end;
   }
   .btnDate {
     flex-direction: column-reverse;
   }
-  .btnDate p {
-    margin-bottom: 20px;
-  }
-}
-@media (max-width: 768px) {
-  .header .wrapper {
-    flex-direction: row;
-    align-items: center;
-  }
-  .logo {
-    margin-bottom: 0;
-  }
-  .burger-menu {
-    display: block;
-  }
-  .header-navigation {
-    display: none;
-  }
-  .menu {
-    padding: 57px 0 68px 16px;
-    box-sizing: border-box;
-  }
-  .burge-navigation {
-    align-items: center;
-  }
-  .burge-navigation-contact {
-    align-items: center;
-  }
-  .burge-navigation-icon {
-    width: 50%;
-    margin: 0 auto;
-  }
-  .sectionTittle .wrapper {
-    flex-direction: column;
-  }
-  .sectionTittleLeft {
-    text-align: center;
-    margin-bottom: 75px;
-  }
-  .sectionTittleRight {
-    margin: 0 auto;
-  }
-  .sectionTittleRight {
-    width: auto;
-  }
-  .coursesSectionLeftImg button {
-    padding: 12px;
-    font-size: 10px;
+  .btnDate .button {
+    margin-top: 16px;
   }
   .blogContainer {
     flex-wrap: wrap;
@@ -1191,206 +1208,150 @@ h3:active {
   .blogContainer .blogContainerSection {
     width: 49%;
   }
-  .slick-prev.slick-arrow {
-    right: 120px;
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 25px 16px;
   }
-  .slick-next.slick-arrow {
-    right: 85px;
+  .header .header-content {
+    flex-direction: row;
   }
-  .blog .wrapper {
-    padding: 0 39px;
+  .header .header-content .header-navigation {
+    display: none;
   }
-  .form .wrapper form {
+  .header .header-content .logo {
+    margin-bottom: 0;
+  }
+  .header .header-content .burger-menu {
+    display: block;
+  }
+  .footer-navigation {
     flex-direction: column;
+  }
+  .main {
+    padding: 0 16px 0 16px;
+  }
+  h1 {
+    position: absolute;
+    top: 0;
+    font-size: 55px;
+  }
+  .sectionTittle {
+    position: relative;
+    padding-top: 170px;
+    align-items: flex-start;
+  }
+  .sectionTittleLeft p {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .coursesContainer {
+    padding-bottom: 50px;
+  }
+  .coursesSection {
+    flex-direction: column;
+  }
+  .coursesSection .coursesSectionLeft,
+.coursesSection .coursesSectionRight {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .coursesSectionLeftImg picture img {
+    min-width: 100%;
+  }
+  .coursesSectionLeftImgText {
     align-items: center;
+    text-align: center;
   }
-  .form .wrapper form label {
-    margin-bottom: 16px;
+  .coursesSectionLeftImgText h6 {
+    width: 100%;
   }
-  .form .wrapper form input {
-    margin-top: 16px;
+  .coursesSectionLeftImgText p {
+    width: 100%;
+  }
+  .coursesSectionLeftImgText .btnDate {
+    width: 100%;
   }
 }
 @media (max-width: 576px) {
   .header {
-    padding: 17px 16px;
+    padding: 0 16px;
+    height: 57px;
+    display: flex;
+    align-items: center;
   }
-  .form {
-    padding: 52px 32px 76px 32px;
+  .header .header-content .logo a p {
+    font-size: 14px;
   }
-  .form .wrapper h2 {
-    text-align: left;
+  .sectionTittle {
+    flex-direction: column;
+    padding-top: 0;
+    margin-top: 60px;
+    align-items: center;
   }
-  .form .wrapper form {
-    align-items: flex-start;
+  .sectionTittle .sectionTittleLeft {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 77px;
   }
-  .form .wrapper form label {
-    width: 256px;
+  .sectionTittle .sectionTittleLeft p {
+    font-size: 14px;
+    margin-bottom: 45px;
   }
-  .form .wrapper form label:nth-of-type(2) {
-    margin: 0;
+  h1 {
+    position: static;
+    font-size: 54px;
   }
-  .video .wrapper {
-    width: 90%;
+  .blogContainer {
+    flex-direction: column;
+    margin-top: 35px;
+  }
+  .blogContainer .blogContainerSection {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .coursesContainer {
+    margin-bottom: 45px;
+  }
+  .blogImg picture img {
+    min-width: 100%;
+  }
+  .blogContainerSection > p {
+    margin-bottom: 0;
+    min-height: auto;
+    margin: 26px 0;
+    font-size: 18px;
+  }
+  .blogContainerSection .blogDate p {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .question {
+    margin: 45px 0 115px 0;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .question .wrapper h2 {
+    margin-bottom: 19px;
   }
   h3 {
     font-size: 18px;
     padding: 26px 0;
   }
-  .mainAccordion {
-    padding: 0;
-  }
-  .question .wrapper {
-    width: 90%;
-    padding: 0 16px;
-    box-sizing: border-box;
-  }
-  .question .wrapper h2 {
-    margin-bottom: 45px;
-  }
-  h3 i {
-    margin-left: 20px;
-  }
   .content {
-    font-size: 14px;
     padding: 0;
   }
-  .flex svg {
-    margin-bottom: 34px;
+  .accordion i {
+    margin-left: 15px;
   }
-  .burge-navigation {
-    align-items: flex-start;
-  }
-  .burge-navigation-contact {
-    align-items: flex-start;
+  .fa-plus:before {
+    font-size: 12px;
   }
   .burge-navigation-icon {
     width: 90%;
-    margin: 0;
-  }
-  h1 {
-    font-size: 54px;
-    margin-bottom: 45px;
-    line-height: 100%;
-  }
-  .sectionTittleLeft p {
-    font-size: 14px;
-    line-height: 145%;
-    margin-bottom: 45px;
-  }
-  h2 {
-    font-size: 32px;
-    line-height: 39px;
-    text-align: center;
-  }
-  .coursesContainer .wrapper {
-    width: 100%;
-    padding: 45px 16px 0 16px;
-    margin: 0 auto;
-  }
-  .courses-wrapper {
-    padding: 45px 16px 0 16px;
-  }
-  .coursesSection {
-    flex-direction: column;
-  }
-  .coursesContainer .coursesSectionLeft {
-    width: 100%;
-  }
-  .coursesSection {
-    margin-top: 45px;
-  }
-  .coursesSectionLeftImgText {
-    margin-top: 33px;
-  }
-  h6 {
-    font-size: 18px;
-    width: 100%;
-  }
-  .coursesSectionLeftImgText p {
-    font-size: 14px;
-    width: 100%;
-    margin-bottom: 34px;
-  }
-  .coursesSectionLeftImgText p {
-    font-size: 18px;
-    margin-bottom: 34px;
-  }
-  .btnDate {
-    align-items: baseline;
-  }
-  .btnDate .button {
-    margin-bottom: 34px;
-  }
-  .coursesSectionLeftImg picture img {
-    min-width: 100%;
-  }
-  .coursesSectionLeftImg button {
-    padding: 9px 17px;
-    bottom: 10px;
-    left: 10px;
-  }
-  .blogContainer .blogContainerSection {
-    width: 100%;
-  }
-  .coursesContainer {
-    margin-bottom: 45px;
-  }
-  .blog .wrapper {
-    width: 90%;
-    padding: 0 16px;
-    margin: 0 auto;
-  }
-  .blogContainer {
-    margin-top: 35px;
-  }
-  .blogImg picture img {
-    min-width: 100%;
-  }
-  .blogImg button {
-    display: none;
-  }
-  .blogContainerSection p {
-    margin: 26px 0;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    min-height: -webkit-max-content;
-    min-height: -moz-max-content;
-    min-height: max-content;
-  }
-  .blogContainerSection {
-    margin-bottom: 25px;
-  }
-  .blog .wrapper button {
-    padding: 22px 30px;
-  }
-  .video .wrapper {
-    padding: 0 16px;
-  }
-  .videoContainer {
-    height: 300px;
-  }
-  .sectionTittle {
-    margin-top: 60px;
-    padding: 0 16px;
-  }
-  .sectionTittleRight {
-    width: 100%;
-    padding: 0 16px;
-    box-sizing: border-box;
-    text-align: center;
-  }
-  .sectionTittleRight picture img {
-    max-width: 216px;
-    min-width: 216px;
-    height: 287px;
-  }
-  .coursesContainer .wrapper {
-    padding-top: 0;
-  }
-  .question {
-    margin-top: 45px;
-    margin-bottom: 95px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -10,8 +10,13 @@ h2 {
     line-height: 49px;
     color: $colorText;
 }
+.main {
+    max-width: 1360px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
 .wrapper {
-    max-width: 1129px;
+    max-width: 1130px;
     width: 100%;
     margin: 0 auto;
 }
@@ -23,6 +28,9 @@ h2 {
     line-height: 17px;
     text-transform: capitalize;
     color: #FFFFFF;
+}
+.bodyActive {
+    overflow: hidden
 }
 .button {
     @include btn;
