@@ -555,9 +555,22 @@ footer {
     padding: 160px 0 54px 0;
     display: flex;
     align-items: center;
+    position: relative;
     .wrapper {
         width: 825px;
         margin: 0 auto;
+    }
+    &::after {
+        content: "";
+        background: url(../../img/sliderIcon.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 150px;
+        height: 60px;
+        position: absolute;
+        z-index: 1;
+        top: -12%;
+        left: -5%;
     }
 }
 .logo-footer {
@@ -591,15 +604,95 @@ footer {
             text-transform: uppercase;
             color: #FFFFFF;
             text-decoration: none;
+            &::after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: transparent;
+                display: block;
+                margin: 10px auto 0 auto;
+                
+            }
+        }
+          &:nth-of-type(1) {
+            a {
+                color: #007CF8;
+                &::after {
+                    background: #007CF8;
+                }
+            }
+        }
+        &:nth-last-of-type(1) {
+            margin-right: 0;
         }
     }
 }
 .footer-contact {
     display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    li {
+        display: flex;
+        align-items: center;
+        a {
+            font-family: "ProximaNova-Semibold";
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            text-transform: lowercase;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        svg {
+            margin-right: 9px;
+        }
+        &:nth-of-type(1) {
+            margin-right: 42px;
+        }
+    }
+}
+footer {
+    .wrapper {
+        .burge-navigation-icon {
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 57px;
+            li {
+                margin-right: 20px;
+            }
+        }
+    }
 }
 .reviewsCenter {
     h2 {
         margin-bottom: 43px;
+    }
+}
+.footer-container {
+    text-align: center;
+    font-family: "ProximaNova-Semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    color: #FFFFFF;
+    p {
+        opacity: 0.4;
+        text-transform: capitalize !important;
+        a {
+            color: #FFFFFF;
+            opacity: 0.4;
+        }
+        &:nth-of-type(1) {
+            margin-bottom: 27px;
+        }
+        &:nth-of-type(2) {
+            a {
+                opacity: 1 !important;
+                color: #fff;
+            }
+        }
     }
 }
 @media (max-width:1440px) {
@@ -701,6 +794,12 @@ h2 {
 .slideshow-container  {
     .mySlides {
         width: 90%;
+    }
+}
+.footer-navigation {
+    flex-direction: column;
+    li {
+        margin-bottom: 23px;
     }
 }
 .dot-container {
@@ -864,10 +963,33 @@ h1 {
         }
     }
 }
+form {
+    padding: 75px 32px 45px 32px;
+}
 .reviewsCenter {
     h2 {
         margin-bottom: 35px;
     }
+}
+.footer-contact  {
+    li {
+        &:nth-of-type(1) {
+            margin-right: 0;
+        }
+    }
+}
+.footer-contact {
+    flex-direction: column;
+    align-items:center;
+    margin-bottom: 45px;
+    li {
+        &:nth-of-type(1) {
+            margin-bottom: 46px;
+        }
+    }
+}
+.logo-footer {
+    margin-bottom: 45px;
 }
 .mySlides {
     padding-left: 16px;
@@ -891,9 +1013,34 @@ h1 {
         }
     }
 }
+.footer-navigation  {
+    li {
+        a {
+            font-size: 14px;
+        }
+    }
+}
+.footer-navigation {
+    margin-bottom: 45px;
+    li {
+        a {
+            font-size: 14px;
+        }
+    }
+}
+.footer-container {
+    p {
+        font-size: 12px;
+    }
+}
 h1 {
     position: static;
     font-size: 54px;
+}
+footer  {
+    .wrapper {
+        width: 100%;
+    }
 }
 .blogContainer {
     flex-direction: column;
