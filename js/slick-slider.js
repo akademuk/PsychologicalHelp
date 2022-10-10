@@ -2,7 +2,6 @@ $(".videoContainer").not('.slick-initialized').slick({
   dots: true,
   infinite: true,
   speed: 500,
-  arrows: false,
   slidesToShow: 2,
   slidesToScroll: 1,
   variableWidth: true,

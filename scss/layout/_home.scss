@@ -1,6 +1,7 @@
 .sectionTittle {
     margin-top: 44px;
     display: flex;
+    position: relative;
 }
 .sectionTittleLeft {
     padding-top: 64px;
@@ -9,9 +10,48 @@
         font-size: 16px;
         line-height: 145%;
         color: #0D3155;
-        margin-bottom: 80px;
+        margin-bottom: 40px;
         width: 60%;
     }
+}
+.hooks {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 22px;
+    width: 100%;
+    padding: 14px 32px;
+    height: 48px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.hooks p{
+    font-family: "ProximaNova-Regular";
+    font-size: 14px;
+    line-height: 140%;
+    color: #000000;
+}
+.hooks p a {
+    font-family: "ProximaNova-Regular";
+    font-size: 14px;
+    line-height: 140%;
+    color: #000000;
+}
+.hooks button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 16px;
+    width: 52px;
+    height: 32px;
+    background: #007CF8;
+    border-radius: 5px;
+    font-family: "ProximaNova-Semibold";
+    font-size: 14px;
+    line-height: 120%;
+    color: #FFFFFF;
+    border: none;
 }
 .sectionTittleRight {
     width: 60%;
@@ -35,6 +75,7 @@
     }
 }
 .video {
+    height: 933px;
     background: #F4F9FE;
     border-radius: 10px;
     box-sizing: border-box;
@@ -77,6 +118,7 @@
 }
 .coursesSectionLeftImgText {
     margin-top: 45px;
+    padding-left: 10px;
     p {
         font-family: "ProximaNova-Regular";
         font-size: 16px;
@@ -138,6 +180,7 @@ h6 {
         border: none; 
     }
 }
+
 .blogContainerSection {
     p {
         margin: 39px 0 48px 0;
@@ -199,16 +242,17 @@ h6 {
 }
 .slick-prev {
     font-size: 0;
-    width: 38px;
-    height: 18px;
+    width: 23px;
+    height: 11px;
     border: none;
     background-color: #000;
     -webkit-mask:  url(../img/left.svg) no-repeat 100% 100%;
     mask: url(../img/left.svg) no-repeat 100% 100%;
     position: absolute;
     mask-size: cover;
-    top: -149px;
+    top: -135px;
     right: 50px;
+    padding: 0;
     &:active {
         background-color: #000;
     }
@@ -223,8 +267,9 @@ h6 {
     mask: url(../img/right.svg) no-repeat 50% 50%;
     position: absolute;
     mask-size: cover;
-    top: -150px;
+    top: -140px;
     right: 0;
+    padding: 0;
     &:active {
         background-color: #000;
     }
@@ -233,10 +278,12 @@ h6 {
     .wrapper {
         h2 {
             margin-bottom: 105px;
+            text-align: left;
         }
     }
 }
 .videoContainer {
+    border-radius: 5px;
     .videoContainer-content {
         display: flex;
         align-items: flex-end;
@@ -264,6 +311,7 @@ h6 {
             line-height: 24px;
             color: #FFFFFF;
             width: 70%;
+            margin-bottom: 13px;
         }
     }
 }
@@ -293,7 +341,7 @@ h3{
 }
  .accordion i{
     color: #007CF8;
-    font-size: 16px;
+    font-size: 18px;
 }
 h3 {
     &:active {
@@ -427,7 +475,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 500px !important;
     width: 25%;
     padding-right: 55px;
     img {
@@ -502,7 +550,7 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
+    height: 500px;
     width: 25%;
     padding-left: 35px;
     img {
@@ -570,6 +618,7 @@ h3 {
 .btnSlider {
     margin-left: auto;
     margin-right: 100px;
+    height: 50px;
 }
 .next {
   right: 0;
@@ -618,6 +667,14 @@ h3 {
         }
     }
 }
+.mySlides-info-left  {
+    > p:nth-of-type(1) {
+        opacity: 1;
+    }
+    > p:nth-of-type(2) {
+        opacity: 1;
+    }
+}
 @media (max-width:1440px) {
 .main {
     max-width: 1130px;
@@ -639,16 +696,25 @@ h3 {
     padding: 50px 0 100px 0;
 }
 }
+@media (min-width: 1440px) {
+    .reviews  {
+        .wrapper {
+            max-width: 1440px;
+        }
+    }
+}
+@media (max-width: 1440px) {
+    .reviews  {
+        .wrapper {
+            max-width: 95%;
+            width: 100%;
+        }
+    }
+}
 @media (max-width: 1200px) {
 .main {
     max-width: 100%;
     padding: 0 50px;
-}
-.slick-prev {
-    top: -135px;
-}
-.slick-next {
-    top: -136px;    
 }
 .wrapper {
     width: 90%;
@@ -671,7 +737,7 @@ h3 {
 .slideshow-container {
     width: 100%;
     .mySlides {
-        width: 400px;
+        width: 98%;
         padding-left: 32px;
         padding-right: 32px;
     } 
@@ -683,7 +749,7 @@ h3 {
 }
 .slideshow-container {
     &::after {
-        width: 300px; 
+        width: 90%; 
     }
 }
 .mainAccordion {
@@ -751,8 +817,19 @@ h1 {
     }
 }
 .sectionTittle {
+    height: 600px;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
+}
+.sectionTittle  {
+    .sectionTittleRight {
+        margin-top: auto;
+    }
+}
+.sectionTittleLeft {
+    p {
+        width: 100%;
+    }
 }
 .reviews {
     .wrapper {
@@ -766,6 +843,7 @@ h1 {
     justify-content: space-between;
     padding: 0;
     margin-bottom: 50px;
+    height: auto !important;
     img {
        margin-left: 0 !important;
        margin-right: 0 !important;
@@ -775,6 +853,7 @@ h1 {
     width: 90%;
     flex-direction: row;
     margin-top: 50px;
+    height: auto;
     img {
         margin-left: 0 !important;
         margin-right: 0 !important;
@@ -827,6 +906,15 @@ h1 {
             }
         }
     }
+}
+.coursesSectionLeftImgText  {
+    .btnDate {
+        width: 100%;
+        align-items: baseline;
+    }
+}
+.sectionTittle {
+    height: auto;
 }
 .main {
     padding: 0 16px 0 16px;
@@ -901,6 +989,19 @@ h1 {
     display: inline-block;
     position: relative;
     height: 100%;
+}
+.hooks {
+    height: max-content;
+    p {
+        font-size: 12px;
+        width: 75%;
+        a {
+            font-size: 12px;
+        }
+    }
+}
+.coursesSectionLeftImgText {
+    padding-left: 0;
 }
 .slick-slide {
     margin: 0 10px;
@@ -1025,6 +1126,7 @@ form {
     overflow: hidden;
     width: 100% !important;
     top: 23%;
+    border-radius: 5px 0 0 5px;
     .videoContainer-content {
         width: 350px;
         height: 296px;
@@ -1045,9 +1147,16 @@ form {
         h2 {
             margin-bottom: 27px;
         }
-        .bitton {
-            top: 350px;
-            padding: 22px 31px;
+        .button {
+            margin-top: 350px !important;
+            width: 219px;
+            height: 63px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
@@ -1075,6 +1184,7 @@ form {
                 z-index: 5;
             }
             input {
+                width: 100%;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -1161,6 +1271,44 @@ h3 {
 .fa-plus {
     &:before {
     font-size: 12px;
+    }
+}
+.coursesSectionLeftImgText {
+    text-align: left;
+}
+.form  {
+    .wrapper  {
+        form {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+.blog {
+    .wrapper  {
+         > button {
+            width: 219px;
+            height: 63px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            text-align: left;
+            padding-left: 5px;
+        }
+    }
+}
+.blogImg {
+    button {
+        padding: 9px 17px !important;
+        font-size: 10px;
+        left: 10px;
+        bottom: 10px;
     }
 }
 }
