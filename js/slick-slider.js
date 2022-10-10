@@ -1,19 +1,19 @@
-$('.videoContainer').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    arrows: false,
-    slidesToShow: 2,
-    slidesToScroll: 1,
-    variableWidth: true,
-    responsive: [
-        {
-          breakpoint: 576,
-          settings: {
-            arrows: false,
-            slidesToShow: 1,
-            cssEase: 'linear'
-          }
+$(".videoContainer").not('.slick-initialized').slick({
+  dots: true,
+  infinite: true,
+  speed: 500,
+  arrows: false,
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  variableWidth: true,
+  responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          cssEase: 'linear'
         }
-      ]
-  });
+      }
+    ]
+});

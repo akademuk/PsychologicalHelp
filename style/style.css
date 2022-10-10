@@ -791,6 +791,8 @@ h6 {
   justify-content: space-between;
   border-radius: 5px;
   max-width: 100%;
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
 }
 .videoContainer .videoContainer-content:nth-of-type(1) {
   background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video1.png);
@@ -1197,12 +1199,26 @@ h3:active {
     opacity: 1;
   }
 }
+.video .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.video .wrapper .button {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 83px auto 0 auto;
+}
+
 @media (max-width: 1440px) {
   .main {
     max-width: 1130px;
   }
   .videoContainer .videoContainer-content {
     width: 510px;
+  }
+  .videoContainer .videoContainer-content {
+    background-size: cover !important;
   }
   .wrapper {
     width: 90%;
@@ -1430,6 +1446,9 @@ h3:active {
   .dot-container {
     right: -20px;
   }
+  .video .wrapper .button {
+    margin-top: 100px !important;
+  }
 }
 @media (max-width: 576px) {
   .slick-slide {
@@ -1555,6 +1574,7 @@ h3:active {
     position: absolute;
     overflow: hidden;
     width: 100% !important;
+    top: 23%;
   }
   .videoContainer .videoContainer-content {
     width: 350px;
@@ -1574,6 +1594,10 @@ h3:active {
   }
   .video .wrapper h2 {
     margin-bottom: 27px;
+  }
+  .video .wrapper .bitton {
+    top: 350px;
+    padding: 22px 31px;
   }
   .reviewsCenter h2 {
     margin-bottom: 35px;
