@@ -588,13 +588,20 @@ footer .wrapper .burge-navigation-icon li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
+  position: fixed;
   bottom: 22px;
   width: 100%;
   padding: 14px 32px;
   height: 48px;
   box-sizing: border-box;
   background: #fff;
+  border: 1px solid rgba(205, 214, 218, 0.25);
+  border-radius: 16px;
+  max-width: 1360px;
+  left: auto;
+  right: auto;
+  width: 100%;
+  z-index: 2;
 }
 
 .hooks p {
@@ -809,10 +816,12 @@ h6 {
 
 .slick-slide {
   margin: 0 12px;
+  padding: 0 15px;
 }
 
 .slick-list {
   margin: 0 -12px;
+  padding: 0 15px;
 }
 
 .videoContainer {
@@ -1070,7 +1079,7 @@ h3:active {
   margin-bottom: 43px;
 }
 .reviewsCenter .slide {
-  max-width: 592px;
+  max-width: 605px;
 }
 .reviewsCenter::after {
   position: absolute;
@@ -1078,7 +1087,7 @@ h3:active {
   background: url(../img/sliderIcon.png);
   width: 148px;
   height: 148px;
-  right: 9%;
+  right: 6%;
   top: 40%;
 }
 
@@ -1129,7 +1138,7 @@ h3:active {
   padding: 50px 72px 78px 72px;
   box-sizing: border-box;
   position: relative;
-  width: 592px;
+  width: 596px;
   height: 409px;
   flex-direction: column;
   justify-content: space-between;
@@ -1262,6 +1271,10 @@ h3:active {
   }
   .videoContainer .videoContainer-content {
     width: 510px;
+  }
+  .hooks {
+    width: 96vw;
+    left: 2vw;
   }
   .videoContainer .videoContainer-content {
     background-size: cover !important;
@@ -1535,7 +1548,7 @@ h3:active {
     content: none;
   }
   .slide::after {
-    width: 250px;
+    width: 200px;
     bottom: -20px;
   }
   .hooks {
@@ -1554,10 +1567,10 @@ h3:active {
     padding-left: 0;
   }
   .slick-slide {
-    margin: 0 10px;
+    margin: 0 15px;
   }
   .slick-list {
-    margin: 0 -10px;
+    margin: 0 -15px;
   }
   form {
     height: 100%;
@@ -1625,6 +1638,7 @@ h3:active {
     width: 100%;
     padding-left: 0;
     height: auto;
+    margin-right: 20px;
   }
   .reviewsRight img {
     max-width: -webkit-fit-content;
@@ -1657,7 +1671,7 @@ h3:active {
   }
   .mySlides {
     padding: 35px 16px;
-    height: 346px;
+    height: 370px;
   }
   .mySlides p {
     font-size: 14px;
@@ -1824,6 +1838,10 @@ h3:active {
     font-size: 10px;
     left: 10px;
     bottom: 10px;
+  }
+  .videoContainer .videoContainer-content p {
+    margin-bottom: 0;
+    line-height: 19px;
   }
 }
 @media (max-width: 410px) {
