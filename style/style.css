@@ -491,6 +491,11 @@ footer .wrapper .burge-navigation-icon li {
     margin-bottom: 23px;
   }
 }
+@media (max-width: 768px) {
+  .footer-navigation {
+    flex-direction: column;
+  }
+}
 @media (max-width: 576px) {
   .footer-contact li:nth-of-type(1) {
     margin-right: 0;
@@ -1220,11 +1225,11 @@ h3:active {
   .wrapper {
     width: 90%;
   }
-  .form .wrapper form::after {
-    right: 0;
-  }
   .form {
     padding: 54px 50px;
+  }
+  .form .wrapper form::after {
+    right: 0;
   }
   .reviews .wrapper {
     padding: 0;
@@ -1233,20 +1238,15 @@ h3:active {
     width: 100%;
   }
   .slideshow-container .mySlides {
-    width: 100%;
+    width: 400px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .slideshow-container::after {
     width: 90%;
   }
-  .mySlides {
-    width: 400px;
-  }
   .slideshow-container::after {
     width: 300px;
-  }
-  .mySlides {
-    padding-left: 32px;
-    padding-right: 32px;
   }
   .mainAccordion {
     width: 100%;
@@ -1375,9 +1375,6 @@ h3:active {
   }
   .form .wrapper form:after {
     top: -70%;
-  }
-  .footer-navigation {
-    flex-direction: column;
   }
   .main {
     padding: 0 16px 0 16px;
