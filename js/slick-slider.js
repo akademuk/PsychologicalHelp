@@ -1,5 +1,4 @@
-$(".videoContainer").not('.slick-initialized').slick({
-  dots: true,
+$(".videoContainer").slick({
   infinite: true,
   speed: 500,
   slidesToShow: 2,
