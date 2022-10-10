@@ -401,8 +401,8 @@ h6 {
     height: 18px;
     border: none;
     background-color: #000;
-    -webkit-mask:  url(../../img/left.svg) no-repeat 100% 100%;
-    mask: url(../../img/left.svg) no-repeat 100% 100%;
+    -webkit-mask:  url(../img/left.svg) no-repeat 100% 100%;
+    mask: url(../img/left.svg) no-repeat 100% 100%;
     position: absolute;
     mask-size: cover;
     top: -149px;
@@ -417,8 +417,8 @@ h6 {
     height: 18px;
     border: none;
     background-color: #000;
-    -webkit-mask:  url(../../img/right.svg) no-repeat 50% 50%;
-    mask: url(../../img/right.svg) no-repeat 50% 50%;
+    -webkit-mask:  url(../img/right.svg) no-repeat 50% 50%;
+    mask: url(../img/right.svg) no-repeat 50% 50%;
     position: absolute;
     mask-size: cover;
     top: -150px;
@@ -443,15 +443,15 @@ h6 {
         border-radius: 5px;
         max-width: 100%;
         &:nth-of-type(1) {
-            background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/img-video1.png);
+            background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video1.png);
             object-fit: contain;
         }
         &:nth-of-type(2) {
-            background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/img-video2.png);
+            background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video2.png);
             object-fit: contain;
         }
         &:nth-of-type(3) {
-            background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/img-video1.png);
+            background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video1.png);
             object-fit: contain;
         }
         p {
@@ -592,7 +592,7 @@ h3 {
             }
             &::after {
                 content: "";
-                background: url(../../img/sliderIcon.png);
+                background: url(../img/sliderIcon.png);
                 background-repeat: no-repeat;
                 background-size: contain;
                 width: 150px;
@@ -619,7 +619,7 @@ footer {
     }
     &::after {
         content: "";
-        background: url(../../img/sliderIcon.png);
+        background: url(../img/sliderIcon.png);
         background-repeat: no-repeat;
         background-size: auto;
         width: 150px;
@@ -1252,13 +1252,13 @@ h3 {
         .videoContainer-content {
             width: 256px;
             &:nth-of-type(1) {
-                background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/mobile/img-video1.png);
+                background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/mobile/img-video1.png);
             }
             &:nth-of-type(2) {
-                background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/mobile/img-video2.png);
+                background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/mobile/img-video2.png);
             }
             &:nth-of-type(3) {
-                background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/mobile/img-video1.png);
+                background:linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/mobile/img-video1.png);
             }
         }
     }

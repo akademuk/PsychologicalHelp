@@ -409,9 +409,6 @@ h1 {
     max-width: 75%;
     width: 55px;
     height: 55px;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
   }
   .reviewsLeft img:nth-of-type(3) {
     display: none;
@@ -891,8 +888,8 @@ h6 {
   height: 18px;
   border: none;
   background-color: #000;
-  -webkit-mask: url(../../img/left.svg) no-repeat 100% 100%;
-  mask: url(../../img/left.svg) no-repeat 100% 100%;
+  -webkit-mask: url(../img/left.svg) no-repeat 100% 100%;
+  mask: url(../img/left.svg) no-repeat 100% 100%;
   position: absolute;
   -webkit-mask-size: cover;
           mask-size: cover;
@@ -909,8 +906,8 @@ h6 {
   height: 18px;
   border: none;
   background-color: #000;
-  -webkit-mask: url(../../img/right.svg) no-repeat 50% 50%;
-  mask: url(../../img/right.svg) no-repeat 50% 50%;
+  -webkit-mask: url(../img/right.svg) no-repeat 50% 50%;
+  mask: url(../img/right.svg) no-repeat 50% 50%;
   position: absolute;
   -webkit-mask-size: cover;
           mask-size: cover;
@@ -934,17 +931,17 @@ h6 {
   max-width: 100%;
 }
 .videoContainer .videoContainer-content:nth-of-type(1) {
-  background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/img-video1.png);
+  background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video1.png);
   -o-object-fit: contain;
      object-fit: contain;
 }
 .videoContainer .videoContainer-content:nth-of-type(2) {
-  background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/img-video2.png);
+  background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video2.png);
   -o-object-fit: contain;
      object-fit: contain;
 }
 .videoContainer .videoContainer-content:nth-of-type(3) {
-  background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/img-video1.png);
+  background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video1.png);
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -1106,7 +1103,7 @@ h3:active {
 }
 .form .wrapper form::after {
   content: "";
-  background: url(../../img/sliderIcon.png);
+  background: url(../img/sliderIcon.png);
   background-repeat: no-repeat;
   background-size: contain;
   width: 150px;
@@ -1133,7 +1130,7 @@ footer .wrapper {
 }
 footer::after {
   content: "";
-  background: url(../../img/sliderIcon.png);
+  background: url(../img/sliderIcon.png);
   background-repeat: no-repeat;
   background-size: auto;
   width: 150px;
@@ -1679,12 +1676,12 @@ footer .wrapper .burge-navigation-icon li {
     width: 256px;
   }
   .videoContainer .videoContainer-content:nth-of-type(1) {
-    background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/mobile/img-video1.png);
+    background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/mobile/img-video1.png);
   }
   .videoContainer .videoContainer-content:nth-of-type(2) {
-    background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/mobile/img-video2.png);
+    background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/mobile/img-video2.png);
   }
   .videoContainer .videoContainer-content:nth-of-type(3) {
-    background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../../img/mobile/img-video1.png);
+    background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/mobile/img-video1.png);
   }
 }/*# sourceMappingURL=style.css.map */
