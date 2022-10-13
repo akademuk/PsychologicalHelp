@@ -140,9 +140,11 @@
         </div>
         <div class="sectionTittle">
             <div class="sectionTittleLeft">
+               <div class="animation-container">
                 <h1>Вы можете получить помощь</h1>
                 <p>Я, практикующий психолог, экзистенциальный терапевт, гештальт – терапевт, семейный психотерапевт, а также работаю в телесно ориентированном подходе</p>
                 <button class="button">оставить заявку</button>
+               </div>
             </div>
             <div class="sectionTittleRight">
                 <picture>
@@ -152,7 +154,7 @@
             </div>
             <div class="hooks">
                 <p>Пользуясь нашим сайтом, вы соглашаетесь с тем, что <a href="#">мы используем cookies</a></p>
-                <button>OK</button>
+                <button class="hooksBtn">OK</button>
             </div>
         </div>
         <div class="coursesContainer">
@@ -535,7 +537,13 @@
     <script src="js/slider.js"></script>
     <script src="js/burger.js"></script>
     <script src="js/accardion.js"></script>
-    <script src="js/slide.js"></script>
     <script src="js/slick-slider.js"></script>
+    <script>
+      $(function() {                     
+        $(".hooksBtn").click(function() { 
+    $(".hooks").addClass("hooksActive");      
+  });
+});
+    </script>
 </body>
 </html>

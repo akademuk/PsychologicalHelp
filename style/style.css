@@ -92,6 +92,46 @@ h1 {
   margin-bottom: 45px;
 }
 
+.hooksActive {
+  display: none !important;
+}
+
+.animation-container {
+  position: relative;
+  height: 50vh;
+  width: 65vw;
+  position: absolute;
+  overflow: hidden;
+  left: -2250px;
+  -webkit-animation: translate-title 2s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation: translate-title 2s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.sectionTittleLeft {
+  display: flex;
+  width: 100%;
+}
+
+@-webkit-keyframes translate-title {
+  0% {
+    left: -2250px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes translate-title {
+  0% {
+    left: -2250px;
+  }
+  100% {
+    left: 0;
+  }
+}
 .header {
   padding: 25px 39px;
   background: #0D3155;
@@ -326,6 +366,12 @@ h1 {
   .header .header-content .header-navigation li a {
     font-size: 14px;
   }
+  .animation-container {
+    position: static;
+    overflow: auto;
+    width: 100%;
+    height: auto;
+  }
 }
 @media (max-width: 768px) {
   .header {
@@ -345,6 +391,9 @@ h1 {
   }
   .menu {
     box-shadow: 0px 4px 33px rgba(0, 0, 0, 0.15);
+  }
+  .form .wrapper h2 {
+    text-align: left;
   }
 }
 @media (max-width: 576px) {
@@ -870,14 +919,12 @@ h6 {
   width: 23px;
   height: 11px;
   border: none;
-  background-color: #000;
-  -webkit-mask: url(../img/left.svg) no-repeat 100% 100%;
-  mask: url(../img/left.svg) no-repeat 100% 100%;
+  background: url(../img/left.svg);
   position: absolute;
   -webkit-mask-size: cover;
           mask-size: cover;
-  top: -135px;
-  right: 50px;
+  top: -136px;
+  right: 40px;
   padding: 0;
 }
 .slick-prev:active {
@@ -886,21 +933,38 @@ h6 {
 
 .slick-next {
   font-size: 0;
-  width: 38px;
-  height: 18px;
+  width: 23px;
+  height: 11px;
   border: none;
-  background-color: #000;
-  -webkit-mask: url(../img/right.svg) no-repeat 50% 50%;
-  mask: url(../img/right.svg) no-repeat 50% 50%;
+  background: url(../img/left.svg);
+  transform: rotate(180deg);
   position: absolute;
   -webkit-mask-size: cover;
           mask-size: cover;
-  top: -140px;
+  top: -135px;
   right: 0;
   padding: 0;
 }
-.slick-next:active {
-  background-color: #000;
+
+.slick-next:hover {
+  background: url(../../img/right.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(0deg);
+  width: 38px;
+  height: 18px;
+  margin-top: -4px;
+  right: -15px;
+}
+
+.slick-prev:hover {
+  background: url(../../img/right.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  width: 38px;
+  height: 18px;
+  margin-top: -4px;
 }
 
 .video .wrapper h2 {
@@ -1239,12 +1303,16 @@ h3:active {
   position: relative;
 }
 .slide .slick-prev.slick-arrow {
-  top: 101% !important;
-  right: 180px !important;
+  top: 488px !important;
+  right: 160px !important;
 }
 .slide .slick-next.slick-arrow {
   top: 100% !important;
   right: 120px !important;
+}
+
+.slide .slick-next.slick-arrow:hover {
+  right: 110px !important;
 }
 
 .video .wrapper {
@@ -1270,7 +1338,7 @@ h3:active {
     max-width: 1130px;
   }
   .videoContainer .videoContainer-content {
-    width: 510px;
+    width: 500px;
   }
   .hooks {
     width: 96vw;
@@ -1537,8 +1605,8 @@ h3:active {
     margin: 0 auto;
   }
   .slide .slick-next.slick-arrow {
-    top: 110% !important;
-    right: 90px !important;
+    top: 412px !important;
+    right: 108px !important;
   }
   .slide .slick-prev.slick-arrow {
     top: 111% !important;
