@@ -98,17 +98,18 @@ h1 {
 
 .animation-container {
   position: relative;
-  height: 50vh;
   width: 65vw;
   position: absolute;
   overflow: hidden;
   left: -2250px;
-  -webkit-animation: translate-title 2s linear;
+  -webkit-animation: translate-title 1.5s linear;
   -webkit-animation-fill-mode: forwards;
-  animation: translate-title 2s linear;
+  animation: translate-title 1.5s linear;
   animation-fill-mode: forwards;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  padding-bottom: 50px;
+  padding-left: 10px;
 }
 
 .sectionTittleLeft {
@@ -130,6 +131,113 @@ h1 {
   }
   100% {
     left: 0;
+  }
+}
+.sectionTittleRight {
+  position: relative;
+  right: -100%;
+  -webkit-animation: translate-title-right 1.5s linear;
+  -webkit-animation-fill-mode: forwards;
+  animation: translate-title-right 1.5s linear;
+  animation-fill-mode: forwards;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes translate-title-right {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+@keyframes translate-title-right {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0;
+  }
+}
+.glow-on-hover {
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+
+.glow-on-hover:before {
+  content: "";
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  -webkit-animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.glow-on-hover:active {
+  color: #000;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:hover {
+  color: #002bff;
+}
+
+.glow-on-hover:hover:after {
+  background: #fff;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #007CF8;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
   }
 }
 .header {
@@ -615,10 +723,102 @@ footer .wrapper .burge-navigation-icon li {
     height: 13px;
   }
 }
+.category {
+  display: none;
+  position: absolute;
+  right: -290%;
+  bottom: -365%;
+  border-radius: 3px;
+  padding-top: 30px;
+}
+.category li {
+  padding: 11px 0 7px 15px;
+  width: 206px;
+  height: 35px;
+  background: #0D3155;
+  border-bottom: 1px solid #000745;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.category li a {
+  font-family: "ProximaNova-Semibold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.category li a::before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  top: 16px;
+  vertical-align: middle;
+  margin: 0 5px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid #fff;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  transform: rotate(-90deg);
+}
+.category li a::after {
+  content: none;
+}
+
+.subcategory {
+  display: none;
+  position: absolute;
+  right: -110%;
+  bottom: -415%;
+  border-radius: 3px;
+}
+.subcategory li {
+  padding: 11px 0 7px 15px;
+  background: #0D3155;
+  width: 206px;
+}
+.subcategory li a {
+  font-family: "ProximaNova-Semibold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.subcategory li a::after {
+  content: none;
+}
+.subcategory li a::before {
+  content: none;
+}
+
+.subcategory {
+  display: none;
+}
+
+.header-navigation li {
+  position: relative;
+}
+.header-navigation li:hover .category {
+  display: block;
+  background: transparent;
+}
+
+.category li:hover .subcategory {
+  display: block;
+}
+
 .sectionTittle {
   margin-top: 44px;
   display: flex;
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .sectionTittleLeft {

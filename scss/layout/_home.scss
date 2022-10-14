@@ -1,7 +1,102 @@
+.category {
+    display: none;
+    position: absolute;
+    right: -290%;
+    bottom: -365%;
+    border-radius: 3px;
+    padding-top: 30px;
+    li {
+        padding: 11px 0 7px 15px;
+        width: 206px;
+        height: 35px;
+        background: #0D3155;
+        border-bottom: 1px solid #000745;
+        position: relative;
+        display: flex;
+        align-items: center;
+        a {
+            font-family: "ProximaNova-Semibold";
+            font-size: 14px;
+            line-height: 17px;
+            color: #fff !important;
+            width: max-content;
+            &::before {
+                content: "";
+                position: absolute;
+                right: 5px;
+                top: 16px;
+                vertical-align: middle;
+                margin: 0 5px;
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-top: 4px solid #fff;
+                border-left: 4px solid transparent;
+                border-right: 4px solid transparent;
+                transform: rotate(-90deg);
+            }
+            &::after {
+                content: none;
+            }
+        }
+    }
+}
+.subcategory {
+    display: none;
+    position: absolute;
+    right: -110%;
+    bottom: -415%;
+    border-radius: 3px;
+    li {
+        padding: 11px 0 7px 15px;
+        background: #0D3155;
+        width: 206px;
+        a {
+            font-family: "ProximaNova-Semibold";
+            font-size: 14px;
+            line-height: 17px;
+            color: #fff !important;
+            width: max-content;
+            &::after {
+                content: none;
+            }
+            &::before {
+                content: none;
+            }
+        }
+    }
+}
+.subcategory {
+    display: none;
+}
+.header-navigation {
+    li {
+        position: relative;
+            &:hover {
+                .category {
+                    display: block;
+                    background: transparent;
+                }
+            }
+        
+    }
+}
+.category {
+    li {
+            &:hover {
+                .subcategory {
+                    display: block;
+                }
+            }
+        
+    }
+}
 .sectionTittle {
     margin-top: 44px;
     display: flex;
     position: relative;
+    width: 100%;
+    overflow:hidden;
 }
 .sectionTittleLeft {
     padding-top: 64px;
