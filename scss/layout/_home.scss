@@ -126,7 +126,7 @@
     left: auto;
     right: auto;
     width: 100%;
-    z-index: 2;
+    z-index: 20;
 }
 .hooks p{
     font-family: "ProximaNova-Regular";
@@ -403,7 +403,7 @@ h6 {
 }
 .slick-next {
     &:hover {
-        background: url(../../img/right.svg);
+        background: url(../img/right.svg);
         background-size: contain;
         background-repeat: no-repeat;
         transform: rotate(0deg);
@@ -415,7 +415,7 @@ h6 {
 }
 .slick-prev {
     &:hover {
-        background: url(../../img/right.svg);
+        background: url(../img/right.svg);
         background-size: contain;
         background-repeat: no-repeat;
         transform: rotate(180deg);
@@ -736,11 +736,11 @@ h3 {
     position: relative;
     .slick-prev.slick-arrow {
         top: 488px !important;
-        right: 160px !important;
+        right: 40vw !important;
     }
     .slick-next.slick-arrow {
         top: 100% !important;
-        right: 120px !important;
+        right: 25vw !important;
     }
 }
 .slide {
@@ -797,6 +797,13 @@ h3 {
             max-width: 1440px;
         }
     }
+.videoContainer {
+    max-width: 1130px;
+    overflow: hidden;
+    .videoContainer-content {
+        max-width: 552px;
+    }
+}
 }
 @media (max-width: 1440px) {
     .reviews  {
@@ -881,11 +888,25 @@ h3 {
 h2 {
     text-align: center;
 }
+.videoContainer {
+    max-width: 80vw;
+    overflow: hidden;
+    .videoContainer-content {
+        max-width: 38vw;
+        background-position: center;
+    }
+}
 }
 @media(max-width: 992px) {
 .main {
     max-width: 100%;
     padding: 0 25px;
+}
+.videoContainer {
+    max-width: 100vw;
+    .videoContainer-content {
+        max-width: 48vw;
+    }
 }
 .wrapper {
     width: 90%;
@@ -993,6 +1014,20 @@ h1 {
         }
     }
 }
+.reviewsCenter  {
+    .slide {
+        max-width: 80vw;
+        padding: 0 15px;
+        .mySlides {
+            max-width: 100%;
+        }
+    }
+}
+.slide::after {
+    width: 80%;
+    left: 50%;
+    bottom: 50px;
+}
 .coursesSectionLeftImgText  {
     .btnDate {
         width: 100%;
@@ -1055,11 +1090,15 @@ h1 {
 .videoContainer {
     width: 90% !important;
     margin: 0 auto !important;
+    max-width: 91vw;
+    .videoContainer-content {
+        max-width: 70vw;
+    }
 }
 .mySlides {
-    width: 500px;
-    max-width: 500px;
-    overflow: hidden;
+    width: 470px;
+    max-width: 100%;
+    padding: 30px;
 }
 .slide {
     .slick-list {
@@ -1079,7 +1118,9 @@ h1 {
 }
 @media(max-width: 576px) {
 .reviewsCenter .slide {
-    max-width: 300px;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding-bottom: 50px;
 }
 .slide  {
     .slick-list {
@@ -1090,14 +1131,14 @@ h1 {
 }
 .slide {
     .slick-next.slick-arrow {
-        top: 412px !important;
-        right: 108px !important;
+        top: 99% !important;
+        right: 35vw !important;
     }
 }
 .slide  {
     .slick-prev.slick-arrow {
-        top: 111% !important;
-        right: 157px !important;
+        top: 98.5% !important;
+        right: 50vw !important;
     }
 }
 .reviewsCenter {
@@ -1109,6 +1150,10 @@ h1 {
     &::after {
         width: 200px;
         bottom: -20px;
+    }
+    .slick-list {
+        padding-bottom: 15px !important;
+        padding-top: 15px !important;
     }
 }
 .hooks {
@@ -1161,10 +1206,16 @@ form {
     right: 0 !important;
 }
 .mySlides {
-    width: 280px;
+    width: 90vw;
+    max-width: 87vw !important;
     p {
         margin-bottom: 31px;
     }
+}
+.slide::after {
+    width: 80%;
+    left: 50%;
+    bottom: 25px;
 }
 .mySlides-info-left  {
     p {
@@ -1250,9 +1301,11 @@ form {
     width: 99% !important;
     top: 23%;
     border-radius: 5px 0 0 5px;
+    max-width: 91vw;
     .videoContainer-content {
         width: 350px;
         height: 296px;
+        max-width: 80vw;
         background-size: cover !important;
         background-repeat: no-repeat !important;
         p {
@@ -1459,13 +1512,22 @@ h3 {
 @media (max-width: 319px) {
 .reviewsCenter {
     .slide {
-        max-width: 230px
+        max-width: 100vw;
+        width: 100%;
+        padding: 0;
+        .slick-list {
+            padding: 0 5px !important;
+            max-width: 97%;
+        }
     }
 }
+
 .mySlides {
-    width: 230px;
-    padding: 8px;
-    height: 400px;
+    width: 98vw;
+    padding: 39px 16px 35px 16px;
+    box-sizing: border-box;
+    height: max-content;
+    margin: 0 auto;
 }
 .slide .slick-next.slick-arrow {
     display: none;

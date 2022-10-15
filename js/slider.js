@@ -18,12 +18,14 @@ $('.slide').slick({
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
+              variableWidth: true,
             }
           },
           {
             breakpoint: 576,
             settings: {
-              variableWidth: false,
+              variableWidth: true,
+              centerMode: true,
               slidesToShow: 1,
               slidesToScroll: 1,
             }
