@@ -135,6 +135,7 @@ h1 {
 }
 .sectionTittleRight {
   position: relative;
+  z-index: 20;
   right: -100%;
   -webkit-animation: translate-title-right 1.5s linear;
   -webkit-animation-fill-mode: forwards;
@@ -727,30 +728,24 @@ footer .wrapper .burge-navigation-icon li {
   display: none;
   position: absolute;
   right: -290%;
-  bottom: -365%;
+  bottom: -385%;
   border-radius: 3px;
   padding-top: 30px;
+  filter: drop-shadow(0px 13.4437px 39.4751px rgba(150, 174, 215, 0.3));
 }
 .category li {
   padding: 11px 0 7px 15px;
   width: 206px;
   height: 35px;
-  background: #0D3155;
-  border-bottom: 1px solid #000745;
+  background: #fff;
   position: relative;
   display: flex;
   align-items: center;
 }
-.category li a {
-  font-family: "ProximaNova-Semibold";
-  font-size: 14px;
-  line-height: 17px;
-  color: #fff !important;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+.category li:hover {
+  background: #F4F9FE;
 }
-.category li a::before {
+.category li:hover a::before {
   content: "";
   position: absolute;
   right: 5px;
@@ -760,41 +755,54 @@ footer .wrapper .burge-navigation-icon li {
   display: inline-block;
   width: 0;
   height: 0;
-  border-top: 4px solid #fff;
+  border-top: 4px solid #1E3440;
   border-left: 4px solid transparent;
   border-right: 4px solid transparent;
   transform: rotate(-90deg);
 }
-.category li a::after {
+.category li:hover a::after {
   content: none;
+}
+.category li a {
+  font-family: "ProximaNova-Semibold";
+  font-size: 14px;
+  line-height: 17px;
+  color: #000745 !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.category li a::after {
+  content: none !important;
 }
 
 .subcategory {
   display: none;
   position: absolute;
   right: -110%;
-  bottom: -415%;
+  bottom: -397%;
   border-radius: 3px;
+  filter: drop-shadow(0px 13.4437px 39.4751px rgba(150, 174, 215, 0.3));
 }
 .subcategory li {
   padding: 11px 0 7px 15px;
-  background: #0D3155;
+  background: #fff;
   width: 206px;
 }
 .subcategory li a {
   font-family: "ProximaNova-Semibold";
   font-size: 14px;
   line-height: 17px;
-  color: #fff !important;
+  color: #000745 !important;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 .subcategory li a::after {
-  content: none;
+  content: none !important;
 }
 .subcategory li a::before {
-  content: none;
+  content: none !important;
 }
 
 .subcategory {

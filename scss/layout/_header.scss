@@ -35,6 +35,7 @@
 }
 .sectionTittleRight {
     position: relative;
+    z-index: 20;
     right: -100%;
     -webkit-animation: translate-title-right 1.5s linear;
     -webkit-animation-fill-mode: forwards;
