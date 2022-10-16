@@ -1849,6 +1849,11 @@
                 left: 40%;
             }
         }
+        .videoContainer {
+            .slick-list {
+                margin: 0 -25px;
+            }
+        }
     }
 
     @media (max-width: 319px) {

@@ -2322,6 +2322,9 @@ h3:active {
   .slide .slick-prev.slick-arrow {
     left: 40%;
   }
+  .videoContainer .slick-list {
+    margin: 0 -25px;
+  }
 }
 @media (max-width: 319px) {
   .reviewsCenter .slide {
