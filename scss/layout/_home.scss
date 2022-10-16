@@ -19,6 +19,7 @@
         &:nth-of-type(1) {
             border-radius: 3px 3px 0 0;
             &:hover {
+                cursor: pointer;
                 &::before {
                     content: "";
                     position: absolute;
@@ -53,8 +54,9 @@
             font-size: 14px;
             line-height: 17px;
             color: #000745 !important;
-            width: max-content;
-
+            width: 100%;
+            display: block;
+            text-decoration: none;
             &::after {
                 content: none !important;
             }
@@ -73,12 +75,15 @@
             padding: 11px 0 7px 15px;
             background: #fff;
             width: 206px;
+            cursor: pointer;
             a {
                 font-family: "ProximaNova-Semibold";
                 font-size: 14px;
                 line-height: 17px;
                 color: #000745 !important;
-                width: max-content;
+                width: 100%;
+                display: block;
+                text-decoration: none;
                 &::after {
                     content: none !important;
                 }
@@ -1060,10 +1065,11 @@
         .videoContainer {
             max-width: 80vw;
             overflow: hidden;
-
-            .videoContainer-content {
-                max-width: 38vw;
-                background-position: center;
+            .slick-list {
+                .videoContainer-content {
+                    max-width: 450px;
+                    background-position: center;
+                }
             }
         }
     }
@@ -1377,6 +1383,11 @@
         width: 100%;
         overflow: hidden;
         margin: 0 auto;
+    }
+}
+.sectionTittle  {
+    .sectionTittleRight {
+        width: 80%;
     }
 }
 .reviewsCenter {
