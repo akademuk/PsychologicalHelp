@@ -317,92 +317,6 @@
         }
     }
 
-    .blogContainer {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        margin-top: 55px;
-
-        .blogContainerSection {
-            width: 30%;
-            display: flex;
-            flex-direction: column;
-        }
-    }
-
-    .blogImg {
-        position: relative;
-
-        button {
-            position: absolute;
-            left: 20px;
-            bottom: 20px;
-            font-family: "ProximaNova-Semibold";
-            font-size: 14px;
-            line-height: 17px;
-            text-transform: uppercase;
-            color: #0D3155;
-            padding: 12px 24px;
-            background: #FFFFFF;
-            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
-            border-radius: 5px;
-            border: none;
-        }
-    }
-
-    .blogContainerSection {
-        p {
-            margin: 39px 0 48px 0;
-            padding: 0 10px;
-            font-family: "ProximaNova-Semibold";
-            font-size: 20px;
-            line-height: 24px;
-            color: #0D3155;
-            text-align: left;
-        }
-
-        .blogDate {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-
-            p {
-                font-family: "ProximaNova-Regular";
-                font-size: 14px;
-                line-height: 17px;
-                color: #50759B;
-            }
-
-            a {
-                font-family: "ProximaNova-Bold";
-                font-size: 14px;
-                line-height: 17px;
-                text-transform: uppercase;
-                color: #007CF8;
-                text-decoration: none;
-            }
-        }
-    }
-
-    .blog {
-        margin-bottom: 55px;
-
-        .wrapper {
-            text-align: center;
-
-            button {
-                margin-top: 50px;
-            }
-        }
-    }
-
-    .blogImg {
-        picture {
-            img {
-                max-width: 100%;
-            }
-        }
-    }
 
 
 
@@ -1032,11 +946,7 @@
             width: 90%;
         }
 
-        .blogContainerSection {
-            >p {
-                min-height: 80px;
-            }
-        }
+     
 
         .sectionTittle {
             width: 100%;
@@ -1184,13 +1094,7 @@
             }
         }
 
-        .blogContainer {
-            flex-wrap: wrap;
-
-            .blogContainerSection {
-                width: 49%;
-            }
-        }
+       
         .slide  {
             .slick-next.slick-arrow {
                 left: 55%;
@@ -1700,43 +1604,13 @@
             font-size: 54px;
         }
 
-        .blogContainer {
-            flex-direction: column;
-            margin-top: 35px;
-
-            .blogContainerSection {
-                width: 100%;
-                margin-bottom: 25px;
-            }
-        }
+    
 
         .coursesContainer {
             margin-bottom: 45px;
         }
 
-        .blogImg {
-            picture {
-                img {
-                    min-width: 100%;
-                }
-            }
-        }
-
-        .blogContainerSection {
-            &>p {
-                margin-bottom: 0;
-                min-height: auto;
-                margin: 26px 0;
-                font-size: 18px;
-            }
-
-            .blogDate {
-                p {
-                    margin-bottom: 0;
-                    margin-top: 0;
-                }
-            }
-        }
+    
 
         .question {
             margin: 45px 0 115px 0;
@@ -1787,34 +1661,7 @@
             }
         }
 
-        .blog {
-            .wrapper {
-                >button {
-                    width: 219px;
-                    height: 63px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding: 0;
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-
-                h2 {
-                    text-align: left;
-                    padding-left: 5px;
-                }
-            }
-        }
-
-        .blogImg {
-            button {
-                padding: 9px 17px !important;
-                font-size: 10px;
-                left: 10px;
-                bottom: 10px;
-            }
-        }
+      
 
         .videoContainer {
             .videoContainer-content {
