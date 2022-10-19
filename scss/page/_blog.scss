@@ -43,6 +43,9 @@
         flex-direction: column;
     }
 }
+.dropdown-toggle {
+    display: none;
+}
 .blogImg {
     position: relative;
     button {
@@ -125,8 +128,8 @@
                         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
                         border-radius: 5px;
                         color: #fff;
+                        border: 1px solid #007CF8;
                         &::after {
-                            content: "";
                             background: url(../../img/Line.svg), #fff;
                             background-repeat: no-repeat;
                             background-size: auto;
@@ -216,9 +219,6 @@
     width: 30% !important;
     min-width: 250px !important;
 }
-.displayForm {
-    display: none !important;
-}
 .dropdown-check-list {
     display: inline-block;
   }
@@ -252,80 +252,75 @@
     width: 12px;
     height: 7px;
   }
-  
-  .dropdown-check-list ul.items {
-    display: none;
-    margin: 0;
-    border-top: none;
+  .filterFormContainer {
+    border: 1px solid transparent !important;
+    &:active {
+        border: 1px solid #007CF8;
+    }
   }
-  .dropdown-check-list ul.items .filterFormContainer{
+  .wrapper {
+    width: 100%;
+  }
+  .select__title {
+    margin-left: -55px;
+  }
+.filterForm{
+    flex-direction: column;
+    align-items: flex-start !important;
+    width: 100%;
+}
+.filterFormContainer {
+    width: 100%;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    label {
+        width: 100% !important;
+        margin-right: 0 !important;
+        border-radius: 5px !important;
+    }
+}
+.wrapper {
+    margin: 0;
+}
+form {
+    padding: 0;
+}
+.mobile {
+    display: none;
+}
+.borderCheckbox:after {
+    content: none;
+}
+.dropdown-toggle {
     background: #FFFFFF;
     box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
-    width: 100%;
     height: 41px;
-    margin-bottom: 11px;
-    position: relative;
-    display: flex;
-    align-items: center;
-  }
-  .dropdown-check-list ul.items .filterFormContainer label {
+    text-decoration: none;
     font-family: "ProximaNova-Semibold";
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     color: #0D3155;
+    padding-left: 24px;
     width: 100%;
-    height: 41px;
+    margin-bottom: 11px;
+}
+.dropdown-toggle {
     display: flex;
     align-items: center;
-    padding-left: 16px;
-  }
-  .dropdown-check-list ul.items .filterFormContainer input {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-  }
-  .dropdown-check-list .items .filterFormContainer label:after {
-    content: "";
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    right: 0;
-    top: 0;
-    right: 20px;
-    top: 11px; 
-    border: 1px solid #007CF8;
-    box-shadow: 0px 3.2px 11.2px rgba(0, 0, 0, 0.05);
-    border-radius: 2.4px;  
-    background-color: #fff; 
-    z-index: 1;   
+    justify-content: space-between;
+    padding-right: 16px;
+    &::after {
+        content: "";
+        background: url(../../img/dropDown.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        width: 17px;
+        height: 17px;
+    }
 }
-
-.dropdown-check-list ul.items .filterFormContainer input:checked + label{
-    background: #007CF8;
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
-    border-radius: 5px;
-    color: #fff;
-}
-.dropdown-check-list ul.items .filterFormContainer input:checked + label:after {
-    content: "";
-    background: url(../../img/Line.svg), #fff;
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-}
-  .dropdown-check-list ul.items li {
-    list-style: none;
-  }
-  
-  .dropdown-check-list.visible .anchor {
-    color: #0094ff;
-  }
-  
-  .dropdown-check-list.visible .items {
-    display: block;
-  }
 }
 @media(max-width: 576px) {
 .blogContainer {
@@ -389,4 +384,12 @@
     margin-bottom: 25px;
     max-width: 100%;
 }
+}
+@media (max-width: 320px) {
+    .dropdown-toggle {
+        font-size: 12px;
+    }
+    .blog-page-category .filterForm .filterFormContainer label {
+        font-size: 12px;
+    }
 }

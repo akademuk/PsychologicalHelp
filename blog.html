@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="style/component.css">
-    <script src="js/modernizr.custom.js"></script>
     <title>Blog</title>
 </head>
 <body class="body">
@@ -397,11 +396,12 @@
             <div class="wrapper">
                 <h2>Блог</h2>
                 <div class="container">
-                    <div class="blog-page-category">
+                    <div class="blog-page-category" id="nav">
                         <p>Выберите категорию:</p>
-                        <form class="filterForm displayForm">
+                        <a class="dropdown-toggle" href="#">Выбрано категорий <span class="select__title"></span></a>
+                        <form class="filterForm displayForm dropdown">
                             <p class="filterFormContainer borderCheckbox">
-                                <input type="checkbox" id="alls" checked>
+                                <input type="checkbox" id="alls">
                                 <label for="alls">Все</label>
                             </p>
                             <p class="filterFormContainer">
@@ -416,64 +416,43 @@
                                 <input type="checkbox" id="friendship" class="filter">
                                 <label for="friendship">дружба</label>
                             </p>
-                            <p class="filterFormContainer">
+                            <p class="filterFormContainer mobile">
                                 <input type="checkbox" id="category1" class="filter">
                                 <label for="category1">Категория</label>
                             </p>
-                            <p class="filterFormContainer">
+                            <p class="filterFormContainer mobile">
                                 <input type="checkbox" id="category2" class="filter">
                                 <label for="category2">Категория</label>
                             </p>
-                            <p class="filterFormContainer">
+                            <p class="filterFormContainer mobile">
                                 <input type="checkbox" id="category3" class="filter">
                                 <label for="category3">Категория</label>
                             </p>
-                            <p class="filterFormContainer">
+                            <p class="filterFormContainer mobile">
                                 <input type="checkbox" id="category4" class="filter">
                                 <label for="category4">Категория</label>
                             </p>
-                            <p class="filterFormContainer">
+                            <p class="filterFormContainer mobile">
                                 <input type="checkbox" id="category5" class="filter">
                                 <label for="category5">Категория</label>
                             </p>
-                            <p class="filterFormContainer">
+                            <p class="filterFormContainer mobile">
                                 <input type="checkbox" id="category6" class="filter">
                                 <label for="category6">Категория</label>
                             </p>
-                            <p class="filterFormContainer">
+                            <p class="filterFormContainer mobile">
                                 <input type="checkbox" id="category7" class="filter">
                                 <label for="category7">Категория</label>
                             </p>
-                            <p class="filterFormContainer">
+                            <p class="filterFormContainer mobile">
                                 <input type="checkbox" id="category8" class="filter">
                                 <label for="category8">Категория</label>
                             </p>
-                            <p class="filterFormContainer">
+                            <p class="filterFormContainer mobile">
                                 <input type="checkbox" id="category9" class="filter">
                                 <label for="category9">Категория</label>
                             </p>
                         </form>
-                        <div id="list1" class="dropdown-check-list" tabindex="100">
-                            <span class="anchor">Все</span>
-                            <ul class="items">
-                              <li class="filterFormContainer">
-                                <input type="checkbox" id="alls" checked>
-                                <label for="alls">Все</label>
-                              </li>
-                              <li class="filterFormContainer">
-                                <input type="checkbox" id="relations" class="filter">
-                                <label for="relations">Отношения</label>
-                              </li>
-                              <li class="filterFormContainer">
-                                <input type="checkbox" id="society" class="filter">
-                                <label for="society">социум</label>
-                              </li>
-                              <li class="filterFormContainer">
-                                <input type="checkbox" id="friendship" class="filter">
-                                <label for="friendship">дружба</label>
-                              </li>
-                            </ul>
-                          </div>
                     </div>
                     <div class="blogContainerWrapper">
                         <div class="blogContainerSection item relations">
@@ -720,6 +699,7 @@
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="js/burger.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/modernizr.custom.js" ></script>
 	<script src="js/jquery.dlmenu.js"></script>
     <script src="js/filter.js"></script>
     <script src="js/dropdown.js"></script>
@@ -736,13 +716,20 @@
         });
     </script>
     <script>
-        var checkList = document.getElementById('list1');
-        checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
-        if (checkList.classList.contains('visible'))
-            checkList.classList.remove('visible');
-        else
-            checkList.classList.add('visible');
-        }
+
+var checked = 0;
+
+$(document).ready(function() {
+        $("form").on("change", "input", function() {
+            checked = $("input[type='checkbox']:checked").length;
+            $(".select__title").html(checked > 0 ? checked : "");
+        });
+        $(".select__title").html(checked > 0 ? checked : "");
+        });
+        $(function() { // Dropdown toggle
+            $('.dropdown-toggle').click(function() { $(this).next('.dropdown').slideToggle();
+            });
+            });
     </script>
 </body>
 </html>
