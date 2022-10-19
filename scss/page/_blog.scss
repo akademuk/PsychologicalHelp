@@ -30,7 +30,6 @@
     display: none;
 }
 .blogContainerWrapper {
-    min-height: 100vh;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -130,7 +129,7 @@
                         color: #fff;
                         border: 1px solid #007CF8;
                         &::after {
-                            background: url(../../img/Line.svg), #fff;
+                            background: url(../img/Line.svg), #fff;
                             background-repeat: no-repeat;
                             background-size: auto;
                             background-position: center;
@@ -242,7 +241,7 @@
   .dropdown-check-list .anchor:after {
     position: absolute;
     content: "";
-    background: url(../../img/dropDown.svg);
+    background: url(../img/dropDown.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -313,7 +312,7 @@ form {
     padding-right: 16px;
     &::after {
         content: "";
-        background: url(../../img/dropDown.svg);
+        background: url(../img/dropDown.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;

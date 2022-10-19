@@ -2269,7 +2269,6 @@ h3:active {
 }
 
 .blogContainerWrapper {
-  min-height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -2376,7 +2375,7 @@ h3:active {
   border: 1px solid #007CF8;
 }
 .blog-page-category .filterForm .filterFormContainer input:checked ~ label::after {
-  background: url(../../img/Line.svg), #fff;
+  background: url(../img/Line.svg), #fff;
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
@@ -2474,7 +2473,7 @@ h3:active {
   .dropdown-check-list .anchor:after {
     position: absolute;
     content: "";
-    background: url(../../img/dropDown.svg);
+    background: url(../img/dropDown.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -2546,7 +2545,7 @@ h3:active {
   }
   .dropdown-toggle::after {
     content: "";
-    background: url(../../img/dropDown.svg);
+    background: url(../img/dropDown.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
