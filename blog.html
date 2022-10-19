@@ -400,9 +400,9 @@
                     <div class="blog-page-category">
                         <p>Выберите категорию:</p>
                         <form class="filterForm displayForm">
-                            <p class="filterFormContainer">
-                                <input type="checkbox" id="all" checked>
-                                <label for="all">Все</label>
+                            <p class="filterFormContainer borderCheckbox">
+                                <input type="checkbox" id="alls" checked>
+                                <label for="alls">Все</label>
                             </p>
                             <p class="filterFormContainer">
                                 <input type="checkbox" id="relations" class="filter">
@@ -416,7 +416,64 @@
                                 <input type="checkbox" id="friendship" class="filter">
                                 <label for="friendship">дружба</label>
                             </p>
+                            <p class="filterFormContainer">
+                                <input type="checkbox" id="category1" class="filter">
+                                <label for="category1">Категория</label>
+                            </p>
+                            <p class="filterFormContainer">
+                                <input type="checkbox" id="category2" class="filter">
+                                <label for="category2">Категория</label>
+                            </p>
+                            <p class="filterFormContainer">
+                                <input type="checkbox" id="category3" class="filter">
+                                <label for="category3">Категория</label>
+                            </p>
+                            <p class="filterFormContainer">
+                                <input type="checkbox" id="category4" class="filter">
+                                <label for="category4">Категория</label>
+                            </p>
+                            <p class="filterFormContainer">
+                                <input type="checkbox" id="category5" class="filter">
+                                <label for="category5">Категория</label>
+                            </p>
+                            <p class="filterFormContainer">
+                                <input type="checkbox" id="category6" class="filter">
+                                <label for="category6">Категория</label>
+                            </p>
+                            <p class="filterFormContainer">
+                                <input type="checkbox" id="category7" class="filter">
+                                <label for="category7">Категория</label>
+                            </p>
+                            <p class="filterFormContainer">
+                                <input type="checkbox" id="category8" class="filter">
+                                <label for="category8">Категория</label>
+                            </p>
+                            <p class="filterFormContainer">
+                                <input type="checkbox" id="category9" class="filter">
+                                <label for="category9">Категория</label>
+                            </p>
                         </form>
+                        <div id="list1" class="dropdown-check-list" tabindex="100">
+                            <span class="anchor">Все</span>
+                            <ul class="items">
+                              <li class="filterFormContainer">
+                                <input type="checkbox" id="alls" checked>
+                                <label for="alls">Все</label>
+                              </li>
+                              <li class="filterFormContainer">
+                                <input type="checkbox" id="relations" class="filter">
+                                <label for="relations">Отношения</label>
+                              </li>
+                              <li class="filterFormContainer">
+                                <input type="checkbox" id="society" class="filter">
+                                <label for="society">социум</label>
+                              </li>
+                              <li class="filterFormContainer">
+                                <input type="checkbox" id="friendship" class="filter">
+                                <label for="friendship">дружба</label>
+                              </li>
+                            </ul>
+                          </div>
                     </div>
                     <div class="blogContainerWrapper">
                         <div class="blogContainerSection item relations">
@@ -677,6 +734,15 @@
             $(".hooks").addClass("hooksActive");      
         });
         });
+    </script>
+    <script>
+        var checkList = document.getElementById('list1');
+        checkList.getElementsByClassName('anchor')[0].onclick = function(evt) {
+        if (checkList.classList.contains('visible'))
+            checkList.classList.remove('visible');
+        else
+            checkList.classList.add('visible');
+        }
     </script>
 </body>
 </html>
