@@ -722,14 +722,16 @@ var checked = 0;
 $(document).ready(function() {
         $("form").on("change", "input", function() {
             checked = $("input[type='checkbox']:checked").length;
-            $(".select__title").html(checked > 0 ? checked : "");
+            $(".select__title").html(checked > 0 ? `(${checked})` : "");
         });
-        $(".select__title").html(checked > 0 ? checked : "");
+        $(".select__title").html(checked > 0 ? `(${checked})` : "");
         });
         $(function() { // Dropdown toggle
-            $('.dropdown-toggle').click(function() { $(this).next('.dropdown').slideToggle();
-            });
-            });
+            $('.dropdown-toggle').click(function() { $(this).next('.dropdown').slideToggle();});
+        });
+        $('.dropdown-toggle').on('click', function(){
+        $('.dropdown-toggle').toggleClass('dropdownArrow');
+        });
     </script>
 </body>
 </html>

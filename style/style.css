@@ -2537,11 +2537,18 @@ h3:active {
     width: 100%;
     margin-bottom: 11px;
   }
+  .select__title {
+    font-family: "ProximaNova-Semibold";
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #0D3155;
+  }
   .dropdown-toggle {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-right: 16px;
+    padding-right: 20px;
   }
   .dropdown-toggle::after {
     content: "";
@@ -2551,6 +2558,23 @@ h3:active {
     background-position: center;
     width: 17px;
     height: 17px;
+    transform: rotate(180deg);
+  }
+  .dropdownArrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+  }
+  .dropdownArrow::after {
+    content: "";
+    background: url(../img/dropDown.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 17px;
+    height: 17px;
+    transform: rotate(0deg);
   }
 }
 @media (max-width: 576px) {
@@ -2564,6 +2588,9 @@ h3:active {
   }
   .blogImg picture img {
     min-width: 100%;
+  }
+  .select__title {
+    margin-left: -110px;
   }
   .blogContainerSection > p {
     margin-bottom: 0;
