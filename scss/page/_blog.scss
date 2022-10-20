@@ -260,9 +260,6 @@
   .wrapper {
     width: 100%;
   }
-  .select__title {
-    margin-left: -55px;
-  }
 .filterForm{
     flex-direction: column;
     align-items: flex-start !important;
@@ -311,18 +308,22 @@ form {
     line-height: 17px;
     text-transform: uppercase;
     color: #0D3155;
+    padding-left: 3px;
 }
 .dropdown-toggle {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-right: 20px;
+    position: relative;
     &::after {
         content: "";
         background: url(../img/dropDown.svg);
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
+        position: absolute;
+        right: 20px;
+        top: 13px;
         width: 17px;
         height: 17px;
         transform: rotate(180deg);
@@ -354,15 +355,15 @@ form {
         margin-bottom: 25px;
     }
 }
+.blogContainerWrapper {
+    padding: 0 16px;
+}
 .blogImg {
     picture {
         img {
             min-width: 100%;
         }
     }
-}
-.select__title {
-    margin-left: -110px;
 }
 .blogContainerSection {
     &>p {
@@ -409,6 +410,22 @@ form {
     min-width: 100% !important;
     margin-bottom: 25px;
     max-width: 100%;
+}
+.blogContainerSection > p {
+    padding: 0;
+}
+.blogForm {
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+}
+.blogContainerSection .blogDate p {
+    padding: 0;
+}
+.blog .wrapper h2 {
+    font-size: 52px !important;
+}
+.main {
+    margin-top: 77px;
 }
 }
 @media (max-width: 320px) {
