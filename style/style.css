@@ -795,6 +795,66 @@ footer .wrapper .burge-navigation-icon li {
     height: 13px;
   }
 }
+.dropdown {
+  position: relative;
+  perspective: 1000px;
+  z-index: 100;
+}
+
+.dropdown_menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  perspective: 1000px;
+  z-index: -1;
+}
+
+.dropdown_menu li {
+  display: none;
+  opacity: 0;
+}
+
+.dropdown:hover .dropdown_menu--animated {
+  display: block;
+}
+
+.dropdown_menu--animated {
+  display: none;
+}
+
+.dropdown_menu--animated li {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown_menu-8 {
+  -webkit-animation: downOut 300ms ease-in-out forwards;
+          animation: downOut 300ms ease-in-out forwards;
+  transform-origin: center center;
+}
+@-webkit-keyframes downOut {
+  0% {
+    transform: translateZ(200px) transLateY(40px);
+  }
+  80% {
+    transform: translateZ(-10px) transLateY(0px);
+  }
+  100% {
+    transform: translateZ(0px) transLateY(0px);
+  }
+}
+@keyframes downOut {
+  0% {
+    transform: translateZ(200px) transLateY(40px);
+  }
+  80% {
+    transform: translateZ(-10px) transLateY(0px);
+  }
+  100% {
+    transform: translateZ(0px) transLateY(0px);
+  }
+}
 .category {
   display: none;
   position: absolute;
@@ -2457,6 +2517,9 @@ h3:active {
   }
   .dropdown-check-list {
     display: inline-block;
+  }
+  .blog-page-category .filterForm .filterFormContainer:nth-of-type(2) label {
+    margin-left: 0;
   }
   .dropdown-check-list .anchor {
     position: relative;

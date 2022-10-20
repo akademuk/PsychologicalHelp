@@ -223,7 +223,9 @@
 .dropdown-check-list {
     display: inline-block;
   }
-  
+  .blog-page-category .filterForm .filterFormContainer:nth-of-type(2) label {
+    margin-left: 0;
+  }
 .dropdown-check-list .anchor {
     position: relative;
     cursor: pointer;
