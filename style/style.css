@@ -3279,7 +3279,7 @@ h3:active {
 }
 .articleSliderContainer .slick-next.slick-arrow::after {
   content: "";
-  background: url(../../img/articleArrow.svg);
+  background: url(../img/articleArrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
