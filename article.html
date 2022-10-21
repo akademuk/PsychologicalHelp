@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
@@ -470,14 +471,175 @@
             <div class="articleComment">
                 <h6>Комментарии</h6>
                 <form class="articleForm">
-                    <label for="name">Имя</label>
-                    <input type="text" id="name" placeholder="Введите вае Имя">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" placeholder="Введите ваш Email адрес">
+                    <div class="articleFormContainer">
+                        <div class="inputContainer">
+                            <label for="name">Имя</label>
+                            <input type="text" id="name" placeholder="Введите вае Имя">
+                        </div>
+                       <div class="inputContainer">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" placeholder="Введите ваш Email адрес">
+                       </div>
+                    </div>
                     <label for="comment">Комментарий</label>
                     <textarea id="comment" cols="30" rows="10" placeholder="Введите ваш Комментарий"></textarea>
-                    <input type="submit" value="отправить">
+                    <input type="submit" value="отправить" class="articleFormSubmit">
                 </form>
+                <div class="articleCommentContainer">
+                    <div class="articleCommentContent">
+                        <div class="articleCommentContentTop">
+                            <div class="commentLeft">
+                                <div class="avatarArticle">
+                                    <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_167_1502)">
+                                        <path d="M10.4995 12C13.8136 12 16.4995 9.31406 16.4995 6C16.4995 2.68594 13.8136 0 10.4995 0C7.18545 0 4.49951 2.68594 4.49951 6C4.49951 9.31406 7.18545 12 10.4995 12ZM14.6995 13.5H13.9167C12.8761 13.9781 11.7183 14.25 10.4995 14.25C9.28076 14.25 8.12764 13.9781 7.08232 13.5H6.29951C2.82139 13.5 -0.000488281 16.3219 -0.000488281 19.8V21.75C-0.000488281 22.9922 1.00732 24 2.24951 24H18.7495C19.9917 24 20.9995 22.9922 20.9995 21.75V19.8C20.9995 16.3219 18.1776 13.5 14.6995 13.5Z" fill="#0D3155"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_167_1502">
+                                        <rect width="21" height="24" fill="white" transform="translate(-0.000488281)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                        
+                                </div>
+                                Пользователь
+                            </div>
+                            <p>08. фев. 2022</p>
+                        </div>
+                        <p>Разве может возвысить человека такое “добро” ----- сначала отправить учиться своё чадо в ‘‘престижную” школу, “престижный” вуз, а отдыхать только на “престижный” курорт, а потом напоминать об этом при каждом удобном и неудобном случае? (11)Вот, мол, бери, пользуйся, но помни... (12)Вряд ли такое “добро” сделает добрее. (13) Скорее будет наоборот.</p>
+                    </div>
+
+                    <div class="articleCommentContent">
+                        <div class="articleCommentContentTop">
+                            <div class="commentLeft">
+                                <div class="avatarArticle">
+                                    <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_167_1502)">
+                                        <path d="M10.4995 12C13.8136 12 16.4995 9.31406 16.4995 6C16.4995 2.68594 13.8136 0 10.4995 0C7.18545 0 4.49951 2.68594 4.49951 6C4.49951 9.31406 7.18545 12 10.4995 12ZM14.6995 13.5H13.9167C12.8761 13.9781 11.7183 14.25 10.4995 14.25C9.28076 14.25 8.12764 13.9781 7.08232 13.5H6.29951C2.82139 13.5 -0.000488281 16.3219 -0.000488281 19.8V21.75C-0.000488281 22.9922 1.00732 24 2.24951 24H18.7495C19.9917 24 20.9995 22.9922 20.9995 21.75V19.8C20.9995 16.3219 18.1776 13.5 14.6995 13.5Z" fill="#0D3155"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_167_1502">
+                                        <rect width="21" height="24" fill="white" transform="translate(-0.000488281)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                        
+                                </div>
+                                Пользователь
+                            </div>
+                            <p>08. фев. 2022</p>
+                        </div>
+                        <p>Разве может возвысить человека такое “добро” ----- сначала отправить учиться своё чадо в ‘‘престижную” школу, “престижный” вуз, а отдыхать только на “престижный” курорт, а потом напоминать об этом при каждом удобном и неудобном случае? (11)Вот, мол, бери, пользуйся, но помни... (12)Вряд ли такое “добро” сделает добрее. (13) Скорее будет наоборот.</p>
+                        <a href="#">Скрыть Ответ (1)</a>
+                        <div class="adminComment">
+                            <div class="adminCommentTop">
+                                <div class="adminCommentSvg">
+                                    <svg width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.3204 0.369544C12.7983 0.134537 12.2006 0.134537 11.6785 0.369544L2.36899 4.56017C1.65141 4.88318 1.18994 5.59698 1.18994 6.38391V12.7273C1.18994 19.6162 5.77963 26.0694 12.0215 27.8719C12.3336 27.9621 12.6653 27.9621 12.9774 27.8719C19.2193 26.0694 23.809 19.6162 23.809 12.7273V6.38391C23.809 5.59698 23.3475 4.88318 22.6299 4.56017L13.3204 0.369544ZM12.4995 4.96364C13.2451 4.96364 13.9739 5.18757 14.5939 5.60712C15.2138 6.02666 15.697 6.62298 15.9823 7.32066C16.2677 8.01834 16.3423 8.78605 16.1969 9.52671C16.0514 10.2674 15.6924 10.9477 15.1651 11.4817C14.6379 12.0157 13.9662 12.3793 13.2349 12.5266C12.5036 12.674 11.7457 12.5983 11.0568 12.3094C10.368 12.0204 9.77919 11.531 9.36496 10.9031C8.95072 10.2752 8.72962 9.53698 8.72962 8.78182C8.72962 7.76917 9.1268 6.798 9.83378 6.08196C10.5408 5.36591 11.4996 4.96364 12.4995 4.96364ZM12.4995 15.0182C14.8112 15.0182 19.2492 16.1919 19.9461 18.3511C20.0656 18.7216 19.9303 19.1152 19.6962 19.4263C18.9139 20.4663 17.9194 21.3267 16.7779 21.9471C15.4623 22.6622 13.9925 23.0364 12.4995 23.0364C11.0064 23.0364 9.53659 22.6622 8.22104 21.9471C7.07956 21.3267 6.08503 20.4663 5.30269 19.4263C5.06867 19.1152 4.93329 18.7216 5.05286 18.3511C5.74975 16.1919 10.1878 15.0182 12.4995 15.0182Z" fill="white"/>
+                                     </svg>   
+                                </div>
+                             <p>Администартор</p>
+                            </div>
+                            <p>Но откуда всё это вдруг берётся? (3)Да и берётся ли вдруг?</p>
+                        </div>
+                    </div>
+
+                    <div class="articleCommentContent">
+                        <div class="articleCommentContentTop">
+                            <div class="commentLeft">
+                                <div class="avatarArticle">
+                                    <svg width="21" height="24" viewBox="0 0 21 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_167_1502)">
+                                        <path d="M10.4995 12C13.8136 12 16.4995 9.31406 16.4995 6C16.4995 2.68594 13.8136 0 10.4995 0C7.18545 0 4.49951 2.68594 4.49951 6C4.49951 9.31406 7.18545 12 10.4995 12ZM14.6995 13.5H13.9167C12.8761 13.9781 11.7183 14.25 10.4995 14.25C9.28076 14.25 8.12764 13.9781 7.08232 13.5H6.29951C2.82139 13.5 -0.000488281 16.3219 -0.000488281 19.8V21.75C-0.000488281 22.9922 1.00732 24 2.24951 24H18.7495C19.9917 24 20.9995 22.9922 20.9995 21.75V19.8C20.9995 16.3219 18.1776 13.5 14.6995 13.5Z" fill="#0D3155"/>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_167_1502">
+                                        <rect width="21" height="24" fill="white" transform="translate(-0.000488281)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>                                        
+                                </div>
+                                Пользователь
+                            </div>
+                            <p>08. фев. 2022</p>
+                        </div>
+                        <p>Разве может возвысить человека такое “добро” ----- сначала отправить учиться своё чадо в ‘‘престижную” школу, “престижный” вуз, а отдыхать только на “престижный” курорт, а потом напоминать об этом при каждом удобном и неудобном случае? (11)Вот, мол, бери, пользуйся, но помни... (12)Вряд ли такое “добро” сделает добрее. (13) Скорее будет наоборот.</p>
+                        <a href="#">Скрыть Ответ (3)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="articleSlider">
+        <h2>Похожие статьи</h2>
+        <div class="articleSliderContainer">
+            <div class="blogContainerSection">
+                <div class="blogImg">
+                    <picture>
+                        <source srcset="img/mobile/img-blog3.png 1x, img/mobile/img-blog3X2.png 2x" media="(max-width: 560px)">
+                        <img src="img/img-blog3.png" srcset="img/img-blog3X2.png 2x" alt="дружба" />
+                     </picture> 
+                    <button>дружба</button>   
+                </div>
+                <p>Токсичные чувства- это враг нашей гармонии</p>
+                <div class="blogDate">          
+                    <p>01. фев. 2022</p>
+                    <a href="#">подробнее</a>
+                </div>
+            </div>
+            <div class="blogContainerSection">
+                <div class="blogImg">
+                    <picture>
+                        <source srcset="img/mobile/img-blog3.png 1x, img/mobile/img-blog3X2.png 2x" media="(max-width: 560px)">
+                        <img src="img/img-blog3.png" srcset="img/img-blog3X2.png 2x" alt="дружба" />
+                     </picture> 
+                    <button>дружба</button>   
+                </div>
+                <p>Токсичные чувства- это враг нашей гармонии</p>
+                <div class="blogDate">
+                    <p>04. фев. 2022</p>
+                    <a href="#">подробнее</a>
+                </div>
+            </div>
+            <div class="blogContainerSection">
+                <div class="blogImg">
+                    <picture>
+                        <source srcset="img/mobile/img-blog3.png 1x, img/mobile/img-blog3X2.png 2x" media="(max-width: 560px)">
+                        <img src="img/img-blog3.png" srcset="img/img-blog3X2.png 2x" alt="дружба" />
+                     </picture> 
+                    <button>дружба</button>   
+                </div>
+                <p>Токсичные чувства- это враг нашей гармонии</p>
+                <div class="blogDate">
+                    <p>08. фев. 2022</p>
+                    <a href="#">подробнее</a>
+                </div>
+            </div>
+            <div class="blogContainerSection">
+                <div class="blogImg">
+                    <picture>
+                        <source srcset="img/mobile/img-blog3.png 1x, img/mobile/img-blog3X2.png 2x" media="(max-width: 560px)">
+                        <img src="img/img-blog3.png" srcset="img/img-blog3X2.png 2x" alt="дружба" />
+                     </picture> 
+                    <button>дружба</button>   
+                </div>
+                <p>Токсичные чувства- это враг нашей гармонии</p>
+                <div class="blogDate">
+                    <p>08. фев. 2022</p>
+                    <a href="#">подробнее</a>
+                </div>
+            </div>
+            <div class="blogContainerSection">
+                <div class="blogImg">
+                    <picture>
+                        <source srcset="img/mobile/img-blog3.png 1x, img/mobile/img-blog3X2.png 2x" media="(max-width: 560px)">
+                        <img src="img/img-blog3.png" srcset="img/img-blog3X2.png 2x" alt="дружба" />
+                     </picture> 
+                    <button>дружба</button>   
+                </div>
+                <p>Токсичные чувства- это враг нашей гармонии</p>
+                <div class="blogDate">
+                    <p>08. фев. 2022</p>
+                    <a href="#">подробнее</a>
+                </div>
             </div>
         </div>
     </div>
@@ -587,10 +749,8 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/slider.js"></script>
     <script src="js/burger.js"></script>
-    <script src="js/accardion.js"></script>
-    <script src="js/slick-slider.js"></script>
+    <script src="js/articleSlider.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="js/jquery.dlmenu.js"></script>
 
