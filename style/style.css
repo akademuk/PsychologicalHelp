@@ -2746,6 +2746,25 @@ h3:active {
   padding-top: 70px;
 }
 
+.articleContentVideo .videoPlay {
+  position: relative;
+}
+.articleContentVideo .videoPlay::after {
+  content: "";
+  background: url(../img/play.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+
 .articleTopSection {
   display: flex;
   align-items: center;
@@ -2871,7 +2890,7 @@ h3:active {
   content: "3";
 }
 
-.articleContentVideo img {
+.articleContentVideo .videoPlay {
   margin-bottom: 70px;
 }
 
@@ -3233,7 +3252,7 @@ h3:active {
 }
 .articleSliderContainer .slick-prev.slick-arrow::after {
   content: "";
-  background: url(../../img/articleArrow.svg);
+  background: url(../img/articleArrow.svg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
