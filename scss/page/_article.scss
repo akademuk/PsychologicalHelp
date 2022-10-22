@@ -10,6 +10,9 @@
         line-height: 81px;
     }
 }
+.mobileArticleImg {
+    display: none;
+}
 .articleWrapperBottom {
     border-top: 1px solid #E3E5EA;
     max-width: 1130px;
@@ -328,6 +331,7 @@
         font-size: 16px;
         line-height: 181%;
         color: #0D3155;
+        margin-bottom: 0 !important;
     }
 }
 .articleCommentContentTop {
@@ -351,7 +355,8 @@
         line-height: 181%;
         color: #0D3155;
     }
-    a {
+    .myBtnComment,
+    .myBtnComment2 {
         font-family: "ProximaNova-Regular";
         font-size: 16px;
         line-height: 181%;
@@ -359,6 +364,8 @@
         color: #007CF8;
         text-decoration: none;
         margin-top: 20px;
+        border: none;
+        background: transparent;
     }
 }
 .articleCommentContainer {
@@ -374,6 +381,13 @@
     margin-left: 43px;
     border-left: 1px dashed #E3E5EA;
     padding-left: 72px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.contenComments {
+    margin-bottom: 20px;
 }
 .adminCommentTop {
     display: flex;
@@ -412,6 +426,12 @@
         text-align: center;
         margin-bottom: 55px;
     }
+}
+.adminCommentTop p{
+    font-family: "ProximaNova-Semibold";
+    font-size: 16px;
+    line-height: 181%;
+    color: #0D3155;
 }
 .articleSliderContainer {
     display: flex;
@@ -527,6 +547,182 @@
             z-index: 101;
             width: 16px;
             height: 9px;
+        }
+    }
+}
+.openComment{
+  width:100%;
+  height: 0;
+  transition: height 2s;
+  overflow: hidden;
+}
+  
+.openComment.open{
+    height: 130px;
+}
+.openComment2{
+    width:100%;
+    height: 0;
+    transition: height 2s;
+    overflow: hidden;
+  }
+    
+  .openComment2.open{
+      height: 600px;
+  }
+@media (max-width:1200px) {
+    .articleWrapperBottom {
+        max-width: 100%;
+    }
+    .articleForm {
+        padding: 40px;
+    }
+    .inputContainer input {
+        width: 350px;
+    }
+    .videoPlay {
+        img {
+            max-width: 100%;
+        }
+    }
+    .articleContent {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .articleWrapper h2 {
+        font-size: 60px;
+        line-height: 65px;
+    }
+    .articleWrapper {
+        max-width: 100%;
+    }
+    .articleQuote > p {
+        font-size: 24px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .articleQuote > p::before {
+        top: -25px;
+    }
+    .articleFormContainer {
+        flex-direction: column;
+    }
+    .inputContainer {
+        width: 100%;
+    }
+    .inputContainer input {
+        width: 100%;
+    }
+    .openComment2.open {
+        padding-left: 0;
+        max-width: 80%;
+    }
+    .openComment.open {
+        padding-left: 0;
+        max-width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .articleWrapper h2 {
+        text-align: left;
+        font-size: 54px;
+        line-height: 55px;
+    }
+    .articleContent img {
+        margin: 45px 0;
+    }
+    .openComment {
+        padding-left: 0;
+    }
+    .openComment2 {
+        padding-left: 0;
+    }
+}
+@media (max-width: 576px) {
+    .adminComment.openComment2.open {
+        height: 700px;
+    }
+    .desctopArticleImg {
+        display: none;
+    }
+    .mobileArticleImg {
+        display: block;
+        min-width: 100%;
+    }
+    .articleWrapper h2 {
+        font-size: 45px;
+    }
+    .articleQuote > p {
+        width: 100%;
+    }
+    .articleQuote > p::before {
+        left: 0;
+        top: -70px;
+    }
+    .articleQuoteContent p {
+        font-size: 14px;
+    }
+    .videoPlay {
+        max-width: 289px;
+        margin-bottom: 45px !important;
+    }
+    .articleContentIcon {
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .articleIcon a {
+        width: 60px;
+        margin-right: 14px;
+        &:nth-last-child(1) {
+            margin-right: 0;
+        }
+    }
+    .articleForm {
+        padding: 16px;
+    }
+    .articleForm .articleFormSubmit {
+        width: 100%;
+    }
+    .articleCommentContentTop  {
+        flex-direction: column;
+    }
+    .commentLeft {
+        width: 100%;
+    }
+    .articleCommentContent p {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .avatarArticle {
+        min-width: 65px;
+    }
+    .openComment {
+        margin-left: 16px;
+    }
+    .openComment.open {
+        height: 250px;
+    }
+    .openComment2 {
+        margin-left: 16px;
+    }
+    .openComment2.open {
+        height: 800px !important;
+    }
+    .adminCommentTop .adminCommentSvg {
+        min-width: 65px;
+    }
+    .adminComment {
+        border: none;
+    }
+    .articleSlider {
+        display: none;
+    }
+    .articleCommentContent {
+        &:nth-of-type(3) {
+            border: none;
         }
     }
 }
