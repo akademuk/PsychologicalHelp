@@ -757,6 +757,21 @@
     .articleWrapper h2 {
         font-size: 32px !important;
     }
+    .articleContentIcon p {
+        margin-bottom: 35px;
+    }
+    .openComment {
+        max-width: 95%;
+    }
+    .openComment.open {
+        max-width: 95%;
+    }
+    .openComment2 {
+        max-width: 95%;
+    }
+    .openComment2.open {
+        max-width: 95%;
+    }
 }
 @media (max-width:320px)  {
     .openComment.open {
