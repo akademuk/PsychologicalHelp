@@ -11,18 +11,7 @@
         text-align: left;
     }
 }
-.lineAdminComment {
-    position: relative;
-    &::after {
-        content: "";
-        width: 48px;
-        border-bottom: 1px dotted red;
-        height: 1px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-    }
-}
+
 .adminComment p {
     line-height: 100% !important;
 }
@@ -45,7 +34,7 @@
         &:nth-of-type(2) {
             &::before {
                 content: "";
-                background: url(../../img/Polygon.svg);
+                background: url(../img/Polygon.svg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;
@@ -58,7 +47,7 @@
             opacity: 1;
             &::before {
                 content: "";
-                background: url(../../img/Polygon.svg);
+                background: url(../img/Polygon.svg);
                 background-repeat: no-repeat;
                 background-position: center;
                 background-size: contain;

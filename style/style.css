@@ -2753,19 +2753,6 @@ h3:active {
   text-align: left;
 }
 
-.lineAdminComment {
-  position: relative;
-}
-.lineAdminComment::after {
-  content: "";
-  width: 48px;
-  border-bottom: 1px dotted red;
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
-
 .adminComment p {
   line-height: 100% !important;
 }
@@ -2790,7 +2777,7 @@ h3:active {
 }
 .topNavigation a:nth-of-type(2)::before {
   content: "";
-  background: url(../../img/Polygon.svg);
+  background: url(../img/Polygon.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -2803,7 +2790,7 @@ h3:active {
 }
 .topNavigation a:nth-of-type(3)::before {
   content: "";
-  background: url(../../img/Polygon.svg);
+  background: url(../img/Polygon.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
