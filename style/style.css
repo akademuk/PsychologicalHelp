@@ -3350,7 +3350,7 @@ h3:active {
   width: 60px;
   height: 60px;
   background: #FFFFFF;
-  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   border: none;
   font-size: 0;
@@ -3379,7 +3379,7 @@ h3:active {
   width: 60px;
   height: 60px;
   background: #FFFFFF;
-  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   border: none;
   font-size: 0;
