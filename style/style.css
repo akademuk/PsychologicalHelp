@@ -3209,10 +3209,28 @@ h3:active {
   margin-bottom: 20px;
 }
 
-.adminComment {
-  margin-left: 43px;
+.contenComments {
   border-left: 1px dashed #E3E5EA;
   padding-left: 72px;
+  position: relative;
+}
+
+.contenComments::before {
+  content: "";
+  width: 50px;
+  height: 1px;
+  border-top: 1px dashed #E3E5EA;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.adminComment p {
+  margin-bottom: -5px !important;
+}
+
+.adminComment {
+  margin-left: 43px;
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -3220,7 +3238,7 @@ h3:active {
 }
 
 .contenComments {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .adminCommentTop {
@@ -3397,7 +3415,7 @@ h3:active {
 }
 
 .openComment.open {
-  height: 120px;
+  height: 135px;
 }
 
 .openComment2 {
@@ -3408,7 +3426,7 @@ h3:active {
 }
 
 .openComment2.open {
-  height: 450px;
+  height: 400px;
 }
 
 @media (max-width: 1200px) {
@@ -3428,10 +3446,10 @@ h3:active {
     max-width: 100%;
   }
   .openComment2.open {
-    height: 450px;
+    height: 400px;
   }
   .openComment.open {
-    height: 120px;
+    height: 135px;
   }
   .articleSliderContainer .slick-prev.slick-arrow {
     left: 20px;
@@ -3469,11 +3487,11 @@ h3:active {
   }
   .openComment2.open {
     max-width: 80%;
-    height: 440px;
+    height: 400px;
   }
   .openComment.open {
     max-width: 80%;
-    height: 120px;
+    height: 135px;
   }
 }
 @media (max-width: 768px) {
@@ -3495,10 +3513,12 @@ h3:active {
     border-left: 0;
   }
   .openComment2.open {
-    height: 450px;
+    height: 400px;
+    max-width: 95%;
   }
   .openComment.open {
-    height: 120px;
+    height: 135px;
+    max-width: 95%;
   }
   .articleWrapper {
     margin-top: 0;
@@ -3572,7 +3592,13 @@ h3:active {
     margin-left: 16px;
   }
   .openComment2.open {
-    height: 490px !important;
+    height: 450px !important;
+  }
+  .contenComments {
+    padding-left: 16px;
+  }
+  .contenComments::before {
+    content: none;
   }
   .adminCommentTop .adminCommentSvg {
     min-width: 65px;
@@ -3622,7 +3648,16 @@ h3:active {
     margin-top: 0 !important;
   }
   .openComment2.open {
-    height: 570px !important;
+    height: 450px !important;
+  }
+  .contenComments {
+    padding-left: 0;
+  }
+  .articleCommentContent {
+    border: none;
+  }
+  .contenComments {
+    border: none;
   }
 }
 @media (max-width: 320px) {
