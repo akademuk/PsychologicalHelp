@@ -3874,4 +3874,7 @@ h3:active {
   .videoContainerSection .videoContainer-content {
     padding: 0px 13px 23px 16px !important;
   }
+  .videoPage .videoContainer-content.content-img2:nth-of-type(1) {
+    background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/mobile/img-video2.png) !important;
+  }
 }/*# sourceMappingURL=style.css.map */
