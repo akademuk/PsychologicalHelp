@@ -3408,7 +3408,7 @@ h3:active {
 }
 
 .openComment2.open {
-  height: 490px;
+  height: 450px;
 }
 
 @media (max-width: 1200px) {
@@ -3428,7 +3428,7 @@ h3:active {
     max-width: 100%;
   }
   .openComment2.open {
-    height: 490px;
+    height: 450px;
   }
   .openComment.open {
     height: 120px;
@@ -3469,7 +3469,7 @@ h3:active {
   }
   .openComment2.open {
     max-width: 80%;
-    height: 480px;
+    height: 440px;
   }
   .openComment.open {
     max-width: 80%;
@@ -3495,7 +3495,7 @@ h3:active {
     border-left: 0;
   }
   .openComment2.open {
-    height: 500px;
+    height: 450px;
   }
   .openComment.open {
     height: 120px;
@@ -3563,7 +3563,7 @@ h3:active {
     margin-left: 16px;
   }
   .openComment.open {
-    height: 175px;
+    height: 150px;
   }
   .commentLeft > p {
     margin-top: 0 !important;
@@ -3572,7 +3572,7 @@ h3:active {
     margin-left: 16px;
   }
   .openComment2.open {
-    height: 580px !important;
+    height: 490px !important;
   }
   .adminCommentTop .adminCommentSvg {
     min-width: 65px;
@@ -3616,7 +3616,7 @@ h3:active {
 }
 @media (max-width: 320px) {
   .openComment.open {
-    height: 175px;
+    height: 150px;
   }
   .adminCommentTop > p {
     margin-top: 0 !important;

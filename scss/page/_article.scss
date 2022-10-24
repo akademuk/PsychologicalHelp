@@ -627,7 +627,7 @@
   }
     
   .openComment2.open{
-      height: 490px;
+      height: 450px;
   }
 @media (max-width:1200px) {
     .articleWrapperBottom {
@@ -650,7 +650,7 @@
         }
     }
     .openComment2.open {
-        height: 490px;
+        height: 450px;
     }
     .openComment.open {
         height: 120px;
@@ -691,7 +691,7 @@
     }
     .openComment2.open {
         max-width: 80%;
-        height: 480px;
+        height: 440px;
     }
     .openComment.open {
         max-width: 80%;
@@ -717,7 +717,7 @@
         border-left: 0;
     }
     .openComment2.open {
-        height: 500px;
+        height: 450px;
     }
     .openComment.open {
         height: 120px;
@@ -785,7 +785,7 @@
         margin-left: 16px;
     }
     .openComment.open {
-        height: 175px;
+        height: 150px;
     }
     .commentLeft > p {
         margin-top: 0 !important;
@@ -794,7 +794,7 @@
         margin-left: 16px;
     }
     .openComment2.open {
-        height: 580px !important;
+        height: 490px !important;
     }
     .adminCommentTop .adminCommentSvg {
         min-width: 65px;
@@ -840,7 +840,7 @@
 }
 @media (max-width:320px)  {
     .openComment.open {
-        height: 175px;
+        height: 150px;
     }
     .adminCommentTop > p {
         margin-top: 0 !important;
