@@ -1069,7 +1069,9 @@
         .wrapper {
             width: 90%;
         }
-
+footer {
+    padding-top: 100px;
+}
         .dot-container {
             right: 15px;
         }
@@ -1354,6 +1356,12 @@
         overflow: hidden;
         margin: 0 auto;
     }
+}
+footer {
+    padding-top: 45px;
+}
+.logo-footer p {
+    font-size: 13px;
 }
 .sectionTittle  {
     .sectionTittleRight {

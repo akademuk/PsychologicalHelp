@@ -16,6 +16,9 @@
         flex-direction: column;
     }
 }
+.blogText {
+    opacity: 1 !important;
+}
 .borderCheckbox {
     display: flex;
     align-items: center;
@@ -147,6 +150,7 @@
         h2 {
             font-size: 85px !important;
             line-height: 81px !important;
+            text-align: left;
         }
     }
 }
@@ -426,6 +430,7 @@ form {
 }
 .blog .wrapper h2 {
     font-size: 52px !important;
+    
 }
 .main {
     margin-top: 77px;
