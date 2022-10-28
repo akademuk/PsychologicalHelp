@@ -87,7 +87,7 @@ h2 {
 
 h1 {
   font-family: "ProximaNova-Semibold";
-  font-size: 85px;
+  font-size: 84px;
   line-height: 81px;
   color: #0D3155;
   margin-bottom: 45px;
@@ -4194,5 +4194,131 @@ h3:active {
   }
   .method > p {
     margin-bottom: 20px;
+  }
+}
+.briefly {
+  max-width: 900px;
+  margin: 150px auto 180px auto;
+}
+.briefly h2 {
+  font-family: "ProximaNova-Semibold";
+  font-size: 85px;
+  line-height: 81px;
+  color: #0D3155;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.briefly .brieflyContainer p {
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 181%;
+  color: #0D3155;
+  margin-bottom: 20px;
+}
+
+.details {
+  max-width: 900px;
+  margin: 150px auto 180px auto;
+}
+.details h2 {
+  font-family: "ProximaNova-Semibold";
+  font-size: 85px;
+  line-height: 81px;
+  color: #0D3155;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.details .detailsContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.details .detailsContainer .detailsContainerLeft {
+  width: 48%;
+}
+.details .detailsContainer .detailsContainerLeft p {
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 181%;
+  color: #0D3155;
+  margin-bottom: 20px;
+}
+.details .detailsContainer .detailsContainerRight {
+  width: 49%;
+}
+.details .detailsContainer .detailsContainerRight p {
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 181%;
+  color: #0D3155;
+  margin-bottom: 20px;
+}
+
+.howWork {
+  max-width: 1130px;
+  margin: 150px auto 180px auto;
+}
+.howWork h2 {
+  font-family: "ProximaNova-Semibold";
+  font-size: 85px;
+  line-height: 81px;
+  color: #0D3155;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.howWork .howWorkContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.howWork .howWorkContainer .howWorkContainerRight {
+  width: 49%;
+  margin-left: 26px;
+}
+.howWork .howWorkContainer .howWorkContainerRight p {
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 181%;
+  color: #0D3155;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .howWorkContainer {
+    flex-direction: column;
+  }
+  .howWorkContainerLeft {
+    margin: 0 auto;
+  }
+  .howWorkContainerLeft img {
+    max-width: 100%;
+  }
+  .howWorkContainerRight {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 30px !important;
+  }
+}
+@media (max-width: 768px) {
+  .detailsContainer {
+    flex-direction: column;
+  }
+  .detailsContainer .detailsContainerLeft,
+.detailsContainer .detailsContainerRight {
+    width: 100% !important;
+  }
+}
+@media (max-width: 576px) {
+  .briefly h2 {
+    font-size: 54px !important;
+    line-height: 52px;
+  }
+  .details h2 {
+    font-size: 54px !important;
+    line-height: 52px;
+  }
+  .howWork h2 {
+    font-size: 54px !important;
+    line-height: 52px;
   }
 }/*# sourceMappingURL=style.css.map */
