@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="icon" type="image/x-icon" href="img/logo.png">
     <link rel="stylesheet" href="style/component.css">
     <script src="js/modernizr.custom.js"></script>
-    <title>Video</title>
+    <title>Psychological help</title>
 </head>
 <body class="body">
     <header class="header">
@@ -61,10 +61,10 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#">Обо мне</a>
+                    <a href="./blog.html">Блог</a>
                 </li>
                 <li>
-                    <a href="./blog.html">Статьи</a>
+                    <a href="./article.html">Статьи</a>
                 </li>
                 <li>
                     <a href="#">Тренинги и вебинары</a>
@@ -103,7 +103,7 @@
                     <div id="dl-menu" class="dl-menuwrapper">
                         <ul class="dl-menu burge-navigation">
                             <li>
-                                <a href="index.html">Главная</a>
+                                <a href="#">Главная</a>
                                 <ul class="dl-submenu">
                                     <li class="dl-back"><a href="#" class="link-category">Главная</a></li>
                                     <li>
@@ -142,9 +142,9 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Обо мне</a>
+                                <a href="./blog.html">Блог</a>
                                 <ul class="dl-submenu">
-                                    <li class="dl-back"><a href="#" class="link-category">Обо мне</a></li>
+                                    <li class="dl-back"><a href="#" class="link-category">Блог</a></li>
                                     <li>
                                         <a href="#" class="categoryArrow">Категория 1</a>
                                         <ul class="dl-submenu">
@@ -181,7 +181,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">Статьи</a>
+                                <a href="./article.html">Статьи</a>
                                 <ul class="dl-submenu">
                                     <li class="dl-back"><a href="#" class="link-category">Статьи</a></li>
                                     <li>
@@ -393,180 +393,149 @@
                 </li>
             </ul>
         </div>
-        <div class="blog blog-page audio-page">
+        <div class="questionPage">
             <div class="wrapper">
-                <div class="topNavigation">
+                <div class="topNavigation questiontTop">
                     <a href="index.html">Главная</a>
-                    <a href="#" class="blogText">Подкасты</a>
+                    <a href="#" class="blogText">Вопросы и ответы</a>
                 </div>
-                <h2>Подкасты</h2>
-                <div class="container">
-                    <div class="blog-page-category" id="nav">
-                        <p>Выберите категорию:</p>
-                        <a class="dropdown-toggle" href="#">Выбрано категорий <span class="select__title"> </span></a>
-                        <form class="filterForm displayForm dropdown">
-                            <p class="filterFormContainer borderCheckbox">
-                                <input type="checkbox" id="alls">
-                                <label for="alls">Все</label>
-                            </p>
-                            <p class="filterFormContainer">
-                                <input type="checkbox" id="relations" class="filter">
-                                <label for="relations">Отношения</label>
-                            </p>
-                            <p class="filterFormContainer">
-                                <input type="checkbox" id="society" class="filter">
-                                <label for="society">социум</label>
-                            </p>
-                            <p class="filterFormContainer">
-                                <input type="checkbox" id="friendship" class="filter">
-                                <label for="friendship">дружба</label>
-                            </p>
-                            <p class="filterFormContainer mobile">
-                                <input type="checkbox" id="category1" class="filter">
-                                <label for="category1">Категория</label>
-                            </p>
-                            <p class="filterFormContainer mobile">
-                                <input type="checkbox" id="category2" class="filter">
-                                <label for="category2">Категория</label>
-                            </p>
-                            <p class="filterFormContainer mobile">
-                                <input type="checkbox" id="category3" class="filter">
-                                <label for="category3">Категория</label>
-                            </p>
-                            <p class="filterFormContainer mobile">
-                                <input type="checkbox" id="category4" class="filter">
-                                <label for="category4">Категория</label>
-                            </p>
-                            <p class="filterFormContainer mobile">
-                                <input type="checkbox" id="category5" class="filter">
-                                <label for="category5">Категория</label>
-                            </p>
-                            <p class="filterFormContainer mobile">
-                                <input type="checkbox" id="category6" class="filter">
-                                <label for="category6">Категория</label>
-                            </p>
-                            <p class="filterFormContainer mobile">
-                                <input type="checkbox" id="category7" class="filter">
-                                <label for="category7">Категория</label>
-                            </p>
-                            <p class="filterFormContainer mobile">
-                                <input type="checkbox" id="category8" class="filter">
-                                <label for="category8">Категория</label>
-                            </p>
-                            <p class="filterFormContainer mobile">
-                                <input type="checkbox" id="category9" class="filter">
-                                <label for="category9">Категория</label>
-                            </p>
-                        </form>
-                    </div>
-                    <div class="audioContainerPlay">
-                        <div class="audioPlayerContainer item relations">
-                            <div class="audioContainer">
-                                <div class="audioContainerTop">
-                                    <img src="img/audio.png" alt="">
-                                    <p>Отношения</p>
-                                    <audio
-                                    controls
-                                    src="audio/play.mp3" class="audioPlayer">
-                                </audio>
+                <div class="question">
+                    <h2>Вопросы и ответы</h2>
+                    <div class="mainAccordion accardionMobile">
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Сколько сеансов нужно посетить<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
-                                <p>5 правил, как просить помощи у вселенной</p>
-                            </div>
                         </div>
-
-                        <div class="audioPlayerContainer item relations">
-                            <div class="audioContainer">
-                                <div class="audioContainerTop">
-                                    <img src="img/audio.png" alt="">
-                                    <p>Отношения</p>
-                                    <img src="img/audioPlayer.png" alt="">
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Как проходят консультации?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
-                                <p>5 правил, как просить помощи у вселенной</p>
-                            </div>
                         </div>
-
-                        <div class="audioPlayerContainer item relations">
-                            <div class="audioContainer">
-                                <div class="audioContainerTop">
-                                    <img src="img/audio.png" alt="">
-                                    <p>Отношения</p>
-                                    <img src="img/audioPlayer.png" alt="">
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Сколько сеансов нужно посетить?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
-                                <p>5 правил, как просить помощи у вселенной</p>
-                            </div>
                         </div>
-                       
-                        <div class="audioPlayerContainer item relations">
-                            <div class="audioContainer">
-                                <div class="audioContainerTop">
-                                    <img src="img/audio.png" alt="">
-                                    <p>Отношения</p>
-                                    <img src="img/audioPlayer.png" alt="">
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Возможна ли консультация онлайн? <i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Сколько хотите. Выбор всегда за клиентом. Например, можно разочароваться в том, что после первого приема проблема не полностью решена, чудо не произошло. Закончить на этом. Или, выделить время и финансы для планомерного, осознанного саморазвития, повышения удовлетворенности собственной жизнью.
+                                    Я рекомендую 10 встреч. За это время клиент может принять взвешенное решение относительно дальнейшей работы 
                                 </div>
-                                <p>5 правил, как просить помощи у вселенной</p>
-                            </div>
                         </div>
-
-                        <div class="audioPlayerContainer item relations">
-                            <div class="audioContainer">
-                                <div class="audioContainerTop">
-                                    <img src="img/audio.png" alt="">
-                                    <p>Отношения</p>
-                                    <img src="img/audioPlayer.png" alt="">
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Психолог будет смеяться над моей проблемой?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
-                                <p>5 правил, как просить помощи у вселенной</p>
-                            </div>
                         </div>
-
-                        <div class="audioPlayerContainer item relations">
-                            <div class="audioContainer">
-                                <div class="audioContainerTop">
-                                    <img src="img/audio.png" alt="">
-                                    <p>Отношения</p>
-                                    <img src="img/audioPlayer.png" alt="">
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Какая длительность консультаций?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
-                                <p>5 правил, как просить помощи у вселенной</p>
-                            </div>
                         </div>
-    
-                        <div class="audioPlayerContainer item relations">
-                            <div class="audioContainer">
-                                <div class="audioContainerTop">
-                                    <img src="img/audio.png" alt="">
-                                    <p>Отношения</p>
-                                    <img src="img/audioPlayer.png" alt="">
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Психолог будет смеяться над моей проблемой?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
-                                <p>5 правил, как просить помощи у вселенной</p>
-                            </div>
                         </div>
-
-                        <div class="audioPlayerContainer item relations">
-                            <div class="audioContainer">
-                                <div class="audioContainerTop">
-                                    <img src="img/audio.png" alt="">
-                                    <p>Отношения</p>
-                                    <img src="img/audioPlayer.png" alt="">
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Какая длительность консультаций?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
-                                <p>5 правил, как просить помощи у вселенной</p>
-                            </div>
                         </div>
-
-                        <div class="audioPlayerContainer item relations">
-                            <div class="audioContainer">
-                                <div class="audioContainerTop">
-                                    <img src="img/audio.png" alt="">
-                                    <p>Отношения</p>
-                                    <img src="img/audioPlayer.png" alt="">
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Психолог будет смеяться над моей проблемой?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                                 </div>
-                                <p>5 правил, как просить помощи у вселенной</p>
-                            </div>
+                        </div>
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Какая длительность консультаций?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                        </div>
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Психолог будет смеяться над моей проблемой?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
+                        </div>
+                        <div class="accordion">
+                                <h3 class="accordion-tittle">Какая длительность консультаций?<i class="fa fa-plus"></i></h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="form blogForm">
+    <div class="form">
         <div class="wrapper">
             <h2>Подпишись на нашу <br> еженедельную рассылку </h2>
             <form>
@@ -599,25 +568,25 @@
                     <a href="#">Главная</a>
                 </li>
                 <li>
-                    <a href="#">Обо мне</a>
+                    <a href="./blog.html">Блог</a>
                 </li>
                 <li>
-                    <a href="#">Статьи</a>
+                    <a href="./article.html">Статьи</a>
                 </li>
                 <li>
                     <a href="#">Тренинги и вебинары</a>
                 </li>
                 <li>
-                    <a href="#">Видео</a>
+                    <a href="video.html">Видео</a>
                 </li>
                 <li>
-                    <a href="#">Медитации</a>
+                    <a href="audio.html">Аудио</a>
                 </li>
                 <li>
                     <a href="#">Контакты</a>
                 </li>
                 <li>
-                    <a href="#">Каталог</a>
+                    <a href="category.html">Категории</a>
                 </li>
             </ul>
             <ul class="footer-contact">
@@ -670,44 +639,22 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/Flip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="js/burger.js"></script>
+    <script src="js/accardion.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/modernizr.custom.js" ></script>
 	<script src="js/jquery.dlmenu.js"></script>
-    <script src="js/filter.js"></script>
 	<script>
 			$(function() {
 				$( '#dl-menu' ).dlmenu();
 			});
 	</script>
     <script>
-            $(function() {                     
-                $(".hooksBtn").click(function() { 
-            $(".hooks").addClass("hooksActive");      
-        });
-        });
-    </script>
-    <script>
-
-var checked = 0;
-
-    $(document).ready(function() {
-        $("form").on("change", "input", function() {
-            checked = $("input[type='checkbox']:checked").length;
-            $(".select__title").html(checked > 0 ? `(${checked})` : "");
-        });
-        $(".select__title").html(checked > 0 ? `(${checked})` : "");
-        });
-        $(function() { // Dropdown toggle
-            $('.dropdown-toggle').click(function() { $(this).next('.dropdown').slideToggle();});
-        });
-        $('.dropdown-toggle').on('click', function(){
-        $('.dropdown-toggle').toggleClass('dropdownArrow');
-        });
+      $(function() {                     
+        $(".hooksBtn").click(function() { 
+    $(".hooks").addClass("hooksActive");      
+  });
+});
     </script>
 </body>
 </html>

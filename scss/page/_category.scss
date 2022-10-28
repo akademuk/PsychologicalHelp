@@ -41,13 +41,32 @@
             min-width: 100%;
             object-fit: cover;
             object-position: center;
+            border-radius: 5px;
         }
     }
+}
+.categoryBlock {
+    .topNavigation {
+        max-width: 1130px;
+        margin: 0 auto;
+    }
+}
+.audioPlayer {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+}
+.mobileCategoryImg {
+    border-radius: 5px;
 }
 .categoryBlock {
     h2 {
         max-width: 1130px;
         margin: 0 auto;
+        font-family: "ProximaNova-Semibold";
+        font-size: 85px;
+        line-height: 81px;
+        color: #0D3155;
     }
 }
 .mobileCategoryImg {
@@ -86,6 +105,11 @@
     h2 {
         text-align: left;
     }
+}
+}
+@media (max-width: 768px) {
+.categoryBlock {
+    margin-top: 80px;
 }
 }
 @media (max-width: 576px) {
