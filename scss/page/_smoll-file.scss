@@ -153,11 +153,40 @@
         }
     }
 }
+.mission {
+    max-width: 1360px;
+    margin: 150px auto 180px auto;
+    h2 {
+        font-family: "ProximaNova-Semibold";
+        font-size: 85px;
+        line-height: 81px;
+        color: #0D3155;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .missionContainer {
+        max-width: 100%;
+        background: #F4F9FE;
+        border-radius: 10px;
+        padding: 50px 231px;
+        box-sizing: border-box;
+        p {
+            font-family: "ProximaNova-Regular";
+            font-size: 16px;
+            line-height: 181%;
+            color: #0D3155;
+            margin-bottom: 20px;
+        }
+    } 
+}
 @media (max-width: 1200px) {
 .philantropyContainer {
     padding: 50px 150px !important;
 }
 .purposeContainer {
+    padding: 50px 150px !important;
+}
+.missionContainer {
     padding: 50px 150px !important;
 }
 }
@@ -169,6 +198,9 @@
     padding: 50px !important;
 }  
 .purposeContainer {
+    padding: 50px !important;
+}
+.missionContainer {
     padding: 50px !important;
 }
  .howWorkContainerLeft {
@@ -208,6 +240,15 @@
         line-height: 52px;
     }
 }
+.missionContainer {
+    h2 {
+        font-size: 54px !important;
+        line-height: 52px;
+    }
+}
+.missionContainer {
+    padding: 50px 16px !important;
+}
 .philantropyContainer {
     padding: 50px 16px !important;
 }
@@ -233,6 +274,12 @@
     }
 }
 .howWork {
+    h2 {
+        font-size: 54px !important;
+        line-height: 52px;
+    }
+}
+.mission {
     h2 {
         font-size: 54px !important;
         line-height: 52px;
