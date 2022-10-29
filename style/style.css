@@ -4312,12 +4312,15 @@ h3:active {
 
 @media (max-width: 1200px) {
   .philantropyContainer {
-    padding: 50px 150px;
+    padding: 50px 150px !important;
   }
 }
 @media (max-width: 992px) {
   .howWorkContainer {
     flex-direction: column;
+  }
+  .philantropyContainer {
+    padding: 50px !important;
   }
   .howWorkContainerLeft {
     margin: 0 auto;
@@ -4342,6 +4345,13 @@ h3:active {
 }
 @media (max-width: 576px) {
   .briefly h2 {
+    font-size: 54px !important;
+    line-height: 52px;
+  }
+  .philantropyContainer {
+    padding: 50px 16px !important;
+  }
+  .philantropy h2 {
     font-size: 54px !important;
     line-height: 52px;
   }
