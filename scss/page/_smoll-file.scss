@@ -85,6 +85,37 @@
         }
     }
 }
+.philantropy {
+    max-width: 1360px;
+    margin: 150px auto 180px auto;
+    h2 {
+        font-family: "ProximaNova-Semibold";
+        font-size: 85px;
+        line-height: 81px;
+        color: #0D3155;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .philantropyContainer {
+        max-width: 100%;
+        background: #F4F9FE;
+        border-radius: 10px;
+        padding: 50px 231px;
+        box-sizing: border-box;
+        p {
+            font-family: "ProximaNova-Regular";
+            font-size: 16px;
+            line-height: 181%;
+            color: #0D3155;
+            margin-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 1200px) {
+.philantropyContainer {
+    padding: 50px 150px;
+}
+}
 @media (max-width: 992px) {
  .howWorkContainer {
     flex-direction: column;
