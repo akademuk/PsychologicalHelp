@@ -1181,6 +1181,11 @@ h6 {
   width: 70%;
 }
 
+.coursesSectionLeftImgText h6:hover {
+  cursor: pointer;
+  color: #025CB6 !important;
+}
+
 .btnDate {
   display: flex;
   align-items: center;
