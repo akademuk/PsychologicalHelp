@@ -247,7 +247,7 @@ button:hover {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
   padding-bottom: 50px;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .sectionTittleLeft {
@@ -1094,7 +1094,7 @@ footer .wrapper .burge-navigation-icon li {
 }
 
 .sectionTittleRight {
-  width: 60%;
+  width: 50%;
 }
 .sectionTittleRight picture img {
   max-width: 100%;
@@ -2548,7 +2548,7 @@ h3:active {
   transition: all 0.3s ease-out;
 }
 .blog-page-category .filterForm .filterFormContainer label:hover {
-  background: #67B3FF;
+  background: #007CF8;
   color: #fff;
   transition: all 0.3s ease-out;
 }
@@ -2558,7 +2558,7 @@ h3:active {
   cursor: pointer;
 }
 .blogContainerSection > p:hover {
-  color: #67B3FF !important;
+  color: #025CB6 !important;
   transition: all 0.3s ease-out;
 }
 
@@ -3470,7 +3470,7 @@ h3:active {
 }
 .articleSliderContainer .slick-prev.slick-arrow::after {
   content: "";
-  background: url(../img/articleArrow.svg);
+  background: url(../img/articleArrow.svg), transparent !important;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -3482,6 +3482,7 @@ h3:active {
 }
 .articleSliderContainer .slick-prev.slick-arrow:hover {
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  background: transparent !important;
   transition: all 0.3s ease-out;
 }
 .articleSliderContainer .slick-next.slick-arrow {
@@ -3501,13 +3502,14 @@ h3:active {
   align-items: center;
   justify-content: center;
   padding: 0;
+  transition: all 0.3s ease-out;
 }
 .articleSliderContainer .slick-next.slick-arrow::after {
   content: "";
-  background: url(../img/articleArrow.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+  background: url(../img/articleArrow.svg), transparent !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position: center !important;
   transform: rotate(180deg);
   display: flex;
   z-index: 101;
@@ -3517,6 +3519,7 @@ h3:active {
 }
 .articleSliderContainer .slick-next.slick-arrow:hover {
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.1);
+  background: transparent !important;
   transition: all 0.3s ease-out;
 }
 
@@ -3822,6 +3825,8 @@ h3:active {
   left: 0;
   z-index: 1;
   border-radius: 5px;
+  opacity: 1;
+  transition: all 0.3s ease-out;
 }
 .categoryContainer .categorySection img {
   min-width: 100%;
@@ -4070,7 +4075,7 @@ h3:active {
   transition: all 0.3s ease-out;
 }
 .audioPlayerContainer .audioContainerTop p:hover {
-  background: #007CF8 !important;
+  background: #007CF8;
   color: #fff !important;
   transition: all 0.3s ease-out;
 }
@@ -4083,7 +4088,7 @@ h3:active {
   transition: all 0.3s ease-out;
 }
 .audioPlayerContainer p:hover {
-  color: #67B3FF !important;
+  color: #025CB6 !important;
   transition: all 0.3s ease-out;
 }
 
