@@ -43,6 +43,14 @@
             object-position: center;
             border-radius: 5px;
         }
+        &:hover {
+            transition: all .3s ease-out;
+            cursor: pointer;
+            &:after {
+                transition: all .3s ease-out;
+                opacity: 0.7;
+            }
+        }
     }
 }
 .categoryBlock {

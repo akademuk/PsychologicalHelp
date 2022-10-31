@@ -41,6 +41,12 @@
             text-transform: uppercase;
             color: #0D3155;
             padding: 12px 24px;
+            transition: all .3s ease-out;
+            &:hover {
+                background: #007CF8 !important;
+                color: #fff !important;
+                transition: all .3s ease-out;
+            }
         }
     }
     p {
@@ -48,6 +54,12 @@
         font-size: 20px;
         line-height: 24px;
         color: #0D3155;
+        cursor: pointer;
+        transition: all .3s ease-out;
+        &:hover {
+            color: #67B3FF !important;
+            transition: all .3s ease-out;
+        }
     }
 }
 @media(max-width:1200px) {

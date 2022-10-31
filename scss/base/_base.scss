@@ -48,7 +48,16 @@ h1 {
     margin-bottom: 45px;
 }
 .hooksActive {
-    display: none !important;
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+button {
+    transition: all .3s ease-out;
+    &:hover {
+        background: #007CF8 !important;
+        color: #fff !important;
+        transition: all .3s ease-out;
+    }
 }
 .button {
     position: relative;

@@ -85,7 +85,7 @@
     padding-top: 30px;
     border-radius: 3px;
     filter: drop-shadow(0px 13.4437px 39.4751px rgba(150, 174, 215, 0.3));
-
+    transition: all .3s ease-out;
     li {
         padding: 11px 0 7px 15px;
         width: 206px;
@@ -97,8 +97,10 @@
         margin-right: 0 !important;
         &:nth-of-type(1) {
             border-radius: 3px 3px 0 0;
+            transition: all .3s ease-out;
             &:hover {
                 cursor: pointer;
+                transition: all .3s ease-out;
                 &::before {
                     content: "";
                     position: absolute;
@@ -121,7 +123,7 @@
         }
         &:hover {
             background: #F4F9FE;
-
+            transition: all .3s ease-out;
             a {
                 &::after {
                     content: none;
@@ -173,7 +175,9 @@
             &:nth-of-type(1) {
                 border-radius: 3px 3px 0 0;
               &:hover {
+                transition: all .3s ease-out;
                 &::before {
+                    transition: all .3s ease-out;
                     content: none;
                 }
               }
@@ -188,9 +192,10 @@
 }
 .header-navigation {
         li {
+            transition: all .3s ease-out;
             position: relative;
-
             &:hover {
+                transition: all .3s ease-out;
                 .category {
                     display: block;
                     background: transparent;
@@ -201,8 +206,11 @@
 }
 .category {
     li {
+        transition: all .3s ease-out;
         &:hover {
+            transition: all .3s ease-out;
             .subcategory {
+                transition: all .3s ease-out;
                 display: block;
             }
         }
@@ -271,6 +279,8 @@
     line-height: 120%;
     color: #FFFFFF;
     border: none;
+    opacity: 1;
+    transition: all 1s ease-out;
 }
 .sectionTittleRight {
     width: 60%;
@@ -392,12 +402,23 @@
         background-repeat: no-repeat !important;
         background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video1.png);
         object-fit: contain;
+        opacity: 1;
+        transition: all .3s ease-out;
+        &:hover {
+            transition: all .3s ease-out;
+            opacity: 0.7;
+        }
 }
 .content-img2 {
         background-size: contain !important;
         background-repeat: no-repeat !important;
         background: linear-gradient(0deg, rgba(13, 49, 85, 0.65) 10.42%, rgba(255, 255, 255, 0) 100%), url(../img/img-video2.png);
         object-fit: contain;
+        transition: all .3s ease-out;
+        &:hover {
+            transition: all .3s ease-out;
+            opacity: 0.7;
+        }
 }
 .videoContainer {
     width: 100%;
@@ -439,24 +460,30 @@
     .slick-prev {
         right: 45px;
         top: 19.5px;
+        transition: none !important;
         &:hover {
-            background: url(../img/right.svg);
+            background-size: cover !important;
+            transition: none !important;
+            background: url(../img/right.svg), transparent !important;
             background-size: contain;
             background-repeat: no-repeat;
             transform: rotate(180deg);
-            width: 38px;
+            width: 40px;
             height: 18px;
             margin-top: -3px;
         }
     }
     .slick-next {
         transform: rotate(180deg);
+        transition: none !important;
         &:hover {
-            background: url(../img/right.svg);
+            background-size: cover !important;
+            transition: none !important;
+            background: url(../img/right.svg), transparent !important;
             background-size: contain;
             background-repeat: no-repeat;
             transform: rotate(0deg);
-            width: 38px;
+            width: 40px;
             height: 18px;
             margin-top: -3px;
         }
@@ -471,12 +498,14 @@
     padding: 0 15px;
 }
 .slide {
+    transition: width .1s ease-in-out !important;
     button {
+        transition: width .1s ease-in-out !important;
         font-size: 0;
         width: 23px;
         height: 11px;
         border: none;
-        background: url(../img/left.svg);
+        background: url(../img/left.svg), transparent;
         padding: 0;
         position: absolute;
         bottom:0;
@@ -484,12 +513,14 @@
     }
     .slick-prev.slick-arrow {
         left: 72%;
+        transition: width .1s ease-in-out !important;
         &:hover {
-            background: url(../img/right.svg);
+            transition: width .1s ease-in-out !important;
+            background: url(../img/right.svg), transparent !important;
             background-size: contain;
             background-repeat: no-repeat;
             transform: rotate(180deg);
-            width: 38px;
+            width: 40px;
             height: 18px;
             bottom: -5px;
         }
@@ -498,12 +529,14 @@
         transform: rotate(180deg);
         left: 80%;
         bottom: -1px;
+        transition: width .1s ease-in-out !important;
         &:hover {
-            background: url(../img/right.svg);
+            transition: width .1s ease-in-out !important;
+            background: url(../img/right.svg), transparent !important;
             background-size: contain;
             background-repeat: no-repeat;
             transform: rotate(0deg);
-            width: 38px;
+            width: 40px;
             height: 18px;
             bottom: -5px;
         }
@@ -1166,13 +1199,17 @@ footer {
         .slide  {
             .slick-next.slick-arrow {
                 left: 55%;
+                transition: all .3s ease-out;
                 &:hover {
+                    transition: all .3s ease-out;
                    bottom: -4px;
                 }
             }
             .slick-prev.slick-arrow {
                 left: 45%;
+                transition: all .3s ease-out;
                 &:hover {
+                    transition: all .3s ease-out;
                     bottom: -4px;
                  }
             }
@@ -1337,7 +1374,9 @@ footer {
             }
             .slick-prev.slick-arrow {
                 left: 45%;
+                transition: all .3s ease-out;
                 &:hover {
+                    transition: all .3s ease-out;
                     bottom: -5px;
                 }
             }
@@ -1375,12 +1414,16 @@ footer {
         }
         .slide  {
             .slick-next.slick-arrow {
+                transition: all .3s ease-out;
                 &:hover {
                     margin-top: -6px !important;
+                    transition: all .3s ease-out;
                 }
             }
             .slick-prev.slick-arrow {
+                transition: all .3s ease-out;
                 &:hover {
+                    transition: all .3s ease-out;
                    bottom: -3px;
                 }
             }
