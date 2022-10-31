@@ -100,10 +100,36 @@ h1 {
 .button {
   position: relative;
   z-index: 3;
+  transition: all 0.3s ease-out;
+}
+
+.accordion-tittle {
+  transition: all 0.3s ease-out;
+}
+.accordion-tittle:hover {
+  color: #007CF8;
+  transition: all 0.3s ease-out;
+}
+
+.form .wrapper form input {
+  transition: all 0.3s ease-out;
+}
+.form .wrapper form input:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease-out;
+}
+
+.articleForm .articleFormSubmit {
+  transition: all 0.3s ease-out;
+}
+.articleForm .articleFormSubmit:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease-out;
 }
 
 .button:after {
-  content: none;
+  content: "";
+  opacity: 0;
   background: #ADBDCD;
   filter: blur(17px);
   border-radius: 5px;
@@ -114,14 +140,22 @@ h1 {
   left: 0;
   right: 0;
   z-index: -1;
+  transition: all 0.3s ease-out;
 }
 
 .button:hover:after {
   content: "";
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.blogContainerSection .blogDate a {
+  transition: all 0.3s ease-out;
 }
 
 .blogContainerSection .blogDate a:hover {
   color: #025CB6 !important;
+  transition: all 0.3s ease-out;
 }
 
 .dl-menu.dl-animate-out-1 {
@@ -578,15 +612,36 @@ footer::after {
   align-items: center;
 }
 
+li a {
+  transition: all 0.3s ease-out;
+}
 li a:hover {
   color: #67B3FF !important;
+  transition: all 0.3s ease-out;
 }
 
+.articleIcon a {
+  transition: all 0.3s ease-out;
+}
+.articleIcon a:hover {
+  background: #007CF8;
+  transition: all 0.3s ease-out;
+}
+.articleIcon a:hover svg path {
+  fill: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.burge-navigation-icon li {
+  transition: all 0.3s ease-out;
+}
 .burge-navigation-icon li:hover {
   background: #007CF8;
+  transition: all 0.3s ease-out;
 }
 .burge-navigation-icon li:hover a svg path {
   fill: #fff;
+  transition: all 0.3s ease-out;
 }
 
 .footer-navigation {

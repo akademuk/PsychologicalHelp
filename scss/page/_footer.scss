@@ -41,19 +41,39 @@ footer {
 }
 li {
     a {
+        transition: all .3s ease-out;
         &:hover {
             color: #67B3FF !important;
+            transition: all .3s ease-out;
+        }
+    }
+}
+.articleIcon {
+    a {
+        transition: all .3s ease-out;
+        &:hover {
+            background: #007CF8;
+            transition: all .3s ease-out;
+                svg {
+                    path {
+                        fill: #fff;
+                        transition: all .3s ease-out;
+                    }
+                }
         }
     }
 }
 .burge-navigation-icon {
     li {
+        transition: all .3s ease-out;
         &:hover {
             background: #007CF8;
+            transition: all .3s ease-out;
             a {
                 svg {
                     path {
                         fill: #fff;
+                        transition: all .3s ease-out;
                     }
                 }
             }
