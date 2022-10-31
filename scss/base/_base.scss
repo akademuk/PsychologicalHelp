@@ -50,8 +50,32 @@ h1 {
 .hooksActive {
     display: none !important;
 }
-
-
+.button {
+    position: relative;
+    z-index: 3;
+}
+.button:after {
+    content: none;
+    background: #ADBDCD;
+    filter: blur(17px);
+    border-radius: 5px;
+    width: 90%;
+    height: 10px;
+    position: absolute;
+    bottom: -15px;
+    left:5%;
+    right: 5%;
+    z-index: -1;
+}
+.button:hover:after {
+    content: "";
+  
+}
+.blogContainerSection .blogDate a {
+    &:hover {
+        color: #025CB6 !important;
+    }
+}
 .dl-menu.dl-animate-out-1 {
 	animation: MenuAnimOut1 0.4s linear forwards;
 }

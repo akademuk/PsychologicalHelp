@@ -39,6 +39,27 @@ footer {
         align-items: center;
     }
 }
+li {
+    a {
+        &:hover {
+            color: #67B3FF !important;
+        }
+    }
+}
+.burge-navigation-icon {
+    li {
+        &:hover {
+            background: #007CF8;
+            a {
+                svg {
+                    path {
+                        fill: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
 .footer-navigation {
     display: flex;
     align-items: center;

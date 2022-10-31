@@ -97,6 +97,33 @@ h1 {
   display: none !important;
 }
 
+.button {
+  position: relative;
+  z-index: 3;
+}
+
+.button:after {
+  content: none;
+  background: #ADBDCD;
+  filter: blur(17px);
+  border-radius: 5px;
+  width: 90%;
+  height: 10px;
+  position: absolute;
+  bottom: -15px;
+  left: 5%;
+  right: 5%;
+  z-index: -1;
+}
+
+.button:hover:after {
+  content: "";
+}
+
+.blogContainerSection .blogDate a:hover {
+  color: #025CB6 !important;
+}
+
 .dl-menu.dl-animate-out-1 {
   -webkit-animation: MenuAnimOut1 0.4s linear forwards;
           animation: MenuAnimOut1 0.4s linear forwards;
@@ -226,86 +253,6 @@ h1 {
   }
   100% {
     right: 0;
-  }
-}
-.glow-on-hover {
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-}
-
-.glow-on-hover:before {
-  content: "";
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  -webkit-animation: glowing 20s linear infinite;
-          animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 5px;
-}
-
-.glow-on-hover:active {
-  color: #000;
-}
-
-.glow-on-hover:active:after {
-  background: transparent;
-}
-
-.glow-on-hover:hover:before {
-  opacity: 1;
-}
-
-.glow-on-hover:hover {
-  color: #002bff;
-}
-
-.glow-on-hover:hover:after {
-  background: #fff;
-}
-
-.glow-on-hover:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #007CF8;
-  left: 0;
-  top: 0;
-  border-radius: 5px;
-}
-
-@-webkit-keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
-  }
-}
-
-@keyframes glowing {
-  0% {
-    background-position: 0 0;
-  }
-  50% {
-    background-position: 400% 0;
-  }
-  100% {
-    background-position: 0 0;
   }
 }
 .header {
@@ -629,6 +576,17 @@ footer::after {
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+
+li a:hover {
+  color: #67B3FF !important;
+}
+
+.burge-navigation-icon li:hover {
+  background: #007CF8;
+}
+.burge-navigation-icon li:hover a svg path {
+  fill: #fff;
 }
 
 .footer-navigation {
@@ -4380,6 +4338,31 @@ h3:active {
   margin-bottom: 20px;
 }
 
+.vision {
+  max-width: 900px;
+  margin: 150px auto 100px auto;
+}
+.vision h2 {
+  font-family: "ProximaNova-Semibold";
+  font-size: 85px;
+  line-height: 81px;
+  color: #0D3155;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.vision .visionContainer {
+  max-width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.vision .visionContainer p {
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 181%;
+  color: #0D3155;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 1200px) {
   .philantropyContainer {
     padding: 50px 150px !important;
@@ -4433,9 +4416,20 @@ h3:active {
 .detailsContainer .detailsContainerRight {
     width: 100% !important;
   }
+  .vision {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  .vision h2 {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 576px) {
   .briefly h2 {
+    font-size: 54px !important;
+    line-height: 52px;
+  }
+  .vision h2 {
     font-size: 54px !important;
     line-height: 52px;
   }
