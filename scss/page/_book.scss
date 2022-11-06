@@ -1,0 +1,193 @@
+.bookTittle {
+    text-align: center;
+    margin-bottom: 78px;
+}
+.bookVideo {
+    position: relative;
+    margin-bottom: 24px;
+    img {
+        &:nth-of-type(1) {
+            max-width: 100%;
+        }
+        &:nth-of-type(2) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+.bookContent {
+    background: #F4F9FE;
+    border-radius: 10px;
+    padding: 80px 115px;
+    margin-bottom: 100px;
+    form {
+        display: flex;
+        flex-direction: column;
+        label {
+            display: flex;
+            flex-direction: column;
+            font-family: "ProximaNova-Regular";
+            font-size: 14px;
+            line-height: 17px;
+            text-transform: capitalize;
+            color: #50759B;
+            margin-bottom: 24px;
+            input {
+                height: 63px;
+                background: #FFFFFF;
+                border: 1px solid #E7EAED;
+                border-radius: 5px;
+                padding-left: 16px;
+                margin-top: 16px;
+                font-family: "ProximaNova-Regular";
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: capitalize;
+                color: #50759B;
+                &::placeholder {
+                    font-family: "ProximaNova-Regular";
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-transform: capitalize;
+                    color: #50759B;
+                }
+            }
+            select {
+                height: 63px;
+                background: #FFFFFF;
+                border: 1px solid #E7EAED;
+                border-radius: 5px;
+                padding-left: 16px;
+                margin-top: 16px;
+                font-family: "ProximaNova-Regular";
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: capitalize;
+                color: #50759B; 
+                option {
+                    min-height: 48px;
+                    width: 100%;
+                    max-width: 100%;
+                    height: 48px;
+                    transition: all .3s;
+                    &:hover {
+                        transition: all .3s;
+                        background: #F4F9FE !important;
+                        border-radius: 4px;
+                    }
+                }
+            }
+            textarea {
+                height: 148px;
+                background: #FFFFFF;
+                border: 1px solid #E7EAED;
+                border-radius: 5px;
+                padding-left: 16px;
+                margin-top: 16px;
+                font-family: "ProximaNova-Regular";
+                font-size: 14px;
+                line-height: 17px;
+                text-transform: capitalize;
+                color: #50759B;
+                resize: none;
+                &::placeholder {
+                    font-family: "ProximaNova-Regular";
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-transform: capitalize;
+                    color: #50759B;
+                }
+            }
+        }
+        .bookContentTop {
+            display: flex;
+            label {
+                width: 100%;
+                input {
+                    width: 100%;
+                }
+                &:nth-of-type(1) {
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+}
+select {
+    background-image: url(../img/dropArrow.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance:none !important;
+    -webkit-appearance: none !important; 
+    appearance: none !important;
+    padding-right: 2rem !important;
+  }
+  .formRadio {
+    p {
+        display: flex;
+        flex-direction: column;
+        font-family: "ProximaNova-Regular";
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: capitalize;
+        color: #50759B;
+        margin-bottom: 24px;
+    }
+    .formRadioDiv {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    label {
+        width: max-content !important;
+        flex-direction: row !important;
+        align-items: center !important;
+        padding: 21px 16px !important;
+        background: #fff !important;
+        margin-right: 16px !important;
+        input {
+            margin-top: 0 !important;
+            width: 20px !important;
+            height: 20px !important;
+            margin-right: 8px;
+        }
+    }
+  }
+  .formSubmit {
+    font-family: "ProximaNova-Bold";
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #007CF8;
+    border-radius: 5px;
+    padding: 22px 77px;
+    width: max-content;
+    border: none;
+}
+@media (max-width: 992px) {
+    .bookContent {
+        padding: 80px 50px;
+    }
+}
+@media (max-width: 576px) {
+    .bookContent {
+        padding: 16px;
+    }
+    .bookTittle {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .bookContentTop {
+        flex-direction: column;
+        label {
+            width: 100%;
+            input {
+                width: 100%;
+            }
+        }
+    }
+}

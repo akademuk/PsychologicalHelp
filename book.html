@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="style/component.css">
+    <script src="js/modernizr.custom.js"></script>
+    <title>Psychological help</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="#">
+                    <svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.4718 12.6466L2.4718 9.13207C2.4718 5.74542 5.21723 3 8.60388 3C10.3429 3 11.9128 3.7239 13.0288 4.88679" stroke="white" stroke-width="2"/>
+                        <path d="M27.0001 10.5435V10.5435C27.0001 6.37735 23.6227 3 19.4565 3L18.2737 3C13.4542 3 9.54724 6.90695 9.54724 11.7264L9.54724 20.9245" stroke="white" stroke-width="2"/>
+                        <path d="M2.47171 8.18876L2.47171 12.264C2.4717 15.8373 4.4906 19.1039 7.68667 20.702L10.5169 22.1171C13.1728 23.445 16.2989 23.445 18.9548 22.1171L21.785 20.702C24.9811 19.1039 27 15.8373 27 12.264L27 10.0756" stroke="white" stroke-width="2"/>
+                        <path d="M10.4906 15.7358H26.0566" stroke="white" stroke-width="2"/>
+                        <path d="M2 11.9624H10.0189" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <p>Psychological help</p>
+                </a>
+            </div>
+            <ul class="header-navigation">
+                <li>
+                    <a href="#" class="dropdown">Главная</a>
+                    <ul class="category dropdown_menu dropdown_menu--animated dropdown_menu-8">
+                        <li>
+                            <a href="#" class="categoryArrow dropdown">Категория 1</a>
+                            <ul class="subcategory dropdown_menu dropdown_menu--animated dropdown_menu-8 dropdownRight">
+                                <li>
+                                    <a href="#">Подкатегория</a>
+                                </li>
+                                <li>
+                                    <a href="#">Подкатегория</a>
+                                </li>
+                                <li>
+                                    <a href="#">Подкатегория</a>
+                                </li>
+                                <li>
+                                    <a href="#">Подкатегория</a>
+                                </li>
+                                <li>
+                                    <a href="#">Подкатегория</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="categoryArrow">Категория 2</a>
+                        </li>
+                        <li>
+                            <a href="#" class="categoryArrow">Категория 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./blog.html">Блог</a>
+                </li>
+                <li>
+                    <a href="./article.html">Статьи</a>
+                </li>
+                <li>
+                    <a href="#">Тренинги и вебинары</a>
+                </li>
+                <li>
+                    <a href="#">Видео</a>
+                </li>
+                <li>
+                    <a href="#">Медитации</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+                <li>
+                    <a href="#">Каталог</a>
+                </li>
+            </ul>
+            <div class="burger-menu dl-trigger">
+                <div class="bar">
+                    <svg class="bar-1" width="19" height="3" viewBox="0 0 19 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.8854 0.25H1.11458C0.568052 0.25 0.125 0.693051 0.125 1.23958V1.34375C0.125 1.89028 0.568052 2.33333 1.11458 2.33333H17.8854C18.4319 2.33333 18.875 1.89028 18.875 1.34375V1.23958C18.875 0.693051 18.4319 0.25 17.8854 0.25Z" fill="white"/>
+                    </svg>
+                    <svg class="bar-2" width="19" height="3" viewBox="0 0 19 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.8854 0.25H1.11458C0.568052 0.25 0.125 0.693051 0.125 1.23958V1.34375C0.125 1.89028 0.568052 2.33333 1.11458 2.33333H17.8854C18.4319 2.33333 18.875 1.89028 18.875 1.34375V1.23958C18.875 0.693051 18.4319 0.25 17.8854 0.25Z" fill="white"/>
+                    </svg>
+                    <svg class="bar-3" width="19" height="3" viewBox="0 0 19 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.8854 0.25H1.11458C0.568052 0.25 0.125 0.693051 0.125 1.23958V1.34375C0.125 1.89028 0.568052 2.33333 1.11458 2.33333H17.8854C18.4319 2.33333 18.875 1.89028 18.875 1.34375V1.23958C18.875 0.693051 18.4319 0.25 17.8854 0.25Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="burge-navigation">
+            <div id="dl-menu" class="dl-menuwrapper">
+                <ul class="dl-menu burge-navigation">
+                    <li>
+                        <a href="#">Главная</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back"><a href="#" class="link-category">Главная</a></li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 1</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back"><a href="#" class="link-category">Категория 1</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 2</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 2</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 3</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 3</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./blog.html">Блог</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back"><a href="#" class="link-category">Блог</a></li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 1</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back"><a href="#" class="link-category">Категория 1</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 2</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 2</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 3</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 3</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./article.html">Статьи</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back"><a href="#" class="link-category">Статьи</a></li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 1</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back"><a href="#" class="link-category">Категория 1</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 2</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 2</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 3</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 3</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Тренинги и вебинары</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back"><a href="#" class="link-category">Тренинги и вебинары</a></li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 1</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back"><a href="#" class="link-category">Категория 1</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 2</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 2</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 3</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 3</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Видео</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back"><a href="#" class="link-category">Видео</a></li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 1</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back"><a href="#" class="link-category">Категория 1</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 2</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 2</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 3</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 3</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Медитации</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back"><a href="#" class="link-category">Медитации</a></li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 1</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back"><a href="#" class="link-category">Категория 1</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 2</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 2</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 3</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 3</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                        <ul class="dl-submenu">
+                            <li class="dl-back"><a href="#" class="link-category">Контакты</a></li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 1</a>
+                                <ul class="dl-submenu">
+                                    <li class="dl-back"><a href="#" class="link-category">Категория 1</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 2</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 2</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="categoryArrow">Категория 3</a>
+                                <ul class="dl-submenu">
+                                     <li class="dl-back"><a href="#" class="link-category">Категория 3</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                    <li><a href="#">Подкатегория</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    <ul class="burge-navigation-contact">
+        <li>
+            <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.41663 1.7575L8.16663 5.3836C8.39343 5.5051 8.68683 5.5627 8.98203 5.5627C9.27723 5.5627 9.57063 5.5051 9.79743 5.3836L16.5474 1.7575C16.9875 1.5208 17.4033 0.600098 16.596 0.600098H1.36893C0.561626 0.600098 0.977426 1.5208 1.41663 1.7575ZM16.7517 3.7402L9.79743 7.3645C9.49143 7.5247 9.27723 7.5436 8.98203 7.5436C8.68683 7.5436 8.47263 7.5247 8.16663 7.3645C7.86063 7.2043 1.74693 3.9994 1.24743 3.7393C0.896426 3.5557 0.900026 3.7708 0.900026 3.9364V10.5001C0.900026 10.8781 1.40943 11.4001 1.80003 11.4001H16.2C16.5906 11.4001 17.1 10.8781 17.1 10.5001V3.9373C17.1 3.7717 17.1036 3.5566 16.7517 3.7402Z" fill="#fff"/>
+            </svg>
+            <a href="mail:ukrainetransfers@gmail.com">ukrainetransfers@gmail.com</a>
+        </li>
+        <li>
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.61 10.3201C8.65374 11.3789 9.91664 12.1964 11.31 12.7151L13.195 11.2151C13.2509 11.1766 13.3171 11.156 13.385 11.156C13.4529 11.156 13.5191 11.1766 13.575 11.2151L17.075 13.4701C17.2079 13.55 17.3204 13.6597 17.4036 13.7905C17.4867 13.9213 17.5384 14.0697 17.5544 14.2239C17.5704 14.3781 17.5503 14.534 17.4958 14.6791C17.4412 14.8242 17.3536 14.9546 17.24 15.0601L15.6 16.6801C15.3651 16.9122 15.0765 17.0825 14.7598 17.1758C14.4431 17.2692 14.1082 17.2827 13.785 17.2151C10.5611 16.5493 7.58957 14.9899 5.21 12.7151C2.88324 10.4177 1.27313 7.49454 0.574997 4.30011C0.50603 3.98193 0.520425 3.65133 0.616785 3.34035C0.713146 3.02937 0.888205 2.74855 1.125 2.52511L2.825 0.885114C2.9302 0.777008 3.05849 0.694101 3.20027 0.642603C3.34205 0.591104 3.49365 0.572348 3.6437 0.587738C3.79376 0.603129 3.93839 0.652267 4.06677 0.731474C4.19514 0.810681 4.30393 0.917904 4.385 1.04511L6.715 4.50011C6.75519 4.55437 6.77688 4.6201 6.77688 4.68761C6.77688 4.75513 6.75519 4.82086 6.715 4.87511L5.18 6.72011C5.71279 8.08558 6.54286 9.31533 7.61 10.3201Z" fill="#fff"/>
+            </svg>    
+            <a href="tel:380673888888">+380 (673) 88 88 88</a>
+        </li>
+    </ul>
+    <ul class="burge-navigation-icon">
+        <li>
+            <a href="#">
+                <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.6691 2.00049C16.0778 2.25553 15.4344 2.43908 14.7717 2.51057C15.4598 2.1018 15.975 1.45601 16.2208 0.694363C15.5752 1.07845 14.8678 1.34778 14.1302 1.4904C13.822 1.16083 13.4491 0.89828 13.0349 0.719109C12.6207 0.539938 12.1741 0.447986 11.7228 0.448983C9.89695 0.448983 8.42853 1.929 8.42853 3.7452C8.42853 4.00024 8.45944 4.25528 8.50968 4.50066C5.77571 4.35769 3.33736 3.05157 1.7163 1.05181C1.42092 1.55632 1.26614 2.13076 1.26804 2.71537C1.26804 3.8592 1.84961 4.86777 2.73646 5.46093C2.21383 5.44035 1.70344 5.2967 1.24679 5.04166V5.08224C1.24679 6.68397 2.37902 8.01135 3.88802 8.31663C3.60468 8.39022 3.31322 8.42787 3.02049 8.42869C2.80602 8.42869 2.60315 8.40744 2.39834 8.37846C2.81568 9.68458 4.03099 10.6333 5.47816 10.6642C4.34593 11.551 2.92775 12.0727 1.38784 12.0727C1.11154 12.0727 0.856499 12.063 0.591797 12.0321C2.05249 12.9692 3.78561 13.5102 5.65205 13.5102C11.7112 13.5102 15.0268 8.49052 15.0268 4.13356C15.0268 3.99058 15.0268 3.8476 15.0171 3.70463C15.6586 3.23512 16.2208 2.65355 16.6691 2.00049Z" fill="#0D3155"/>
+                </svg>                        
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.48438 0.448975C7.98352 0.448975 13.273 5.72294 13.3005 12.2155V12.2159H13.3015V12.9029H13.2938C13.2766 13.0552 13.2084 13.1973 13.1004 13.306C12.9923 13.4148 12.8507 13.4838 12.6984 13.502V13.5101H11.477V13.5087C11.3118 13.5053 11.1535 13.4419 11.0315 13.3304C10.9095 13.219 10.8321 13.0669 10.8139 12.9027H10.8061V12.2157H10.8131C10.7855 7.09428 6.61198 2.93623 1.48418 2.93623C1.47931 2.93623 1.47444 2.93587 1.46957 2.93552C1.46552 2.93523 1.46146 2.93493 1.45741 2.93484V2.94436H0.770446V2.93663C0.618094 2.91946 0.476013 2.85131 0.367261 2.74324C0.258509 2.63518 0.189467 2.49353 0.171339 2.34129H0.163208V1.11987H0.164596C0.168053 0.954647 0.23142 0.796307 0.342905 0.674316C0.45439 0.552325 0.606399 0.474992 0.770644 0.456709V0.448975H1.4576V0.450363C1.46164 0.450273 1.46563 0.449981 1.46964 0.449687C1.4745 0.449332 1.47938 0.448975 1.48438 0.448975ZM1.48443 5.15503C1.47944 5.15503 1.47456 5.15539 1.4697 5.15575C1.46569 5.15604 1.4617 5.15633 1.45766 5.15642V5.15503H0.770701V5.16277C0.606456 5.18105 0.454447 5.25838 0.342962 5.38038C0.231478 5.50237 0.168111 5.66071 0.164653 5.82593H0.163265V7.04735H0.171396C0.189558 7.19957 0.258611 7.3412 0.367357 7.44927C0.476103 7.55733 0.618164 7.62548 0.770503 7.64269V7.65042H1.45746V7.6409C1.46152 7.64099 1.46558 7.64129 1.46963 7.64158C1.4745 7.64193 1.47937 7.64229 1.48423 7.64229C4.0171 7.64229 6.07977 9.68909 6.10713 12.2156H6.10059V12.9026H6.10832C6.12661 13.0668 6.20394 13.2188 6.32593 13.3303C6.44792 13.4418 6.60626 13.5052 6.77148 13.5086V13.51H7.9927V13.5019C8.14493 13.4837 8.28656 13.4147 8.39462 13.3059C8.50268 13.1972 8.57084 13.0551 8.58804 12.9028H8.59578V12.2158H8.59459C8.56742 8.31755 5.38864 5.15503 1.48443 5.15503ZM2.02412 9.94394C1.7954 9.94394 1.56891 9.989 1.35761 10.0766C1.14631 10.1641 0.954324 10.2924 0.792628 10.4542C0.630933 10.616 0.502694 10.808 0.415237 11.0194C0.32778 11.2307 0.28282 11.4572 0.282924 11.6859C0.282924 11.9146 0.327972 12.1411 0.415495 12.3524C0.503018 12.5637 0.631303 12.7557 0.793025 12.9174C0.954747 13.0791 1.14674 13.2074 1.35804 13.295C1.56934 13.3825 1.79581 13.4275 2.02452 13.4275C2.25323 13.4275 2.4797 13.3825 2.691 13.295C2.9023 13.2074 3.09429 13.0791 3.25601 12.9174C3.41773 12.7557 3.54602 12.5637 3.63354 12.3524C3.72106 12.1411 3.76611 11.9146 3.76611 11.6859C3.76622 11.4571 3.72123 11.2306 3.63372 11.0192C3.54622 10.8078 3.41791 10.6157 3.25613 10.4539C3.09435 10.2921 2.90227 10.1638 2.69088 10.0763C2.47948 9.98882 2.25291 9.94383 2.02412 9.94394Z" fill="#0D3155"/>
+                </svg>    
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.95855 0.448975C3.35234 0.448975 0.428589 3.37273 0.428589 6.97893C0.428589 10.2377 2.81618 12.9388 5.93847 13.4305V8.86693H4.27969V6.97893H5.93847V5.54024C5.93847 3.90236 6.91349 2.99918 8.40443 2.99918C9.11887 2.99918 9.86728 3.12653 9.86728 3.12653V4.7324H9.04181C8.23202 4.7324 7.97863 5.23657 7.97863 5.75314V6.97763H9.78826L9.49896 8.86563H7.97863V13.4292C11.1009 12.9401 13.4885 10.2384 13.4885 6.97893C13.4885 3.37273 10.5648 0.448975 6.95855 0.448975Z" fill="#0D3155"/>
+                </svg>    
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.22283 4.80179C6.02365 4.80179 5.04503 5.78041 5.04503 6.97959C5.04503 8.17876 6.02365 9.15738 7.22283 9.15738C8.422 9.15738 9.40062 8.17876 9.40062 6.97959C9.40062 5.78041 8.422 4.80179 7.22283 4.80179ZM13.7546 6.97959C13.7546 6.07775 13.7628 5.18409 13.7121 4.28389C13.6615 3.23828 13.4229 2.31031 12.6583 1.54571C11.8921 0.779479 10.9658 0.542585 9.92016 0.491938C9.01832 0.441292 8.12466 0.449461 7.22446 0.449461C6.32263 0.449461 5.42896 0.441292 4.52876 0.491938C3.48316 0.542585 2.55518 0.781113 1.79058 1.54571C1.02435 2.31194 0.787458 3.23828 0.736811 4.28389C0.686165 5.18572 0.694334 6.07939 0.694334 6.97959C0.694334 7.87979 0.686165 8.77509 0.736811 9.67529C0.787458 10.7209 1.02599 11.6489 1.79058 12.4135C2.55682 13.1797 3.48316 13.4166 4.52876 13.4672C5.43059 13.5179 6.32426 13.5097 7.22446 13.5097C8.12629 13.5097 9.01996 13.5179 9.92016 13.4672C10.9658 13.4166 11.8937 13.1781 12.6583 12.4135C13.4246 11.6472 13.6615 10.7209 13.7121 9.67529C13.7644 8.77509 13.7546 7.88142 13.7546 6.97959ZM7.22283 10.3304C5.36851 10.3304 3.87199 8.8339 3.87199 6.97959C3.87199 5.12527 5.36851 3.62875 7.22283 3.62875C9.07714 3.62875 10.5737 5.12527 10.5737 6.97959C10.5737 8.8339 9.07714 10.3304 7.22283 10.3304ZM10.7109 4.27409C10.278 4.27409 9.92833 3.92446 9.92833 3.49152C9.92833 3.05857 10.278 2.70895 10.7109 2.70895C11.1438 2.70895 11.4935 3.05857 11.4935 3.49152C11.4936 3.59432 11.4734 3.69614 11.4342 3.79114C11.3949 3.88615 11.3372 3.97247 11.2645 4.04516C11.1919 4.11786 11.1055 4.1755 11.0105 4.21478C10.9155 4.25406 10.8137 4.27421 10.7109 4.27409Z" fill="#0D3155"/>
+                </svg>                        
+            </a>
+        </li>
+    </ul>
+    </div>
+    <div class="main">
+        <div class="wrapper">
+            <div class="topNavigation">
+                <a href="index.html">Главная</a>
+                <a href="#" class="blogText">Вопросы и ответы</a>
+            </div>
+            <h1 class="bookTittle">BOOK PSYCHOLOGICAL CONSULTATION</h1>
+            <div class="bookVideo">
+                <img src="img/courseDescriptionVideo.png" alt="">
+                <img src="img/play.png" alt="" class="bookPosition">
+            </div>
+            <div class="bookContent">
+                <form action="">
+                    <div class="bookContentTop">
+                        <label for="firstName">First Name: *
+                            <input type="text" placeholder="Enter your First Name" id="firstName">
+                        </label>
+                        <label for="lastName">Last Name: *
+                            <input type="text" placeholder="Enter your Last Name" id="lastName">
+                        </label>
+                    </div>
+                    <label for="email">Email: *
+                        <input type="email" placeholder="Enter your Email" id="email">
+                    </label>
+
+                    <label for="phone">Phone
+                        <input type="tel" placeholder="Enter your Phone" id="phone">
+                    </label>
+
+                    <label for="age">Age: *
+                        <input type="text" placeholder="Enter your Age" id="age">
+                    </label>
+
+                    <label for="from">Where are you from?: *
+                        <input type="text" placeholder="Enter Where are you from" id="from">
+                    </label>
+
+                    <label for="status">Marital Status: *
+                        <select id="status">
+                            <option value="1">Sekect Your Marital Status</option>
+                            <option value="Single">Single</option>
+                            <option value="Relationship">In a Relationship</option>
+                            <option value="Married">Married</option>
+                            <option value="Separated">Separated</option>
+                            <option value="Divorced">Divorced</option>
+                            <option value="Widowed">Widowed</option>
+                            <option value="Prefer">Prefer Not to Say</option>
+                    </select>
+                    </label>
+                    
+                    <label for="problem">Describe the problem you want to discuss: *
+                        <textarea id="problem" cols="30" rows="10" placeholder="Введите ваш Комментарий">
+                        </textarea>
+                    </label>
+
+                    <label for="answered">Question(s) you want to be answered: * 
+                        <input type="text" placeholder="Введите ваш Комментарий" id="answered">
+                    </label>
+
+                    <label for="concern">How long has this been a concern?: *
+                        <input type="text" placeholder="Enter Where are you from" id="concern">
+                    </label>
+
+                    <label for="concern2">How long has this been a concern?: *
+                        <input type="text" placeholder="Enter Where are you from" id="concern2">
+                    </label>
+
+                    <div class="formRadio">
+                        <p>Have you been in psychological therapy before?: *</p>
+                     <div class="formRadioDiv">
+                        <label for="beforeYes">
+                            <input type="radio" id="beforeYes" />
+                            Yes
+                        </label>
+                        <label for="beforeNo">
+                            <input type="radio" id="beforeNo" />
+                            No
+                        </label>
+                        <label for="beforeNot">
+                            <input type="radio" id="beforeNot" />
+                            Not Sure
+                        </label>
+                     </div>
+                    </div>
+
+                    <label for="consultation">What led you to consider psychological consultation?: *
+                        <textarea id="consultation" cols="30" rows="10" placeholder="Enter Where are you from">
+                        </textarea>
+                    </label>
+
+                    <div class="formRadio">
+                        <p>Which software do you prefer for communication?: *</p>
+                        <div class="formRadioDiv">
+                        <label for="skype">
+                            <input type="checkbox" id="skype">
+                            Skype
+                        </label>
+                        <label for="viber">
+                            <input type="checkbox" id="viber">
+                            Viber
+                        </label>
+                        <label for="whatsApp">
+                            <input type="checkbox" id="whatsApp">
+                            WhatsApp
+                        </label>
+                        <label for="telegram">
+                            <input type="checkbox" id="telegram">
+                            Telegram
+                        </label>
+                        <label for="zoom">
+                            <input type="checkbox" id="zoom">
+                            Zoom
+                        </label>
+                        <label for="meet">
+                            <input type="checkbox" id="meet">
+                            Google Meet
+                        </label>
+                        <label for="other">
+                            <input type="checkbox" id="other">
+                            Other
+                        </label>
+                    </div>
+                    </div>
+
+                    <label for="consultation">Anything else you would like to tell me?:
+                        <textarea id="consultation" cols="30" rows="10" placeholder="Enter your Comment">
+                        </textarea>
+                    </label>
+
+                    <input type="submit" value="submit" class="formSubmit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <div class="wrapper">
+            <h2>Подпишись на нашу <br> еженедельную рассылку </h2>
+            <form>
+                <label for="name">Имя *
+                <input type="text" id="name" placeholder="Введите ваше Имя">
+                </label>
+                <label for="email">Email *
+                <input type="email" id="email" placeholder="Введите ваш Email адрес">
+                </label>
+                <input type="submit" value="Подписаться">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <div class="logo-footer">
+                <a href="#">
+                    <svg width="29" height="26" viewBox="0 0 29 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.4718 12.6466L2.4718 9.13207C2.4718 5.74542 5.21723 3 8.60388 3C10.3429 3 11.9128 3.7239 13.0288 4.88679" stroke="white" stroke-width="2"/>
+                        <path d="M27.0001 10.5435V10.5435C27.0001 6.37735 23.6227 3 19.4565 3L18.2737 3C13.4542 3 9.54724 6.90695 9.54724 11.7264L9.54724 20.9245" stroke="white" stroke-width="2"/>
+                        <path d="M2.47171 8.18876L2.47171 12.264C2.4717 15.8373 4.4906 19.1039 7.68667 20.702L10.5169 22.1171C13.1728 23.445 16.2989 23.445 18.9548 22.1171L21.785 20.702C24.9811 19.1039 27 15.8373 27 12.264L27 10.0756" stroke="white" stroke-width="2"/>
+                        <path d="M10.4906 15.7358H26.0566" stroke="white" stroke-width="2"/>
+                        <path d="M2 11.9624H10.0189" stroke="white" stroke-width="2"/>
+                    </svg>
+                    <p>Psychological help</p>
+                </a>
+            </div>
+            <ul class="footer-navigation">
+                <li>
+                    <a href="#">Главная</a>
+                </li>
+                <li>
+                    <a href="./blog.html">Блог</a>
+                </li>
+                <li>
+                    <a href="./article.html">Статьи</a>
+                </li>
+                <li>
+                    <a href="#">Тренинги и вебинары</a>
+                </li>
+                <li>
+                    <a href="video.html">Видео</a>
+                </li>
+                <li>
+                    <a href="audio.html">Аудио</a>
+                </li>
+                <li>
+                    <a href="#">Контакты</a>
+                </li>
+                <li>
+                    <a href="category.html">Категории</a>
+                </li>
+            </ul>
+            <ul class="footer-contact">
+                <li>
+                    <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.41663 1.7575L8.16663 5.3836C8.39343 5.5051 8.68683 5.5627 8.98203 5.5627C9.27723 5.5627 9.57063 5.5051 9.79743 5.3836L16.5474 1.7575C16.9875 1.5208 17.4033 0.600098 16.596 0.600098H1.36893C0.561626 0.600098 0.977426 1.5208 1.41663 1.7575ZM16.7517 3.7402L9.79743 7.3645C9.49143 7.5247 9.27723 7.5436 8.98203 7.5436C8.68683 7.5436 8.47263 7.5247 8.16663 7.3645C7.86063 7.2043 1.74693 3.9994 1.24743 3.7393C0.896426 3.5557 0.900026 3.7708 0.900026 3.9364V10.5001C0.900026 10.8781 1.40943 11.4001 1.80003 11.4001H16.2C16.5906 11.4001 17.1 10.8781 17.1 10.5001V3.9373C17.1 3.7717 17.1036 3.5566 16.7517 3.7402Z" fill="#fff"/>
+                    </svg>
+                    <a href="mail:ukrainetransfers@gmail.com">ukrainetransfers@gmail.com</a>
+                </li>
+                <li>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.61 10.3201C8.65374 11.3789 9.91664 12.1964 11.31 12.7151L13.195 11.2151C13.2509 11.1766 13.3171 11.156 13.385 11.156C13.4529 11.156 13.5191 11.1766 13.575 11.2151L17.075 13.4701C17.2079 13.55 17.3204 13.6597 17.4036 13.7905C17.4867 13.9213 17.5384 14.0697 17.5544 14.2239C17.5704 14.3781 17.5503 14.534 17.4958 14.6791C17.4412 14.8242 17.3536 14.9546 17.24 15.0601L15.6 16.6801C15.3651 16.9122 15.0765 17.0825 14.7598 17.1758C14.4431 17.2692 14.1082 17.2827 13.785 17.2151C10.5611 16.5493 7.58957 14.9899 5.21 12.7151C2.88324 10.4177 1.27313 7.49454 0.574997 4.30011C0.50603 3.98193 0.520425 3.65133 0.616785 3.34035C0.713146 3.02937 0.888205 2.74855 1.125 2.52511L2.825 0.885114C2.9302 0.777008 3.05849 0.694101 3.20027 0.642603C3.34205 0.591104 3.49365 0.572348 3.6437 0.587738C3.79376 0.603129 3.93839 0.652267 4.06677 0.731474C4.19514 0.810681 4.30393 0.917904 4.385 1.04511L6.715 4.50011C6.75519 4.55437 6.77688 4.6201 6.77688 4.68761C6.77688 4.75513 6.75519 4.82086 6.715 4.87511L5.18 6.72011C5.71279 8.08558 6.54286 9.31533 7.61 10.3201Z" fill="#fff"/>
+                    </svg>    
+                    <a href="tel:380673888888">+380 (673) 88 88 88</a>
+                </li>
+            </ul>
+            <ul class="burge-navigation-icon">
+                <li>
+                    <a href="#">
+                        <svg width="24" height="20" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.6691 2.00049C16.0778 2.25553 15.4344 2.43908 14.7717 2.51057C15.4598 2.1018 15.975 1.45601 16.2208 0.694363C15.5752 1.07845 14.8678 1.34778 14.1302 1.4904C13.822 1.16083 13.4491 0.89828 13.0349 0.719109C12.6207 0.539938 12.1741 0.447986 11.7228 0.448983C9.89695 0.448983 8.42853 1.929 8.42853 3.7452C8.42853 4.00024 8.45944 4.25528 8.50968 4.50066C5.77571 4.35769 3.33736 3.05157 1.7163 1.05181C1.42092 1.55632 1.26614 2.13076 1.26804 2.71537C1.26804 3.8592 1.84961 4.86777 2.73646 5.46093C2.21383 5.44035 1.70344 5.2967 1.24679 5.04166V5.08224C1.24679 6.68397 2.37902 8.01135 3.88802 8.31663C3.60468 8.39022 3.31322 8.42787 3.02049 8.42869C2.80602 8.42869 2.60315 8.40744 2.39834 8.37846C2.81568 9.68458 4.03099 10.6333 5.47816 10.6642C4.34593 11.551 2.92775 12.0727 1.38784 12.0727C1.11154 12.0727 0.856499 12.063 0.591797 12.0321C2.05249 12.9692 3.78561 13.5102 5.65205 13.5102C11.7112 13.5102 15.0268 8.49052 15.0268 4.13356C15.0268 3.99058 15.0268 3.8476 15.0171 3.70463C15.6586 3.23512 16.2208 2.65355 16.6691 2.00049Z" fill="#0D3155"/>
+                        </svg>                        
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.48438 0.448975C7.98352 0.448975 13.273 5.72294 13.3005 12.2155V12.2159H13.3015V12.9029H13.2938C13.2766 13.0552 13.2084 13.1973 13.1004 13.306C12.9923 13.4148 12.8507 13.4838 12.6984 13.502V13.5101H11.477V13.5087C11.3118 13.5053 11.1535 13.4419 11.0315 13.3304C10.9095 13.219 10.8321 13.0669 10.8139 12.9027H10.8061V12.2157H10.8131C10.7855 7.09428 6.61198 2.93623 1.48418 2.93623C1.47931 2.93623 1.47444 2.93587 1.46957 2.93552C1.46552 2.93523 1.46146 2.93493 1.45741 2.93484V2.94436H0.770446V2.93663C0.618094 2.91946 0.476013 2.85131 0.367261 2.74324C0.258509 2.63518 0.189467 2.49353 0.171339 2.34129H0.163208V1.11987H0.164596C0.168053 0.954647 0.23142 0.796307 0.342905 0.674316C0.45439 0.552325 0.606399 0.474992 0.770644 0.456709V0.448975H1.4576V0.450363C1.46164 0.450273 1.46563 0.449981 1.46964 0.449687C1.4745 0.449332 1.47938 0.448975 1.48438 0.448975ZM1.48443 5.15503C1.47944 5.15503 1.47456 5.15539 1.4697 5.15575C1.46569 5.15604 1.4617 5.15633 1.45766 5.15642V5.15503H0.770701V5.16277C0.606456 5.18105 0.454447 5.25838 0.342962 5.38038C0.231478 5.50237 0.168111 5.66071 0.164653 5.82593H0.163265V7.04735H0.171396C0.189558 7.19957 0.258611 7.3412 0.367357 7.44927C0.476103 7.55733 0.618164 7.62548 0.770503 7.64269V7.65042H1.45746V7.6409C1.46152 7.64099 1.46558 7.64129 1.46963 7.64158C1.4745 7.64193 1.47937 7.64229 1.48423 7.64229C4.0171 7.64229 6.07977 9.68909 6.10713 12.2156H6.10059V12.9026H6.10832C6.12661 13.0668 6.20394 13.2188 6.32593 13.3303C6.44792 13.4418 6.60626 13.5052 6.77148 13.5086V13.51H7.9927V13.5019C8.14493 13.4837 8.28656 13.4147 8.39462 13.3059C8.50268 13.1972 8.57084 13.0551 8.58804 12.9028H8.59578V12.2158H8.59459C8.56742 8.31755 5.38864 5.15503 1.48443 5.15503ZM2.02412 9.94394C1.7954 9.94394 1.56891 9.989 1.35761 10.0766C1.14631 10.1641 0.954324 10.2924 0.792628 10.4542C0.630933 10.616 0.502694 10.808 0.415237 11.0194C0.32778 11.2307 0.28282 11.4572 0.282924 11.6859C0.282924 11.9146 0.327972 12.1411 0.415495 12.3524C0.503018 12.5637 0.631303 12.7557 0.793025 12.9174C0.954747 13.0791 1.14674 13.2074 1.35804 13.295C1.56934 13.3825 1.79581 13.4275 2.02452 13.4275C2.25323 13.4275 2.4797 13.3825 2.691 13.295C2.9023 13.2074 3.09429 13.0791 3.25601 12.9174C3.41773 12.7557 3.54602 12.5637 3.63354 12.3524C3.72106 12.1411 3.76611 11.9146 3.76611 11.6859C3.76622 11.4571 3.72123 11.2306 3.63372 11.0192C3.54622 10.8078 3.41791 10.6157 3.25613 10.4539C3.09435 10.2921 2.90227 10.1638 2.69088 10.0763C2.47948 9.98882 2.25291 9.94383 2.02412 9.94394Z" fill="#0D3155"/>
+                        </svg>    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.95855 0.448975C3.35234 0.448975 0.428589 3.37273 0.428589 6.97893C0.428589 10.2377 2.81618 12.9388 5.93847 13.4305V8.86693H4.27969V6.97893H5.93847V5.54024C5.93847 3.90236 6.91349 2.99918 8.40443 2.99918C9.11887 2.99918 9.86728 3.12653 9.86728 3.12653V4.7324H9.04181C8.23202 4.7324 7.97863 5.23657 7.97863 5.75314V6.97763H9.78826L9.49896 8.86563H7.97863V13.4292C11.1009 12.9401 13.4885 10.2384 13.4885 6.97893C13.4885 3.37273 10.5648 0.448975 6.95855 0.448975Z" fill="#0D3155"/>
+                        </svg>    
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <svg width="20" height="20" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.22283 4.80179C6.02365 4.80179 5.04503 5.78041 5.04503 6.97959C5.04503 8.17876 6.02365 9.15738 7.22283 9.15738C8.422 9.15738 9.40062 8.17876 9.40062 6.97959C9.40062 5.78041 8.422 4.80179 7.22283 4.80179ZM13.7546 6.97959C13.7546 6.07775 13.7628 5.18409 13.7121 4.28389C13.6615 3.23828 13.4229 2.31031 12.6583 1.54571C11.8921 0.779479 10.9658 0.542585 9.92016 0.491938C9.01832 0.441292 8.12466 0.449461 7.22446 0.449461C6.32263 0.449461 5.42896 0.441292 4.52876 0.491938C3.48316 0.542585 2.55518 0.781113 1.79058 1.54571C1.02435 2.31194 0.787458 3.23828 0.736811 4.28389C0.686165 5.18572 0.694334 6.07939 0.694334 6.97959C0.694334 7.87979 0.686165 8.77509 0.736811 9.67529C0.787458 10.7209 1.02599 11.6489 1.79058 12.4135C2.55682 13.1797 3.48316 13.4166 4.52876 13.4672C5.43059 13.5179 6.32426 13.5097 7.22446 13.5097C8.12629 13.5097 9.01996 13.5179 9.92016 13.4672C10.9658 13.4166 11.8937 13.1781 12.6583 12.4135C13.4246 11.6472 13.6615 10.7209 13.7121 9.67529C13.7644 8.77509 13.7546 7.88142 13.7546 6.97959ZM7.22283 10.3304C5.36851 10.3304 3.87199 8.8339 3.87199 6.97959C3.87199 5.12527 5.36851 3.62875 7.22283 3.62875C9.07714 3.62875 10.5737 5.12527 10.5737 6.97959C10.5737 8.8339 9.07714 10.3304 7.22283 10.3304ZM10.7109 4.27409C10.278 4.27409 9.92833 3.92446 9.92833 3.49152C9.92833 3.05857 10.278 2.70895 10.7109 2.70895C11.1438 2.70895 11.4935 3.05857 11.4935 3.49152C11.4936 3.59432 11.4734 3.69614 11.4342 3.79114C11.3949 3.88615 11.3372 3.97247 11.2645 4.04516C11.1919 4.11786 11.1055 4.1755 11.0105 4.21478C10.9155 4.25406 10.8137 4.27421 10.7109 4.27409Z" fill="#0D3155"/>
+                        </svg>                        
+                    </a>
+                </li>
+            </ul>
+            <div class="footer-container">
+                <p>Авторское право 2022 - <a href="#">Положение и Условие</a> <a href="#">Политика Конфиденциальности</a></p>
+                <p>Разработано: <a href="#">geometric.agency</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/accardion.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="js/jquery.dlmenu.js"></script>
+	<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu();
+			});
+	</script>
+    <script>
+      $(function() {                     
+        $(".hooksBtn").click(function() { 
+    $(".hooks").addClass("hooksActive");      
+  });
+});
+    </script>
+</body>
+</html>
