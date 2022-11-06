@@ -1,0 +1,130 @@
+.consultationsTittle {
+    max-width: 900px;
+    margin: 0 auto 130px auto;
+    h2 {
+        font-family: "ProximaNova-Semibold";
+        font-size: 40px;
+        line-height: 49px;
+        color: #0D3155;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: "ProximaNova-Regular";
+        font-size: 16px;
+        line-height: 181%;
+        color: #0D3155;
+        margin-bottom: 20px;
+    }
+}
+.servicesPage {
+    margin: 150px auto 0 auto;
+    h1 {
+        font-family: "ProximaNova-Semibold";
+        font-weight: 600;
+        font-size: 85px;
+        line-height: 81px;
+        text-align: center;
+        color: #0D3155;
+        margin-bottom: 130px; 
+    }
+}
+.secrvicesBackground {
+    max-width: 90%;
+    margin: 130px auto 0 auto;
+    padding: 50px 0;
+    background: #F4F9FE;
+    border-radius: 10px;
+    h2 {
+        max-width: 900px;
+        font-family: "ProximaNova-Semibold";
+        font-size: 40px;
+        line-height: 49px;
+        color: #0D3155;
+        text-align: left;
+        margin: 0 auto 40px auto;
+    }
+    p {
+        font-family: "ProximaNova-Regular";
+        max-width: 900px; 
+        font-size: 16px;
+        line-height: 181%;
+        color: #0D3155;
+        margin: 0 auto 20px auto;
+    }
+}
+.servicesAccardion {
+    max-width: 900px !important;
+}
+.secrvicesWhite {
+    max-width: 900px;
+    margin: 130px auto 130px auto;
+    h2 {
+        font-family: "ProximaNova-Semibold";
+        font-size: 40px;
+        line-height: 49px;
+        color: #0D3155;
+        margin-bottom: 30px;
+    }
+    p {
+        font-family: "ProximaNova-Regular";
+        font-size: 16px;
+        line-height: 181%;
+        color: #0D3155;
+        margin-bottom: 20px;
+    }
+}
+.priceTable {
+    margin-bottom: 40px;
+    h2 {
+        text-align: center;
+    }
+}
+.priceTableSetion {
+    max-width: 715px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 67px;
+    padding: 0 30px;
+    border-bottom: 1px solid #D0DBE7;
+    p {
+        margin: 0;
+    }
+    &:nth-last-child(1) {
+        border-bottom: 0;
+    }
+}
+@media (max-width: 1200px) {
+    .secrvicesBackground p {
+        max-width: 90%;
+    }
+    .secrvicesBackground h2 {
+        max-width: 90%;
+    }
+}
+@media (max-width: 992px) {
+.secrvicesBackground {
+    max-width: 100%;
+}
+}
+@media (max-width: 768px) {
+.servicesPage h1 {
+   position: static;
+}
+}
+@media (max-width: 576px) {
+.servicesPage h1 {
+   font-size: 45px;
+   line-height: 50px;
+   margin-bottom: 20px;
+   margin-top: 20px;
+}
+.servicesPage {
+    margin-top: 100px;
+}
+.servicesPage h2 {
+    font-size: 30px;
+    line-height: 35px;
+}
+}

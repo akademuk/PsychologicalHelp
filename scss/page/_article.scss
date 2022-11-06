@@ -712,10 +712,10 @@
         flex-direction: column;
     }
     .inputContainer {
-        width: 100%;
+        width: 100% !important;
     }
     .inputContainer input {
-        width: 100%;
+        width: 100% !important;
     }
     .openComment2.open {
         max-width: 80%;
