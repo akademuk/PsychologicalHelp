@@ -98,6 +98,10 @@ h1 {
   transition: all 1s ease-out;
 }
 
+.footer-contact li:nth-of-type(2) {
+  display: none;
+}
+
 button {
   transition: all 0.3s ease-out;
 }
@@ -4650,5 +4654,214 @@ h3:active {
   .mission h2 {
     font-size: 54px !important;
     line-height: 52px;
+  }
+}
+.courseDescriptionBunner {
+  background: url(../img/courseDescriptionVideo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: 671px;
+  padding: 267px 0 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4px;
+  position: relative;
+}
+.courseDescriptionBunner .button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+}
+
+.courseDescriptionBunner a {
+  margin: 0 auto;
+}
+
+.courseDescriptionBunner h1 {
+  font-family: "ProximaNova-Semibold";
+  margin-top: 45px;
+  width: 45%;
+  font-weight: 600;
+  font-size: 85px;
+  line-height: 81px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.courseDescriptionContent {
+  max-width: 990px;
+  margin: 106px auto;
+}
+.courseDescriptionContent h2 {
+  font-family: "ProximaNova-Semibold";
+  font-size: 40px;
+  line-height: 49px;
+  color: #0D3155;
+  margin-bottom: 30px;
+}
+.courseDescriptionContent p {
+  font-family: "ProximaNova-Regular";
+  font-size: 16px;
+  line-height: 181%;
+  color: #0D3155;
+}
+
+.enrollСourse {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 57px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #F4F9FE;
+  border-radius: 10px;
+}
+.enrollСourse h2 {
+  font-family: "ProximaNova-Semibold";
+  font-size: 40px;
+  line-height: 49px;
+  color: #0D3155;
+  margin-bottom: 33px;
+}
+.enrollСourse p {
+  font-family: "ProximaNova-Regular";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 181%;
+  color: #0D3155;
+  margin-bottom: 33px;
+  width: 35%;
+  text-align: center;
+}
+
+.courseSlider {
+  max-width: 100%;
+}
+
+.courseVideo {
+  background: #fff;
+}
+.courseVideo .wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+
+.courseVideo {
+  overflow: hidden;
+}
+.courseVideo .wrapper {
+  align-items: center;
+}
+.courseVideo .wrapper h2 {
+  max-width: 1130px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.courseVideo .wrapper .courseSlider .content-img1 {
+  background: url(../img/videoImg1.png);
+  background-position: center !important;
+}
+.courseVideo .wrapper .courseSlider .content-img2 {
+  background: url(../img/videoImg2.png);
+  background-position: center !important;
+}
+
+.courseDesign h6 {
+  font-family: "ProximaNova-Semibold";
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #0D3155;
+  text-align: center;
+  width: 100%;
+}
+
+.courseVideo2 {
+  padding-bottom: 100px;
+  padding-left: 155px;
+}
+.courseVideo2 .slick-prev {
+  top: auto;
+  bottom: 45px;
+  right: 17%;
+}
+.courseVideo2 .slick-prev:hover {
+  bottom: 41px;
+}
+.courseVideo2 .slick-next {
+  top: auto;
+  bottom: 44px;
+  right: 13%;
+}
+.courseVideo2 .slick-next:hover {
+  bottom: 41px;
+}
+
+@media (max-width: 1300px) {
+  .courseDescriptionBunner {
+    background-size: auto;
+  }
+  .courseVideo2 {
+    padding-left: 30px;
+  }
+  .courseVideo .wrapper {
+    width: 100%;
+    padding-left: 5%;
+  }
+}
+@media (max-width: 992px) {
+  .courseDescriptionBunner {
+    background-size: cover;
+    background-position: -595px;
+    height: 700px;
+    padding-top: 150px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .courseDescriptionBunner h1 {
+    width: 100%;
+  }
+  .courseDescriptionContent {
+    max-width: 90%;
+    margin: 50px auto;
+  }
+  .enrollСourse p {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .courseDescriptionBunner {
+    background-size: auto;
+  }
+  .courseDescriptionBunner h1 {
+    position: inherit;
+    font-size: 55px;
+    line-height: 60px;
+  }
+  .courseDescriptionBunner {
+    margin-top: 0;
+  }
+}
+@media (max-width: 576px) {
+  .courseDescriptionBunner {
+    margin-top: -25px;
+  }
+  .courseVideo2 {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .courseVideo .wrapper .courseSlider .content-img1 {
+    padding: 0 8px !important;
+  }
+  .courseVideo .wrapper .courseSlider .content-img1 {
+    padding: 8px 8px !important;
   }
 }/*# sourceMappingURL=style.css.map */
