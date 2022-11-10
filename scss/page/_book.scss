@@ -1,3 +1,89 @@
+.tt-select {
+    position: relative;
+    height: auto;
+    padding: 0px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.tt-select select {
+    display: none;
+}
+.select-selected {
+    height: 63px;
+    background: #FFFFFF;
+    border: 1px solid #E7EAED;
+    border-radius: 5px;
+    padding-left: 16px;
+    margin-top: 16px;
+    font-family: "ProximaNova-Regular";
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #50759B; 
+    display: flex;
+    align-items: center;
+}
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+}
+.select-selected:before {
+    position: absolute;
+    content: "";
+    top: 50px;
+    right: 20px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: transparent transparent #000000 transparent;
+    transform: rotate(180deg);
+}
+.select-selected.select-arrow-active:before {
+    border: none;
+}
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #000000 transparent;
+    top: 40px;
+    right: 20px;
+}
+.select-items {
+    position: absolute;
+    background: #FFFFFF;
+    border: 1px solid #E7EAED;
+    border-radius: 5px;
+    top: 104%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    div {
+        font-family: "ProximaNova-Semibold";
+        height: 48px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        padding-left: 16px;
+        text-transform: capitalize;
+        color: #0D3155;
+        background: #fff;
+        transition: all 0.3s;
+        &:hover {
+            background: #F4F9FE;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+    }
+}
+.select-hide {
+    display: none;
+}
+
 .bookTittle {
     text-align: center;
     margin-bottom: 78px;
@@ -149,6 +235,7 @@ select {
         padding: 21px 16px !important;
         background: #fff !important;
         margin-right: 16px !important;
+        border-radius: 5px !important;
         input {
             margin-top: 0 !important;
             width: 20px !important;
