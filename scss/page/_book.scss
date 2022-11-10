@@ -85,6 +85,7 @@
                 border: 1px solid #E7EAED;
                 border-radius: 5px;
                 padding-left: 16px;
+                padding-top: 5px;
                 margin-top: 16px;
                 font-family: "ProximaNova-Regular";
                 font-size: 14px;
@@ -96,8 +97,9 @@
                     font-family: "ProximaNova-Regular";
                     font-size: 14px;
                     line-height: 17px;
+                    padding-top: 5px;
                     text-transform: capitalize;
-                    color: #50759B;
+                    color: #50759B !important;
                 }
             }
         }
