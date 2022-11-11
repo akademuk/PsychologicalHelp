@@ -403,71 +403,6 @@ input[type=submit]:hover {
     height: 450px !important;
   }
 }
-.animation-container {
-  position: relative;
-  width: 65vw;
-  position: absolute;
-  overflow: hidden;
-  left: -2250px;
-  -webkit-animation: translate-title 1.5s linear;
-  -webkit-animation-fill-mode: forwards;
-  animation: translate-title 1.5s linear;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-  padding-bottom: 50px;
-  padding-left: 30px;
-}
-
-.sectionTittleLeft {
-  display: flex;
-  width: 100%;
-}
-
-@-webkit-keyframes translate-title {
-  0% {
-    left: -2250px;
-  }
-  100% {
-    left: 0;
-  }
-}
-@keyframes translate-title {
-  0% {
-    left: -2250px;
-  }
-  100% {
-    left: 0;
-  }
-}
-.sectionTittleRight {
-  position: relative;
-  z-index: 20;
-  right: -100%;
-  -webkit-animation: translate-title-right 1.5s linear;
-  -webkit-animation-fill-mode: forwards;
-  animation: translate-title-right 1.5s linear;
-  animation-fill-mode: forwards;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-@-webkit-keyframes translate-title-right {
-  0% {
-    right: -100%;
-  }
-  100% {
-    right: 0;
-  }
-}
-@keyframes translate-title-right {
-  0% {
-    right: -100%;
-  }
-  100% {
-    right: 0;
-  }
-}
 .header {
   padding: 25px 39px;
   background: #0D3155;
@@ -706,12 +641,6 @@ input[type=submit]:hover {
   }
   .header .header-content .header-navigation li a {
     font-size: 14px;
-  }
-  .animation-container {
-    position: static;
-    overflow: auto;
-    width: 100%;
-    height: auto;
   }
 }
 @media (max-width: 768px) {
@@ -2026,7 +1955,7 @@ h3:active {
   .sectionTittle {
     height: 600px;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
   .sectionTittle .sectionTittleRight {
     margin-top: auto;
