@@ -128,14 +128,19 @@
     }
 }
 .consultationLinkText {
-    display: block;
-    font-family: "ProximaNova-Semibold";
-    font-size: 24px;
-    line-height: 29px;
-    text-decoration-line: underline;
-    color: #007CF8;
     padding: 28px 0;
-    border-bottom: 1px solid #D0DBE7;;
+    a {
+        font-family: "ProximaNova-Semibold";
+        font-size: 24px;
+        line-height: 29px;
+        text-decoration: none;
+        color: #007CF8;
+        border-bottom: 1px solid #007CF8;
+    }
+    &:nth-of-type(2) {
+        border-top: 1px solid #D0DBE7;
+        border-bottom: 1px solid #D0DBE7;
+    }
 }
 @media (max-width: 992px) {
 .consultationMain {

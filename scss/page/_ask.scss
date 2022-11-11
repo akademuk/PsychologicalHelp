@@ -22,9 +22,9 @@
 .textWhot {
     background: #F4F9FE;
     border-radius: 10px;
-    width: 145px;
-    min-width: 145px;
-    max-width: 145px;
+    width: 87px;
+    min-width: 87px;
+    max-width: 87px;
     height: auto;
     display: flex;
     align-items: center;
@@ -97,7 +97,10 @@
     padding-top: 55px;
 }
 .askSection2 {
-    padding-left: 170px;
+    padding-left: 111px;
+}
+.askSection1Left {
+    margin-right: 48px !important;
 }
 @media (max-width: 1200px) {
     .askSection3Right {

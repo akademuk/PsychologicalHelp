@@ -164,7 +164,7 @@ button {
 .IconsNav {
     display: flex;
     width: 100%;
-    max-width: 90%;
+    max-width: 1360px;
     margin: 0 auto;
     align-items: center;
     justify-content: space-between;
@@ -231,24 +231,7 @@ textarea {
 *:required {
     border: 1px solid #EF4358 !important;
 }
-// input[type=checkbox] {
-   
-// }
-// input[type=checkbox]:checked  {
-//     background: #fff;
-//    ~ label {
-//         background: #007CF8;
-//         box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.05);
-//         border-radius: 5px;
-//         color: #fff;
-//         &::after {
-//             background: url(../img/Line.svg), #fff;
-//             background-repeat: no-repeat;
-//             background-size: auto;
-//             background-position: center;
-//         }
-//     }
-// }
+
 input[type=checkbox] {display: none;}
 
 input[type=checkbox] + label:before {
@@ -259,6 +242,12 @@ input[type=checkbox] + label:before {
     width: 18px;
     margin-right: 8px;
     transition: color ease .3s;
+}
+.select-items div {
+    cursor: pointer;
+}
+.select-selected {
+    cursor: pointer;
 }
 
 input[type=checkbox]:checked + label:before {
@@ -289,11 +278,42 @@ input[type=radio]:checked + label {
     background: red !important;
 }
 
+input[type=submit] {
+    transition: all .3s ease-out;
+   &:hover {
+    opacity: 0.7;
+    transition: all .3s ease-out;
+    border: none !important;
+   }
+}
+.formSubmit {
+    &:hover {
+        border: none !important;
+    }
+}
+@media (max-width: 1440px) {
+.IconsNav   
+    {
+        max-width: 1130px;
+    }
+}
+@media (max-width: 1200px) {
+    .IconsNav   
+        {
+            max-width: 90%;
+            margin: 0 auto;
+        }
+    }
 @media (max-width: 768px) {
     .IconsNav {
         flex-direction: column;
         p {
             margin-bottom: 20px;
         }
+    }
+}
+@media (max-width: 576px) {
+    .padVideo {
+        height: 450px !important;
     }
 }
